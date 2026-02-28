@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'fira';
+}
+
+@font-face {
+  font-family: 'fira';
+  src: url(fonts/FiraCode-Regular.ttf);
+}
+
+h3 {
+  color: white;
+}
+
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 98px;
+  display: flex;
+  align-items: center;
+  padding-left: 96px;
+  gap: 20px;
+  background: linear-gradient(179deg, rgba(0, 0, 0, 0.6) 10%, rgba(0, 0, 0, 0) 60%);
+}
+
+header .language-switcher {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 84px;
+  height: 28px;
+  border: 1px solid rgba(61, 207, 182, 1);
+  border-radius: 100px;
+}
+
+header .language-switcher:hover {
+  cursor: pointer;
+  border-color: white;
+}
+.language-button:not(.active):hover {
+  color: rgba(61, 207, 182, 1);
+}
+
+.language-switcher .language-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  width: 44px;
+  height: 28px;
+  color: rgba(61, 207, 182, 0.5);
+}
+
+.language-switcher .active {
+  background-color: rgba(61, 207, 182, 1);
+  color: white;
+}
+
+main {
+  height: 100vh;
+  background-image: url(images/Background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

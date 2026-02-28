@@ -1,12 +1,12 @@
 function setLanguage(language) {
-  const btnDE = document.getElementById('btnDE');
   const btnEN = document.getElementById('btnEN');
+  const btnDE = document.getElementById('btnDE');
 
-  if (language === 'DE') {
-    btnDE.classList.add('active');
-    btnEN.classList.remove('active');
-  } else {
+  if (language === 'EN') {
     btnEN.classList.add('active');
     btnDE.classList.remove('active');
+  } else {
+    btnDE.classList.add('active');
+    btnEN.classList.remove('active');
   }
 }

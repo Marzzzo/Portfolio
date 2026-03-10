@@ -1,12 +1,36 @@
 * {
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
   font-family: 'fira';
 }
 
 @font-face {
   font-family: 'fira';
-  src: url(fonts/FiraCode-Regular.ttf);
+  src: url('fonts/FiraCode-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'fira';
+  src: url('fonts/FiraCode-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+h1 {
+  color: #d9d9d9;
+  font-size: 128px;
+  font-weight: 700;
+}
+
+h2 {
+  color: #d9d9d9;
+  font-size: 40px;
+  font-weight: 400;
 }
 
 h3 {
@@ -23,7 +47,7 @@ header {
   align-items: center;
   padding-left: 96px;
   gap: 20px;
-  background: linear-gradient(179deg, rgba(0, 0, 0, 0.6) 10%, rgba(0, 0, 0, 0) 60%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 10%, rgba(0, 0, 0, 0) 90%);
 }
 
 header .language-switcher {
@@ -60,9 +84,55 @@ header .language-switcher:hover {
 }
 
 main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
   background-image: url(images/Background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.nametag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nametag-button-section {
+  display: flex;
+  gap: 48px;
+  cursor: pointer;
+}
+
+.nametag-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 100px;
+  width: 172px;
+  height: 48px;
+  overflow: hidden;
+}
+
+.nametag-button p {
+  font-size: 18px;
+  color: white;
+  white-space: nowrap;
+}
+
+.nametag-button:hover p {
+  animation: textMove 3s linear infinite;
+}
+
+@keyframes textMove {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-150%);
+  }
 }

@@ -9,15 +9,13 @@ body {
 
 @font-face {
   font-family: 'fira';
-  src: url('fonts/FiraCode-Regular.ttf') format('truetype');
-  font-weight: 400;
+  src: url('fonts/FiraCode-VariableFont_wght.ttf') format('truetype');
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'fira';
-  src: url('fonts/FiraCode-Bold.ttf') format('truetype');
-  font-weight: 700;
+  font-family: 'karla';
+  src: url('fonts/Karla-VariableFont_wght.ttf') format('truetype');
   font-style: normal;
 }
 
@@ -135,4 +133,63 @@ main {
   to {
     transform: translateX(-150%);
   }
+}
+
+section {
+  height: 100vh;
+  padding-top: 144px;
+  padding-left: 112px;
+  padding-right: 96px;
+  background-color: rgba(28, 28, 28, 1);
+}
+
+.about-me-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 96px;
+}
+
+.profil-image {
+  width: 568px;
+  height: 568px;
+  background-image: url(/images/profilbild.JPEG);
+  background-size: cover;
+  background-position: top;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.about-me {
+  max-width: 568px;
+  height: 540px;
+  padding: 32px;
+  border-radius: 30px;
+  background-color: rgba(61, 207, 182, 0.1);
+}
+
+.about-me h1 {
+  font-weight: 700;
+  font-size: 64px;
+  color: rgba(61, 207, 182, 1);
+}
+
+.who-i-am-container h3 {
+  font-size: 24px;
+  font-family: 'karla';
+  font-weight: 500;
+  color: rgba(61, 207, 182, 1);
+}
+
+.about-me p {
+  font-size: 18px;
+  font-weight: 300;
+  font-family: 'karla';
+  color: rgba(255, 255, 255, 1);
+}
+
+.who-i-am-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 96px;
+  gap: 20px;
 }

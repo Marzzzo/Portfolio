@@ -163,6 +163,7 @@ section {
   max-width: 568px;
   height: 540px;
   padding: 32px;
+  border: 1px solid rgba(61, 207, 182, 1);
   border-radius: 30px;
   background-color: rgba(61, 207, 182, 0.1);
 }
@@ -192,4 +193,21 @@ section {
   flex-direction: column;
   margin-top: 96px;
   gap: 20px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 32px;
+}
+
+.aboutme-textbox {
+  display: flex;
+  gap: 30px;
+}
+
+.aboutme-textbox img {
+  height: 32px;
+  width: 32px;
 }

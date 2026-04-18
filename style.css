@@ -243,8 +243,8 @@ section {
 
 .skill-container {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  justify-content: space-between;
+  padding-top: 20px;
 }
 
 .skill-container h3 {
@@ -314,4 +314,25 @@ section {
   to {
     transform: translateX(-150%);
   }
+}
+
+.tech-color {
+  font-size: 24px;
+  font-family: 'fira';
+  font-weight: 700;
+  color: rgba(61, 207, 182, 1);
+}
+
+.skill-icon-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px 72px;
+  max-width: 632px;
+  justify-items: center;
+}
+
+.skill-icon-box img {
+  width: 104px;
+  height: 116px;
+  object-fit: contain;
 }

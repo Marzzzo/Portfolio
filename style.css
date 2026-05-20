@@ -89,8 +89,9 @@ header .language-switcher:hover {
 }
 
 main {
-  display: flex;
   position: relative;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
@@ -151,10 +152,9 @@ main {
 .textbar {
   position: absolute;
   display: flex;
-  left: -10px;
-  right: -10px;
   bottom: 40px;
   rotate: -3deg;
+  width: 100%;
   height: 62px;
   background-color: rgba(255, 255, 255, 0.12);
   padding: 12px 32px;
@@ -165,8 +165,9 @@ main {
 .textbar-track {
   display: flex;
   align-items: center;
-  width: max-content;
+  width: 100%;
   animation: loop 25s linear infinite;
+  overflow: hidden;
 }
 
 .inline-container {
@@ -197,8 +198,10 @@ main {
 
 .other-section {
   display: flex;
+  position: relative;
   padding-left: 96px;
   padding-right: 96px;
+  gap: 70px;
   background-color: rgba(28, 28, 28, 1);
 }
 
@@ -460,6 +463,27 @@ main {
   padding-bottom: 16px;
 }
 
+.project-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+.project-preview img {
+  width: 315.24px;
+  height: 212px;
+  border-radius: 16px;
+  opacity: 0;
+  transform: translateX(20px);
+  transition: 0.25s ease;
+}
+
+.project-preview img.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 .projects-container {
   display: flex;
   justify-content: space-between;
@@ -470,6 +494,11 @@ main {
   border-bottom: 1px solid rgba(61, 207, 182, 1);
 }
 
+.projects-container:hover {
+  cursor: pointer;
+  background-color: rgba(61, 207, 182, 0.3);
+}
+
 .projects-container-bottom {
   display: flex;
   justify-content: space-between;
@@ -477,6 +506,11 @@ main {
   height: 109px;
   padding: 40px 32px 40px 32px;
   border-bottom: 1px solid rgba(61, 207, 182, 1);
+}
+
+.projects-container-bottom:hover {
+  cursor: pointer;
+  background-color: rgba(61, 207, 182, 0.3);
 }
 
 .project-technology {
@@ -507,4 +541,32 @@ main {
   width: 1px;
   height: 18px;
   background-color: rgba(61, 207, 182, 1);
+}
+
+.img-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  pointer-events: none;
+}
+
+.join-image {
+  position: absolute;
+  top: 260px;
+  border-radius: 16px;
+  display: none;
+}
+
+.loco-image {
+  position: absolute;
+  top: 310px;
+  border-radius: 16px;
+  display: none;
+}
+
+.bubble-image {
+  position: absolute;
+  bottom: 16px;
+  border-radius: 16px;
+  display: none;
 }

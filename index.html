@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
   </head>
   <body>
     <header>
@@ -170,10 +169,12 @@
           <h3>Portfolio</h3>
           <h1>Featured Projects</h1>
         </div>
+
         <div class="textfield-projects">
           <p>Explore a selection of my work here - Interact with projects to see my skills in action.</p>
         </div>
-        <div class="projects-container">
+
+        <div class="projects-container" onmouseenter="showImage('join-image')" onmouseleave="hideImages()">
           <div>
             <span>Join</span>
           </div>
@@ -189,7 +190,8 @@
             <p>Firebase</p>
           </div>
         </div>
-        <div class="projects-container-bottom">
+
+        <div class="projects-container-bottom" onmouseenter="showImage('loco-image')" onmouseleave="hideImages()">
           <div>
             <span>El Pollo Loco</span>
           </div>
@@ -201,7 +203,8 @@
             <p>JavaScript</p>
           </div>
         </div>
-        <div class="projects-container-bottom">
+
+        <div class="projects-container-bottom" onmouseenter="showImage('bubble-image')" onmouseleave="hideImages()">
           <div>
             <span>DA Bubble</span>
           </div>
@@ -214,6 +217,12 @@
           </div>
         </div>
       </div>
+      <div class="img-container">
+        <img class="join-image" src="/images/join.png" />
+        <img class="loco-image" src="/images/el-pollo-loco.png" />
+        <img class="bubble-image" src="/images/da-bubble.png" />
+      </div>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -10,3 +10,19 @@ function setLanguage(language) {
     btnEN.classList.remove('active');
   }
 }
+
+const images = document.querySelectorAll('.img-container img');
+
+function hideImages() {
+  images.forEach((image) => {
+    image.style.display = 'none';
+  });
+}
+
+function showImage(className) {
+  hideImages();
+  const image = document.querySelector(`.${className}`);
+  if (image) {
+    image.style.display = 'block';
+  }
+}

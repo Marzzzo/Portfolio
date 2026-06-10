@@ -1,7 +1,6 @@
 function setLanguage(language) {
   const btnEN = document.getElementById('btnEN');
   const btnDE = document.getElementById('btnDE');
-
   if (language === 'EN') {
     btnEN.classList.add('active');
     btnDE.classList.remove('active');
@@ -11,7 +10,7 @@ function setLanguage(language) {
   }
 }
 
-const images = document.querySelectorAll('.img-container img');
+let images = document.querySelectorAll('.img-container img');
 
 function hideImages() {
   images.forEach((image) => {

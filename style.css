@@ -6,10 +6,12 @@
 body {
   display: flex;
   justify-content: center;
+  height: 100%;
   font-family: 'fira';
   background-image: url(images/Background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-x: hidden;
 }
 
 .content-max-width {
@@ -121,9 +123,7 @@ main {
 }
 
 .nametag-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
   border: 1px solid white;
   border-radius: 100px;
   width: 172px;
@@ -131,61 +131,77 @@ main {
   overflow: hidden;
 }
 
+.nametag-button p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  font-size: 18px;
+  color: white;
+  white-space: nowrap;
+  transform: translate(-50%, -50%);
+}
+
 .nametag-button:hover {
   border-color: rgba(61, 207, 182, 1);
 }
 
-.nametag-button p {
-  font-size: 18px;
-  color: white;
-  white-space: nowrap;
-}
-
 .nametag-button:hover p {
   color: rgba(61, 207, 182, 1);
-  animation: buttonTextMove 5s linear infinite;
+  animation:
+    buttonFirst 2s linear forwards,
+    buttonLoop 5s linear infinite 2s;
 }
 
-@keyframes buttonTextMove {
+@keyframes buttonFirst {
   from {
-    transform: translateX(0%);
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
+
   to {
-    transform: translateX(-150%);
+    left: -180px;
+    transform: translate(0, -50%);
+  }
+}
+
+@keyframes buttonLoop {
+  from {
+    left: 172px;
+    transform: translate(0, -50%);
+  }
+
+  to {
+    left: -180px;
+    transform: translate(0, -50%);
   }
 }
 
 .textbar {
   position: absolute;
-  display: flex;
   bottom: 40px;
   rotate: -3deg;
   width: 100%;
   height: 62px;
   background-color: rgba(255, 255, 255, 0.12);
-  padding: 12px 32px;
   overflow: hidden;
   white-space: nowrap;
 }
 
 .textbar-track {
-  display: flex;
-  align-items: center;
+  position: relative;
+  overflow-x: hidden;
+  height: 100%;
   width: 100%;
-  animation: loop 25s linear infinite;
-  overflow: hidden;
 }
 
 .inline-container {
+  position: absolute;
+  height: 100%;
   display: flex;
   align-items: center;
   gap: 56px;
-  flex-shrink: 0;
   padding-right: 56px;
-}
-
-.inline-container span {
-  display: block;
   flex-shrink: 0;
   font-family: 'karla';
   font-weight: 400;
@@ -193,12 +209,31 @@ main {
   color: rgba(61, 207, 182, 1);
 }
 
-@keyframes loop {
+#scroll-one {
+  animation: loop-one 30s linear infinite;
+}
+
+#scroll-two {
+  animation: loop-two 30s linear infinite;
+}
+
+@keyframes loop-one {
   from {
     transform: translateX(0);
   }
+
   to {
-    transform: translateX(calc(-100% / 4));
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes loop-two {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
   }
 }
 
@@ -372,9 +407,7 @@ main {
 }
 
 .lets-talk-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
   border: 1px solid white;
   border-radius: 100px;
   width: 122px;
@@ -388,22 +421,44 @@ main {
 }
 
 .lets-talk-button p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
   font-size: 18px;
   color: white;
   white-space: nowrap;
+  transform: translate(-50%, -50%);
 }
 
 .lets-talk-button:hover p {
   color: rgba(61, 207, 182, 1);
-  animation: textMove 3s linear infinite;
+  animation:
+    letsTalkFirst 2s linear forwards,
+    letsTalkLoop 5s linear infinite 2s;
 }
 
-@keyframes textMove {
+@keyframes letsTalkFirst {
   from {
-    transform: translateX(100%);
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
+
   to {
-    transform: translateX(-150%);
+    left: -140px;
+    transform: translate(0, -50%);
+  }
+}
+
+@keyframes letsTalkLoop {
+  from {
+    left: 122px;
+    transform: translate(0, -50%);
+  }
+
+  to {
+    left: -140px;
+    transform: translate(0, -50%);
   }
 }
 
@@ -415,17 +470,37 @@ main {
 }
 
 .skill-icon-box {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 40px 72px;
   max-width: 632px;
   justify-items: center;
 }
 
-.skill-icon-box img {
+.skill-innerbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 104px;
   height: 116px;
-  object-fit: contain;
+  gap: 8px;
+}
+
+.skill-innerbox img {
+  height: 56px;
+  width: 56px;
+  transition: transform 0.3s ease;
+}
+
+.skill-innerbox img:hover {
+  transform: scale(1.1);
+}
+
+.skill-innerbox p {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
 }
 
 .headline-projects {

@@ -12,6 +12,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
+  user-select: none;
 }
 
 .content-max-width {
@@ -521,6 +522,14 @@ main {
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
   text-align: center;
+}
+
+.growth > p {
+  transition: color 0.3s ease;
+}
+
+.growth:hover > p {
+  color: rgba(61, 207, 182, 1);
 }
 
 .headline-projects {

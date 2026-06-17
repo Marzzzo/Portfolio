@@ -243,6 +243,7 @@ main {
   position: relative;
   padding-left: 96px;
   padding-right: 96px;
+  padding-bottom: 144px;
   gap: 70px;
 }
 

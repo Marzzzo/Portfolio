@@ -1,3 +1,29 @@
+@keyframes switchSide {
+  0% {
+    opacity: 1;
+  }
+
+  15% {
+    opacity: 0.5;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 0;
+  }
+
+  85% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .container-carousel {
   position: relative;
   width: 100%;
@@ -38,12 +64,11 @@ input.input {
   top: 0;
   width: 632px;
   height: 274px;
-  aspect-ratio: 16/9;
   padding: 20px;
   border: 1px solid rgba(61, 207, 182, 1);
   border-radius: 32px;
   box-sizing: border-box;
-  background: rgba(61, 207, 182, 0.3);
+  background: rgb(31, 91, 82);
   color: #eee;
   text-align: center;
   cursor: pointer;
@@ -88,17 +113,22 @@ input.input {
   animation: blur 1s 1 forwards;
 }
 
-#item_1:checked ~ .items label[for='item_2'] {
-  transform: translate3d(0px, 0, -100px);
-  z-index: 2;
-}
-#item_1:checked ~ .items label[for='item_3'] {
-  transform: translate3d(800px, 0, -200px);
-  z-index: 1;
-}
 #item_1:checked ~ .items label[for='item_1'] {
-  transform: translate3d(-800px, 0, -200px);
-  z-index: 1;
+  transform: translate3d(0, 0, 0);
+  z-index: 3;
+  animation: unblur 1s forwards;
+}
+
+#item_1:checked ~ .items label[for='item_2'] {
+  transform: translate3d(800px, 0, -100px);
+  z-index: 2;
+  animation: switchSide 1s forwards;
+}
+
+#item_1:checked ~ .items label[for='item_3'] {
+  transform: translate3d(-800px, 0, -100px);
+  z-index: 2;
+  animation: blur 1s forwards;
 }
 
 /* Item 2 */
@@ -107,9 +137,9 @@ input.input {
   transform: scale(1.5);
   cursor: default;
 }
-#item_2:checked ~ .nav label[for='item_1'],
-#item_2:checked ~ .nav label[for='item_3'] {
-  background: #444;
+#item_2:checked ~ .nav label[for='item_3'],
+#item_2:checked ~ .nav label[for='item_1'] {
+  background: white;
   transform: scale(1);
   cursor: pointer;
 }
@@ -118,22 +148,27 @@ input.input {
   animation: unblur 1s 1 forwards;
   z-index: 3;
 }
-#item_2:checked ~ .items label[for='item_1'],
-#item_2:checked ~ .items label[for='item_3'] {
+#item_2:checked ~ .items label[for='item_3'],
+#item_2:checked ~ .items label[for='item_1'] {
   animation: blur 1s 1 forwards;
+}
+
+#item_2:checked ~ .items label[for='item_2'] {
+  transform: translate3d(0, 0, 0);
+  z-index: 3;
+  animation: unblur 1s forwards;
 }
 
 #item_2:checked ~ .items label[for='item_3'] {
   transform: translate3d(800px, 0, -100px);
   z-index: 2;
+  animation: switchSide 1s forwards;
 }
+
 #item_2:checked ~ .items label[for='item_1'] {
-  transform: translate3d(-800px, 0, -200px);
-  z-index: 1;
-}
-#item_2:checked ~ .items label[for='item_2'] {
-  transform: translate3d(-800px, 0, -200px);
-  z-index: 1;
+  transform: translate3d(-800px, 0, -100px);
+  z-index: 2;
+  animation: blur 1s forwards;
 }
 
 /* Item 3 */
@@ -144,25 +179,34 @@ input.input {
 }
 #item_3:checked ~ .nav label[for='item_1'],
 #item_3:checked ~ .nav label[for='item_2'] {
-  background: #444;
+  background: white;
   transform: scale(1);
   cursor: pointer;
 }
 
-#item_3:checked ~ .items label[for='item_3'] {
+#item_3:checked ~ .items label[for='item_1'] {
   animation: unblur 1s 1 forwards;
   z-index: 3;
 }
-#item_3:checked ~ .items label[for='item_1'],
-#item_3:checked ~ .items label[for='item_2'] {
+#item_3:checked ~ .items label[for='item_2'],
+#item_3:checked ~ .items label[for='item_3'] {
   animation: blur 1s 1 forwards;
 }
 
-#item_3:checked ~ .items label[for='item_1'] {
-  transform: translate3d(-500px, 0, -200px);
-  z-index: 1;
+#item_3:checked ~ .items label[for='item_3'] {
+  transform: translate3d(0, 0, 0);
+  z-index: 3;
+  animation: unblur 1s forwards;
 }
-#item_3:checked ~ .items label[for='item_2'] {
-  transform: translate3d(-250px, 0, -100px);
+
+#item_3:checked ~ .items label[for='item_1'] {
+  transform: translate3d(800px, 0, -100px);
   z-index: 2;
+  animation: switchSide 1s forwards;
+}
+
+#item_3:checked ~ .items label[for='item_2'] {
+  transform: translate3d(-800px, 0, -100px);
+  z-index: 2;
+  animation: blur 1s forwards;
 }

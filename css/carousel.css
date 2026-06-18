@@ -56,6 +56,7 @@ input.input {
   height: 200px;
   aspect-ratio: 16/9;
   margin: 0 auto;
+  transform-style: preserve-3d;
   perspective: 1000px;
 }
 
@@ -74,17 +75,18 @@ input.input {
   cursor: pointer;
   user-select: none;
   overflow: hidden;
-  transition: transform 0.7s;
+  transition: transform 0.7s ease-in-out;
 }
 
 .nav {
   display: flex;
   justify-content: center;
+  margin-top: 110px;
 }
 
 .dot {
-  width: 13px;
-  height: 13px;
+  width: 8px;
+  height: 8px;
   margin: 10px;
   border-radius: 50%;
   background: #444;
@@ -93,13 +95,13 @@ input.input {
 
 /* Item 1 */
 #item_1:checked ~ .nav label[for='item_1'] {
-  background: green;
-  transform: scale(1.5);
+  background: #3dcfb6;
+  transform: scale(1.2);
   cursor: default;
 }
 #item_1:checked ~ .nav label[for='item_2'],
 #item_1:checked ~ .nav label[for='item_3'] {
-  background: white;
+  background: #ffffff;
   transform: scale(1);
   cursor: pointer;
 }
@@ -115,31 +117,31 @@ input.input {
 
 #item_1:checked ~ .items label[for='item_1'] {
   transform: translate3d(0, 0, 0);
-  z-index: 3;
+  z-index: 8;
   animation: unblur 1s forwards;
 }
 
 #item_1:checked ~ .items label[for='item_2'] {
-  transform: translate3d(800px, 0, -100px);
-  z-index: 2;
-  animation: switchSide 1s forwards;
+  transform: translate3d(750px, 0, -100px);
+  z-index: 1;
+  animation: blur 1s forwards;
 }
 
 #item_1:checked ~ .items label[for='item_3'] {
-  transform: translate3d(-800px, 0, -100px);
-  z-index: 2;
+  transform: translate3d(-750px, 0, -100px);
+  z-index: 1;
   animation: blur 1s forwards;
 }
 
 /* Item 2 */
 #item_2:checked ~ .nav label[for='item_2'] {
-  background: green;
-  transform: scale(1.5);
+  background: #3dcfb6;
+  transform: scale(1.2);
   cursor: default;
 }
 #item_2:checked ~ .nav label[for='item_3'],
 #item_2:checked ~ .nav label[for='item_1'] {
-  background: white;
+  background: #ffffff;
   transform: scale(1);
   cursor: pointer;
 }
@@ -155,36 +157,36 @@ input.input {
 
 #item_2:checked ~ .items label[for='item_2'] {
   transform: translate3d(0, 0, 0);
-  z-index: 3;
+  z-index: 8;
   animation: unblur 1s forwards;
 }
 
 #item_2:checked ~ .items label[for='item_3'] {
-  transform: translate3d(800px, 0, -100px);
-  z-index: 2;
-  animation: switchSide 1s forwards;
+  transform: translate3d(750px, 0, -100px);
+  z-index: 1;
+  animation: blur 1s forwards;
 }
 
 #item_2:checked ~ .items label[for='item_1'] {
-  transform: translate3d(-800px, 0, -100px);
-  z-index: 2;
+  transform: translate3d(-750px, 0, -100px);
+  z-index: 1;
   animation: blur 1s forwards;
 }
 
 /* Item 3 */
 #item_3:checked ~ .nav label[for='item_3'] {
-  background: green;
-  transform: scale(1.5);
+  background: #3dcfb6;
+  transform: scale(1.2);
   cursor: default;
 }
 #item_3:checked ~ .nav label[for='item_1'],
 #item_3:checked ~ .nav label[for='item_2'] {
-  background: white;
+  background: #ffffff;
   transform: scale(1);
   cursor: pointer;
 }
 
-#item_3:checked ~ .items label[for='item_1'] {
+#item_3:checked ~ .items label[for='item_3'] {
   animation: unblur 1s 1 forwards;
   z-index: 3;
 }
@@ -195,18 +197,18 @@ input.input {
 
 #item_3:checked ~ .items label[for='item_3'] {
   transform: translate3d(0, 0, 0);
-  z-index: 3;
+  z-index: 8;
   animation: unblur 1s forwards;
 }
 
 #item_3:checked ~ .items label[for='item_1'] {
-  transform: translate3d(800px, 0, -100px);
-  z-index: 2;
-  animation: switchSide 1s forwards;
+  transform: translate3d(750px, 0, -100px);
+  z-index: 1;
+  animation: blur 1s forwards;
 }
 
 #item_3:checked ~ .items label[for='item_2'] {
-  transform: translate3d(-800px, 0, -100px);
-  z-index: 2;
+  transform: translate3d(-750px, 0, -100px);
+  z-index: 1;
   animation: blur 1s forwards;
 }

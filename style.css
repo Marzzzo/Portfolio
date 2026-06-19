@@ -553,6 +553,15 @@ main {
   color: rgba(61, 207, 182, 1);
 }
 
+.headline-colleagues h1 {
+  width: 100%;
+  font-family: 'fira';
+  font-weight: 700;
+  font-size: 32px;
+  color: rgba(61, 207, 182, 1);
+  text-align: center;
+}
+
 .textfield-projects {
   max-width: 456px;
   padding: 41px 0 41px 0;

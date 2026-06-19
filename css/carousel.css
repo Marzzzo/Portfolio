@@ -81,6 +81,7 @@ input.input {
 .nav {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 110px;
 }
 
@@ -91,6 +92,19 @@ input.input {
   border-radius: 50%;
   background: #444;
   cursor: pointer;
+}
+
+.quotes {
+  position: absolute;
+  top: -10px;
+  left: calc(50% - 360px);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
 }
 
 /* Item 1 */

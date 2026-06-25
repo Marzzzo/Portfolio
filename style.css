@@ -62,9 +62,36 @@ header {
   gap: 20px;
 }
 
-header h3:hover {
+.header-headline {
+  display: flex;
+  gap: 32px;
+}
+
+.header-headline h3 {
+  position: relative;
   cursor: pointer;
-  color: rgba(61, 207, 182, 1);
+}
+
+.header-headline h3:hover {
+  color: #3dcfb6;
+}
+
+.header-headline h3::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #3dcfb6;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.header-headline h3:hover::after {
+  opacity: 1;
 }
 
 header .language-switcher {
@@ -637,10 +664,31 @@ main {
 
 .projects-container span,
 .projects-container-bottom span {
+  position: relative;
   font-family: 'fira';
   font-weight: 700;
   font-size: 24px;
   color: white;
+}
+
+.projects-container span::after,
+.projects-container-bottom span::after {
+  content: '';
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12.56px;
+  height: 12.56px;
+  background: url('./icons/arrow_outward.png') no-repeat center;
+  background-size: contain;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.projects-container:hover span::after,
+.projects-container-bottom:hover span::after {
+  opacity: 1;
 }
 
 .projects-container p,

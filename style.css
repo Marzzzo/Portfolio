@@ -17,6 +17,8 @@ body {
 
 .content-max-width {
   max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
   position: relative;
 }
 
@@ -208,10 +210,13 @@ main {
 .textbar {
   position: absolute;
   bottom: 40px;
-  rotate: -3deg;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%) rotate(-3deg);
+
+  width: 100vw;
   height: 62px;
-  background-color: rgba(255, 255, 255, 0.12);
+
+  background: rgba(255, 255, 255, 0.12);
   overflow: hidden;
   white-space: nowrap;
 }
@@ -237,15 +242,31 @@ main {
   color: rgba(61, 207, 182, 1);
 }
 
-#scroll-one {
-  animation: loop-one 30s linear infinite;
+#scroll-1 {
+  animation: loop-1 7s linear infinite;
 }
 
-#scroll-two {
-  animation: loop-two 30s linear infinite;
+#scroll-2 {
+  animation: loop-2 7s linear infinite;
 }
 
-@keyframes loop-one {
+#scroll-3 {
+  animation: loop-3 7s linear infinite;
+}
+
+#scroll-4 {
+  animation: loop-4 7s linear infinite;
+}
+
+#scroll-5 {
+  animation: loop-5 7s linear infinite;
+}
+
+#scroll-6 {
+  animation: loop-6 7s linear infinite;
+}
+
+@keyframes loop-1 {
   from {
     transform: translateX(0);
   }
@@ -255,13 +276,53 @@ main {
   }
 }
 
-@keyframes loop-two {
+@keyframes loop-2 {
   from {
     transform: translateX(100%);
   }
 
   to {
     transform: translateX(0);
+  }
+}
+
+@keyframes loop-3 {
+  from {
+    transform: translateX(200%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes loop-4 {
+  from {
+    transform: translateX(300%);
+  }
+
+  to {
+    transform: translateX(200%);
+  }
+}
+
+@keyframes loop-5 {
+  from {
+    transform: translateX(400%);
+  }
+
+  to {
+    transform: translateX(300%);
+  }
+}
+
+@keyframes loop-6 {
+  from {
+    transform: translateX(500%);
+  }
+
+  to {
+    transform: translateX(400%);
   }
 }
 

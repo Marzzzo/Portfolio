@@ -72,7 +72,6 @@ input.input {
   background: rgb(31, 91, 82);
   color: #eee;
   text-align: center;
-  cursor: pointer;
   user-select: none;
   overflow: hidden;
   transition: transform 0.7s ease-in-out;
@@ -94,6 +93,10 @@ input.input {
   cursor: pointer;
 }
 
+.dot.active {
+  background: rgba(61, 207, 182, 1);
+}
+
 .quotes {
   position: absolute;
   top: -10px;
@@ -102,126 +105,146 @@ input.input {
   pointer-events: none;
 }
 
+.arrow-button {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.arrow-button:hover {
+  transform: scale(1.2);
+}
+
+.arrow-button:hover .arrow {
+  fill: rgba(61, 207, 182, 1);
+}
+
 .arrow {
-  width: 40px;
-  height: 40px;
+  width: 19px;
+  height: 19px;
+  fill: white;
+  transition: fill 0.3s ease;
 }
 
 /* Item 1 */
-#item_1:checked ~ .nav label[for='item_1'] {
+#item_1:checked ~ .nav div[for='item_1'] {
   background: #3dcfb6;
-  transform: scale(1.2);
+  transform: scale(1.1);
   cursor: default;
 }
-#item_1:checked ~ .nav label[for='item_2'],
-#item_1:checked ~ .nav label[for='item_3'] {
+#item_1:checked ~ .nav div[for='item_2'],
+#item_1:checked ~ .nav div[for='item_3'] {
   background: #ffffff;
   transform: scale(1);
   cursor: pointer;
 }
 
-#item_1:checked ~ .items label[for='item_1'] {
+#item_1:checked ~ .items div[for='item_1'] {
   animation: unblur 1s 1 forwards;
   z-index: 3;
 }
-#item_1:checked ~ .items label[for='item_2'],
-#item_1:checked ~ .items label[for='item_3'] {
+#item_1:checked ~ .items div[for='item_2'],
+#item_1:checked ~ .items div[for='item_3'] {
   animation: blur 1s 1 forwards;
 }
 
-#item_1:checked ~ .items label[for='item_1'] {
+#item_1:checked ~ .items div[for='item_1'] {
   transform: translate3d(0, 0, 0);
   z-index: 8;
   animation: unblur 1s forwards;
 }
 
-#item_1:checked ~ .items label[for='item_2'] {
+#item_1:checked ~ .items div[for='item_2'] {
   transform: translate3d(750px, 0, -100px);
   z-index: 1;
   animation: blur 1s forwards;
 }
 
-#item_1:checked ~ .items label[for='item_3'] {
+#item_1:checked ~ .items div[for='item_3'] {
   transform: translate3d(-750px, 0, -100px);
   z-index: 1;
   animation: blur 1s forwards;
 }
 
 /* Item 2 */
-#item_2:checked ~ .nav label[for='item_2'] {
+#item_2:checked ~ .nav div[for='item_2'] {
   background: #3dcfb6;
   transform: scale(1.2);
   cursor: default;
 }
-#item_2:checked ~ .nav label[for='item_3'],
-#item_2:checked ~ .nav label[for='item_1'] {
+#item_2:checked ~ .nav div[for='item_3'],
+#item_2:checked ~ .nav div[for='item_1'] {
   background: #ffffff;
   transform: scale(1);
   cursor: pointer;
 }
 
-#item_2:checked ~ .items label[for='item_2'] {
+#item_2:checked ~ .items div[for='item_2'] {
   animation: unblur 1s 1 forwards;
   z-index: 3;
 }
-#item_2:checked ~ .items label[for='item_3'],
-#item_2:checked ~ .items label[for='item_1'] {
+#item_2:checked ~ .items div[for='item_3'],
+#item_2:checked ~ .items div[for='item_1'] {
   animation: blur 1s 1 forwards;
 }
 
-#item_2:checked ~ .items label[for='item_2'] {
+#item_2:checked ~ .items div[for='item_2'] {
   transform: translate3d(0, 0, 0);
   z-index: 8;
   animation: unblur 1s forwards;
 }
 
-#item_2:checked ~ .items label[for='item_3'] {
+#item_2:checked ~ .items div[for='item_3'] {
   transform: translate3d(750px, 0, -100px);
   z-index: 1;
   animation: blur 1s forwards;
 }
 
-#item_2:checked ~ .items label[for='item_1'] {
+#item_2:checked ~ .items div[for='item_1'] {
   transform: translate3d(-750px, 0, -100px);
   z-index: 1;
   animation: blur 1s forwards;
 }
 
 /* Item 3 */
-#item_3:checked ~ .nav label[for='item_3'] {
+#item_3:checked ~ .nav div[for='item_3'] {
   background: #3dcfb6;
   transform: scale(1.2);
   cursor: default;
 }
-#item_3:checked ~ .nav label[for='item_1'],
-#item_3:checked ~ .nav label[for='item_2'] {
+#item_3:checked ~ .nav div[for='item_1'],
+#item_3:checked ~ .nav div[for='item_2'] {
   background: #ffffff;
   transform: scale(1);
   cursor: pointer;
 }
 
-#item_3:checked ~ .items label[for='item_3'] {
+#item_3:checked ~ .items div[for='item_3'] {
   animation: unblur 1s 1 forwards;
   z-index: 3;
 }
-#item_3:checked ~ .items label[for='item_2'],
-#item_3:checked ~ .items label[for='item_3'] {
+#item_3:checked ~ .items div[for='item_2'],
+#item_3:checked ~ .items div[for='item_3'] {
   animation: blur 1s 1 forwards;
 }
 
-#item_3:checked ~ .items label[for='item_3'] {
+#item_3:checked ~ .items div[for='item_3'] {
   transform: translate3d(0, 0, 0);
   z-index: 8;
   animation: unblur 1s forwards;
 }
 
-#item_3:checked ~ .items label[for='item_1'] {
+#item_3:checked ~ .items div[for='item_1'] {
   transform: translate3d(750px, 0, -100px);
   z-index: 1;
   animation: blur 1s forwards;
 }
 
-#item_3:checked ~ .items label[for='item_2'] {
+#item_3:checked ~ .items div[for='item_2'] {
   transform: translate3d(-750px, 0, -100px);
   z-index: 1;
   animation: blur 1s forwards;

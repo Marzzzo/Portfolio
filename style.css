@@ -243,27 +243,27 @@ main {
 }
 
 #scroll-1 {
-  animation: loop-1 7s linear infinite;
+  animation: loop-1 9s linear infinite;
 }
 
 #scroll-2 {
-  animation: loop-2 7s linear infinite;
+  animation: loop-2 9s linear infinite;
 }
 
 #scroll-3 {
-  animation: loop-3 7s linear infinite;
+  animation: loop-3 9s linear infinite;
 }
 
 #scroll-4 {
-  animation: loop-4 7s linear infinite;
+  animation: loop-4 9s linear infinite;
 }
 
 #scroll-5 {
-  animation: loop-5 7s linear infinite;
+  animation: loop-5 9s linear infinite;
 }
 
 #scroll-6 {
-  animation: loop-6 7s linear infinite;
+  animation: loop-6 9s linear infinite;
 }
 
 @keyframes loop-1 {

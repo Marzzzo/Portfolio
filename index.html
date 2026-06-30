@@ -295,16 +295,30 @@
 
           <div class="items">
             <img class="quotes" src="./icons/quotes.png" alt="quotes" />
-            <label for="item_1" class="item"> Label #1</label>
-            <label for="item_2" class="item">Label #2</label>
-            <label for="item_3" class="item">Label #3</label>
+            <div for="item_1" class="item">Label #1</div>
+            <div for="item_2" class="item">Label #2</div>
+            <div for="item_3" class="item">Label #3</div>
           </div>
           <div class="nav">
-            <img class="arrow" src="./icons/arrow-left.png" alt="arrow-left" />
-            <label for="item_1" class="dot"></label>
-            <label for="item_2" class="dot"></label>
-            <label for="item_3" class="dot"></label>
-            <img class="arrow" src="./icons/arrow-right.png" alt="arrow-right" />
+            <div class="arrow-button">
+              <svg onclick="prevSlide()" width="19" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.123 9.729l7.251 7.251c.13.13.198.283.204.46.006.175-.064.337-.211.484a.688.688 0 01-.472.217c-.168.002-.325-.07-.472-.217L.316 9.816A1.046 1.046 0 01.07 9.46 1.089 1.089 0 010 9.062c0-.143.024-.276.07-.397.048-.121.13-.24.246-.357L8.423.201a.668.668 0 01.455-.2.642.642 0 01.489.2c.147.147.22.305.22.475 0 .17-.073.33-.22.476L2.123 8.396h15.439c.19 0 .348.063.475.19a.645.645 0 01.191.476c0 .19-.063.349-.19.476a.646.646 0 01-.476.191H2.123z"
+                  class="arrow"
+                />
+              </svg>
+            </div>
+            <div id="dot1" class="dot active"></div>
+            <div id="dot2" class="dot"></div>
+            <div id="dot3" class="dot"></div>
+            <div class="arrow-button">
+              <svg onclick="nextSlide()" width="19" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.105 9.745H.667a.646.646 0 01-.476-.19A.646.646 0 010 9.077c0-.19.064-.348.191-.475a.646.646 0 01.476-.191h15.438L8.854 1.16A.66.66 0 018.65.701c-.006-.176.065-.337.212-.484A.688.688 0 019.333 0c.168-.002.325.07.472.217l8.108 8.107c.116.117.198.236.245.357.047.121.07.254.07.397 0 .144-.023.276-.07.398-.047.121-.129.24-.245.356L9.805 17.94a.668.668 0 01-.455.2.642.642 0 01-.488-.2c-.147-.147-.221-.306-.221-.476 0-.17.074-.328.22-.475l7.244-7.244z"
+                  class="arrow"
+                />
+              </svg>
+            </div>
           </div>
         </div>
       </section>

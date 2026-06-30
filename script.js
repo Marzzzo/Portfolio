@@ -28,3 +28,32 @@ function showImage(className) {
     image.style.display = 'block';
   }
 }
+
+let currentSlide = 1;
+
+function updateCarousel() {
+  document.getElementById('item_1').checked = false;
+  document.getElementById('item_2').checked = false;
+  document.getElementById('item_3').checked = false;
+  document.getElementById('item_' + currentSlide).checked = true;
+  document.getElementById('dot1').classList.remove('active');
+  document.getElementById('dot2').classList.remove('active');
+  document.getElementById('dot3').classList.remove('active');
+  document.getElementById('dot' + currentSlide).classList.add('active');
+}
+
+function nextSlide() {
+  currentSlide++;
+  if (currentSlide > 3) {
+    currentSlide = 1;
+  }
+  updateCarousel();
+}
+
+function prevSlide() {
+  currentSlide--;
+  if (currentSlide < 1) {
+    currentSlide = 3;
+  }
+  updateCarousel();
+}

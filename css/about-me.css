@@ -1,0 +1,90 @@
+.about-me-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 144px;
+  padding-bottom: 144px;
+  gap: 96px;
+}
+
+.profil-wrapper {
+  position: relative;
+  width: 568px;
+  height: 568px;
+}
+
+.profil-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/profilbild.JPEG);
+  background-size: cover;
+  background-position: top;
+  border-radius: 30px;
+  z-index: 2;
+}
+
+.stripes {
+  position: absolute;
+  left: -46px;
+  top: 30px;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  object-fit: cover;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.about-me {
+  max-width: 568px;
+  padding: 32px;
+  border: 1px solid rgba(61, 207, 182, 1);
+  border-radius: 30px;
+  background-color: rgba(61, 207, 182, 0.1);
+}
+
+.about-me h1 {
+  font-weight: 700;
+  font-size: 64px;
+  color: rgba(61, 207, 182, 1);
+}
+
+.who-i-am-container h3 {
+  font-size: 24px;
+  font-family: 'karla';
+  font-weight: 500;
+  color: rgba(61, 207, 182, 1);
+}
+
+.about-me p {
+  word-spacing: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'karla';
+  color: rgba(255, 255, 255, 1);
+}
+
+.who-i-am-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 96px;
+  gap: 20px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 32px;
+}
+
+.aboutme-textbox {
+  display: flex;
+  gap: 30px;
+}
+
+.aboutme-textbox img {
+  height: 32px;
+  width: 32px;
+}

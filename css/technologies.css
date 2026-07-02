@@ -1,0 +1,194 @@
+.gradient {
+  padding-left: 96px;
+  padding-right: 96px;
+}
+
+.skillbox {
+  display: flex;
+  flex-direction: column;
+  max-width: 520px;
+  padding: 32px;
+  border: 1px solid rgba(61, 207, 182, 1);
+  border-radius: 30px;
+  background: radial-gradient(22.43% 43.85% at 1.22% 52.45%, rgba(44, 236, 201, 0.3) 0%, #192525 100%);
+  gap: 32px;
+}
+
+.skillbox h1 {
+  font-weight: 700;
+  font-size: 64px;
+  color: rgba(61, 207, 182, 1);
+}
+
+.skillbox p {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'karla';
+  color: rgba(255, 255, 255, 1);
+}
+
+.skill-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 144px;
+  gap: 96px;
+}
+
+.skill-container h3 {
+  font-size: 24px;
+  font-family: 'fira';
+  font-weight: 700;
+  color: rgba(61, 207, 182, 1);
+}
+
+.skill-container span {
+  font-size: 24px;
+  font-family: 'fira';
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+}
+
+.textarea-skill {
+  display: flex;
+  flex-direction: column;
+  max-width: 331px;
+  gap: 16px;
+}
+
+.textarea-skill p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'karla';
+  color: rgba(255, 255, 255, 1);
+}
+
+.another-skill {
+  display: flex;
+  gap: 14px;
+}
+
+.lets-talk-button {
+  position: relative;
+  border: 1px solid white;
+  border-radius: 100px;
+  width: 122px;
+  height: 48px;
+  overflow: hidden;
+}
+
+.lets-talk-button:hover {
+  cursor: pointer;
+  border-color: rgba(61, 207, 182, 1);
+}
+
+.lets-talk-button p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  font-size: 18px;
+  color: white;
+  white-space: nowrap;
+  transform: translate(-50%, -50%);
+}
+
+.lets-talk-button:hover p {
+  color: rgba(61, 207, 182, 1);
+  animation:
+    letsTalkFirst 2s linear forwards,
+    letsTalkLoop 5s linear infinite 2s;
+}
+
+@keyframes letsTalkFirst {
+  from {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  to {
+    left: -140px;
+    transform: translate(0, -50%);
+  }
+}
+
+@keyframes letsTalkLoop {
+  from {
+    left: 122px;
+    transform: translate(0, -50%);
+  }
+
+  to {
+    left: -140px;
+    transform: translate(0, -50%);
+  }
+}
+
+.tech-color {
+  font-size: 24px;
+  font-family: 'fira';
+  font-weight: 700;
+  color: rgba(61, 207, 182, 1);
+}
+
+.skill-icon-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 72px;
+  max-width: 632px;
+  justify-items: center;
+}
+
+.mindset-bubble {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-30%) translateY(10px);
+  width: 220px;
+  height: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+  pointer-events: none;
+}
+
+.skill-innerbox:hover .mindset-bubble {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-30%) translateY(0);
+}
+
+.skill-innerbox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 104px;
+  height: 116px;
+  gap: 8px;
+}
+
+.skill-innerbox img {
+  transition: transform 0.3s ease;
+}
+
+.skill-innerbox img:hover {
+  transform: scale(1.1);
+}
+
+.skill-innerbox p {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+}
+
+.growth > p {
+  transition: color 0.3s ease;
+}
+
+.growth:hover > p {
+  color: rgba(61, 207, 182, 1);
+}

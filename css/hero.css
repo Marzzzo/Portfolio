@@ -1,0 +1,275 @@
+header {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 98px;
+  display: flex;
+  align-items: center;
+  padding-left: 96px;
+  gap: 20px;
+}
+
+.header-headline {
+  display: flex;
+  gap: 32px;
+}
+
+.header-headline h3 {
+  position: relative;
+  cursor: pointer;
+}
+
+.header-headline h3:hover {
+  color: #3dcfb6;
+}
+
+.header-headline h3::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #3dcfb6;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.header-headline h3:hover::after {
+  opacity: 1;
+}
+
+header .language-switcher {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 84px;
+  height: 28px;
+  border: 1px solid rgba(61, 207, 182, 1);
+  border-radius: 100px;
+}
+
+header .language-switcher:hover {
+  cursor: pointer;
+  border-color: white;
+}
+.language-button:not(.active):hover {
+  color: rgba(61, 207, 182, 1);
+}
+
+.language-switcher .language-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  width: 44px;
+  height: 28px;
+  color: rgba(61, 207, 182, 0.5);
+}
+
+.language-switcher .active {
+  background-color: rgba(61, 207, 182, 1);
+  color: white;
+}
+
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 900px;
+  height: 100vh;
+}
+
+.nametag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nametag-button-section {
+  display: flex;
+  gap: 48px;
+  cursor: pointer;
+}
+
+.nametag-button {
+  position: relative;
+  border: 1px solid white;
+  border-radius: 100px;
+  width: 172px;
+  height: 48px;
+  overflow: hidden;
+}
+
+.nametag-button p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  font-size: 18px;
+  color: white;
+  white-space: nowrap;
+  transform: translate(-50%, -50%);
+}
+
+.nametag-button:hover {
+  border-color: rgba(61, 207, 182, 1);
+}
+
+.nametag-button:hover p {
+  color: rgba(61, 207, 182, 1);
+  animation:
+    buttonFirst 2s linear forwards,
+    buttonLoop 5s linear infinite 2s;
+}
+
+@keyframes buttonFirst {
+  from {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  to {
+    left: -180px;
+    transform: translate(0, -50%);
+  }
+}
+
+@keyframes buttonLoop {
+  from {
+    left: 172px;
+    transform: translate(0, -50%);
+  }
+
+  to {
+    left: -180px;
+    transform: translate(0, -50%);
+  }
+}
+
+.textbar {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-3deg);
+
+  width: 100vw;
+  height: 62px;
+
+  background: rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.textbar-track {
+  position: relative;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.inline-container {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 56px;
+  padding-right: 56px;
+  flex-shrink: 0;
+  font-family: 'karla';
+  font-weight: 400;
+  font-size: 32px;
+  color: rgba(61, 207, 182, 1);
+}
+
+#scroll-1 {
+  animation: loop-1 9s linear infinite;
+}
+
+#scroll-2 {
+  animation: loop-2 9s linear infinite;
+}
+
+#scroll-3 {
+  animation: loop-3 9s linear infinite;
+}
+
+#scroll-4 {
+  animation: loop-4 9s linear infinite;
+}
+
+#scroll-5 {
+  animation: loop-5 9s linear infinite;
+}
+
+#scroll-6 {
+  animation: loop-6 9s linear infinite;
+}
+
+@keyframes loop-1 {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes loop-2 {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes loop-3 {
+  from {
+    transform: translateX(200%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes loop-4 {
+  from {
+    transform: translateX(300%);
+  }
+
+  to {
+    transform: translateX(200%);
+  }
+}
+
+@keyframes loop-5 {
+  from {
+    transform: translateX(400%);
+  }
+
+  to {
+    transform: translateX(300%);
+  }
+}
+
+@keyframes loop-6 {
+  from {
+    transform: translateX(500%);
+  }
+
+  to {
+    transform: translateX(400%);
+  }
+}

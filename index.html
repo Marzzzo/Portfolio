@@ -10,22 +10,31 @@
     <link rel="stylesheet" href="./css/technologies.css" />
     <link rel="stylesheet" href="./css/contact-me.css" />
     <link rel="stylesheet" href="./css/carousel.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
   </head>
   <body>
     <div class="content-max-width">
       <header>
-        <div class="language-switcher">
-          <div id="btnEN" class="language-button active" onclick="setLanguage('EN')">
-            <p>EN</p>
+        <div class="left-header-section">
+          <div class="language-switcher">
+            <div id="btnEN" class="language-button active" onclick="setLanguage('EN')">
+              <p>EN</p>
+            </div>
+            <div id="btnDE" class="language-button" onclick="setLanguage('DE')">
+              <p>DE</p>
+            </div>
           </div>
-          <div id="btnDE" class="language-button" onclick="setLanguage('DE')">
-            <p>DE</p>
+          <div class="header-headline">
+            <h3>About me</h3>
+            <h3>Skills</h3>
+            <h3>Projects</h3>
           </div>
         </div>
-        <div class="header-headline">
-          <h3>About me</h3>
-          <h3>Skills</h3>
-          <h3>Projects</h3>
+        <div>
+          <div class="logo-container">
+            <img class="logo-filled" src="./icons/logo-initial.png" alt="" />
+            <img class="logo-outline" src="./icons/logo-initial-hover.png" alt="" />
+          </div>
         </div>
       </header>
 
@@ -371,6 +380,7 @@
           </form>
         </div>
       </section>
+      <footer></footer>
     </div>
     <script src="script.js"></script>
   </body>

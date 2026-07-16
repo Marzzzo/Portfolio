@@ -25,9 +25,9 @@
             </div>
           </div>
           <div class="header-headline">
-            <h3>About me</h3>
-            <h3>Skills</h3>
-            <h3>Projects</h3>
+            <a href="#aboutMe"><h3>About me</h3></a>
+            <a href="#skills"><h3>Skills</h3></a>
+            <a href="#projects"><h3>Projects</h3></a>
           </div>
         </div>
         <div>
@@ -38,7 +38,7 @@
         </div>
       </header>
 
-      <main>
+      <main id="hero">
         <div class="nametag">
           <h2>Frontend Developer</h2>
           <h1>Marco Burdick</h1>
@@ -46,9 +46,11 @@
             <div class="nametag-button">
               <p>Check my work</p>
             </div>
-            <div class="nametag-button">
-              <p>Contact me</p>
-            </div>
+            <a href="#contactMe">
+              <div class="nametag-button">
+                <p>Contact me</p>
+              </div>
+            </a>
           </div>
         </div>
         <div class="textbar" id="scrollContainer">
@@ -117,7 +119,7 @@
         </div>
       </main>
 
-      <section class="other-section">
+      <section id="aboutMe" class="other-section">
         <div class="about-me-container">
           <div class="profil-wrapper">
             <img class="stripes" src="./images/Capa_1.png" />
@@ -159,7 +161,7 @@
         </div>
       </section>
 
-      <section class="gradient">
+      <section id="skills" class="gradient">
         <h3 class="tech-color">Technologies</h3>
         <div class="skill-container">
           <div class="skillbox">
@@ -237,7 +239,7 @@
         </div>
       </section>
 
-      <section class="other-section">
+      <section id="projects" class="other-section">
         <div class="projects-section">
           <div class="headline-projects">
             <h3>Portfolio</h3>
@@ -336,7 +338,7 @@
         </div>
       </section>
 
-      <section class="contact-me-section">
+      <section id="contactMe" class="contact-me-section">
         <div class="work-container">
           <div class="headline-container">
             <p>Contact me</p>
@@ -384,7 +386,7 @@
         <div class="footer-left">
           <div class="logo-container">
             <img class="logo-filled" src="./icons/logo-initial.png" alt="" />
-            <img class="logo-outline" src="./icons/logo-initial-hover.png" alt="" />
+            <a href="#hero"> <img class="logo-outline" src="./icons/logo-initial-hover.png" alt="" /></a>
           </div>
           <div class="footer-p">
             <p>Web Developer</p>

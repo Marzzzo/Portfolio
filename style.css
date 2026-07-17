@@ -16,6 +16,23 @@ body {
   user-select: none;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #383636;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3dcfb6;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #35b6a0;
+}
+
 .content-max-width {
   max-width: 1440px;
   width: 100%;

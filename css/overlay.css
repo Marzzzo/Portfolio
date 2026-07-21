@@ -8,7 +8,6 @@
   overflow: hidden;
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.5);
-  /* display: none; */
 }
 
 .card {
@@ -26,6 +25,10 @@
   background-size: cover;
   overflow-x: hidden;
   user-select: none;
+}
+
+.d-none {
+  display: none;
 }
 
 .left-section {
@@ -47,7 +50,7 @@
 }
 
 .headline h2 {
-  font-size: 64px;
+  font-size: 61px;
   font-weight: 700;
   color: rgba(255, 255, 255, 1);
 }
@@ -155,14 +158,14 @@
   cursor: pointer;
 }
 
-.next-button a {
+.next-button p {
   font-family: 'karla', sans-serif;
   font-weight: 400;
   font-size: 18px;
   color: rgba(61, 207, 182, 1);
 }
 
-.next-button:hover a {
+.next-button:hover p {
   color: rgba(255, 255, 255, 1);
 }
 

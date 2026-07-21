@@ -1,3 +1,5 @@
+let currentProject = 0;
+
 // switch language German and English
 function setLanguage(language) {
   const btnEN = document.getElementById('btnEN');
@@ -56,4 +58,24 @@ function prevSlide() {
     currentSlide = 3;
   }
   updateCarousel();
+}
+
+function openOverlay(index) {
+  currentProject = index;
+  const overlay = document.getElementById('overlay');
+  overlay.innerHTML = overlayTemplate(projects[index]);
+  overlay.classList.remove('d-none');
+  console.log(projects);
+}
+
+function closeOverlay() {
+  document.getElementById('overlay').classList.add('d-none');
+}
+
+function nextProject() {
+  currentProject++;
+  if (currentProject >= projects.length) {
+    currentProject = 0;
+  }
+  document.getElementById('overlay').innerHTML = overlayTemplate(projects[currentProject]);
 }

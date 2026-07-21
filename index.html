@@ -12,67 +12,12 @@
     <link rel="stylesheet" href="./css/carousel.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/overlay.css" />
+    <script src="./js/objects.js"></script>
+    <script src="./js/templates.js"></script>
   </head>
   <body>
-    <section class="overlay">
-      <div class="card">
-        <div class="left-section">
-          <div class="headline">
-            <h1>01</h1>
-            <h2>Join</h2>
-          </div>
-          <div class="fonts-section">
-            <h3>Whats is this project about?</h3>
-            <span
-              >Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions,
-              assign users and categories.
-            </span>
-          </div>
-          <div class="workframe">
-            <div class="single-content">
-              <img src="./icons/overlay-css.png" alt="" />
-              <p>CSS</p>
-            </div>
-            <div class="single-content">
-              <img src="./icons/overlay-html.png" alt="" />
-              <p>HTML</p>
-            </div>
-            <div class="single-content">
-              <img src="./icons/overlay-firebase.png" alt="" />
-              <p>Firebase</p>
-            </div>
-            <div class="single-content">
-              <img src="./icons/overlay-angular.png" alt="" />
-              <p>Angular</p>
-            </div>
-            <div class="single-content">
-              <img src="./icons/overlay-typescript.png" alt="" />
-              <p>TypeScript</p>
-            </div>
-          </div>
-          <div class="overlay-buttons">
-            <div class="overlay-button">
-              <a href="">GitHub</a>
-              <img src="./icons/arrow-outward-green.png" alt="" />
-            </div>
-            <div class="overlay-button">
-              <a href="">Live Test</a>
-              <img src="./icons/arrow-outward-green.png" alt="" />
-            </div>
-          </div>
-        </div>
-        <div>
-          <img class="image" src="./images/join-image.jpg" alt="" />
-        </div>
-        <div class="next-button">
-          <a href="">Next project</a>
-          <img src="./icons/arrow-forward-green.png" alt="" />
-        </div>
-        <div class="close-button">
-          <img class="close-button-small" src="./icons/close-button.png" alt="" />
-          <img class="close-button-big" src="./icons/close-button-hover.png" alt="" />
-        </div>
-      </div>
+    <section class="overlay d-none" id="overlay">
+      <!--overlays rendered here-->
     </section>
     <div class="content-max-width">
       <header>
@@ -311,7 +256,12 @@
             <p>Explore a selection of my work here - Interact with projects to see my skills in action.</p>
           </div>
 
-          <div class="projects-container" onmouseenter="showImage('join-image')" onmouseleave="hideImages()">
+          <div
+            class="projects-container"
+            onmouseenter="showImage('join-image')"
+            onmouseleave="hideImages()"
+            onclick="openOverlay(0)"
+          >
             <div>
               <span>Join</span>
             </div>
@@ -328,7 +278,12 @@
             </div>
           </div>
 
-          <div class="projects-container-bottom" onmouseenter="showImage('loco-image')" onmouseleave="hideImages()">
+          <div
+            class="projects-container-bottom"
+            onmouseenter="showImage('loco-image')"
+            onmouseleave="hideImages()"
+            onclick="openOverlay(1)"
+          >
             <div>
               <span>El Pollo Loco</span>
             </div>
@@ -341,7 +296,12 @@
             </div>
           </div>
 
-          <!-- <div class="projects-container-bottom" onmouseenter="showImage('bubble-image')" onmouseleave="hideImages()">
+          <!-- <div
+            class="projects-container-bottom"
+            onmouseenter="showImage('bubble-image')"
+            onmouseleave="hideImages()"
+            onclick="openOverlay(2)"
+          >
             <div>
               <span>DA Bubble</span>
             </div>

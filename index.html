@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="de">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,49 +12,29 @@
     <link rel="stylesheet" href="./css/carousel.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/overlay.css" />
+    <link rel="stylesheet" href="./css/impressum.css" />
     <script src="./js/objects.js"></script>
     <script src="./js/templates.js"></script>
   </head>
-  <body>
+  <body onload="init()">
     <section class="overlay d-none" id="overlay">
       <!--overlays rendered here-->
     </section>
+
     <div class="content-max-width">
-      <header>
-        <div class="left-header-section">
-          <div class="language-switcher">
-            <div id="btnEN" class="language-button active" onclick="setLanguage('EN')">
-              <p>EN</p>
-            </div>
-            <div id="btnDE" class="language-button" onclick="setLanguage('DE')">
-              <p>DE</p>
-            </div>
-          </div>
-          <div class="header-headline">
-            <a href="#aboutMe"><h3>About me</h3></a>
-            <a href="#skills"><h3>Skills</h3></a>
-            <a href="#projects"><h3>Projects</h3></a>
-          </div>
-        </div>
-        <div>
-          <div class="logo-container">
-            <img class="logo-filled" src="./icons/logo-initial.png" alt="" />
-            <img class="logo-outline" src="./icons/logo-initial-hover.png" alt="" />
-          </div>
-        </div>
-      </header>
+      <header id="header"></header>
 
       <main id="hero">
         <div class="nametag">
-          <h2>Frontend Developer</h2>
+          <h2>Frontend Entwickler</h2>
           <h1>Marco Burdick</h1>
           <div class="nametag-button-section">
             <div class="nametag-button">
-              <p>Check my work</p>
+              <p>Meine Arbeit</p>
             </div>
             <a href="#contactMe">
               <div class="nametag-button">
-                <p>Contact me</p>
+                <p>Kontakt</p>
               </div>
             </a>
           </div>
@@ -63,63 +43,63 @@
           <div class="textbar-track">
             <div class="inline-container" id="scroll-1">
               <div>•</div>
-              <div>Frontend Developer</div>
+              <div>Frontend Entwickler</div>
               <div>•</div>
-              <div>Based in Paderborn</div>
+              <div>Komme aus Büren</div>
               <div>•</div>
-              <div>Open to work</div>
+              <div>Offen für neue Herausforderungen</div>
               <div>•</div>
-              <div>Available for remote</div>
+              <div>Verfügbar für Remote</div>
             </div>
             <div class="inline-container" id="scroll-2">
               <div>•</div>
-              <div>Frontend Developer</div>
+              <div>Frontend Entwickler</div>
               <div>•</div>
-              <div>Based in Paderborn</div>
+              <div>Komme aus Büren</div>
               <div>•</div>
-              <div>Open to work</div>
+              <div>Offen für neue Herausforderungen</div>
               <div>•</div>
-              <div>Available for remote</div>
+              <div>Verfügbar für Remote</div>
             </div>
             <div class="inline-container" id="scroll-3">
               <div>•</div>
-              <div>Frontend Developer</div>
+              <div>Frontend Entwickler</div>
               <div>•</div>
-              <div>Based in Paderborn</div>
+              <div>Komme aus Büren</div>
               <div>•</div>
-              <div>Open to work</div>
+              <div>Offen für neue Herausforderungen</div>
               <div>•</div>
-              <div>Available for remote</div>
+              <div>Verfügbar für Remote</div>
             </div>
             <div class="inline-container" id="scroll-4">
               <div>•</div>
-              <div>Frontend Developer</div>
+              <div>Frontend Entwickler</div>
               <div>•</div>
-              <div>Based in Paderborn</div>
+              <div>Komme aus Büren</div>
               <div>•</div>
-              <div>Open to work</div>
+              <div>Offen für neue Herausforderungen</div>
               <div>•</div>
-              <div>Available for remote</div>
+              <div>Verfügbar für Remote</div>
             </div>
             <div class="inline-container" id="scroll-5">
               <div>•</div>
-              <div>Frontend Developer</div>
+              <div>Frontend Entwickler</div>
               <div>•</div>
-              <div>Based in Paderborn</div>
+              <div>Komme aus Büren</div>
               <div>•</div>
-              <div>Open to work</div>
+              <div>Offen für neue Herausforderungen</div>
               <div>•</div>
-              <div>Available for remote</div>
+              <div>Verfügbar für Remote</div>
             </div>
             <div class="inline-container" id="scroll-6">
               <div>•</div>
-              <div>Frontend Developer</div>
+              <div>Frontend Entwickler</div>
               <div>•</div>
-              <div>Based in Paderborn</div>
+              <div>Komme aus Büren</div>
               <div>•</div>
-              <div>Open to work</div>
+              <div>Offen für neue Herausforderungen</div>
               <div>•</div>
-              <div>Available for remote</div>
+              <div>Verfügbar für Remote</div>
             </div>
           </div>
         </div>
@@ -132,33 +112,45 @@
             <div class="profil-image"></div>
           </div>
           <div class="who-i-am-container">
-            <h3>Who I Am</h3>
+            <h3>Wer ich bin</h3>
             <div class="about-me">
-              <h1>About me</h1>
+              <h1>Über mich</h1>
               <div>
                 <p>
-                  Hey there, I'm Marco! Write some information about yourself that is IT related. Why are you passionate
-                  about coding? What is your source of inspiration for improving your programming skills?
+                  Hallo, ich bin Marco. Mich begeistert die Webentwicklung, weil sie Kreativität und logisches Denken
+                  miteinander verbindet. Es motiviert mich, aus einer Idee Schritt für Schritt eine funktionierende
+                  Anwendung zu entwickeln und dabei ständig neue Technologien kennenzulernen. Besonders wichtig ist mir,
+                  die Zusammenhänge hinter dem Code zu verstehen, anstatt nur Lösungen zu übernehmen. Deshalb
+                  beschäftige ich mich intensiv mit modernen Webtechnologien, sauberem Code und einer
+                  benutzerfreundlichen Gestaltung. Mein Ziel ist es, mich kontinuierlich weiterzuentwickeln, neue
+                  Herausforderungen anzunehmen und als Frontend-Entwickler immer besser zu werden.
                 </p>
               </div>
               <div class="text-container">
                 <div class="aboutme-textbox">
                   <img src="./icons/location_on.png" alt="" />
-                  <p>Where are you based? Would you be open to working remotely or potentially relocating?</p>
+                  <p>
+                    Ich komme aus Büren (NRW) und bin offen für Remote oder Vor-Ort-Arbeit. Ich freue mich darauf, in
+                    einem motivierten Team an spannenden Projekten mitzuwirken und mich kontinuierlich
+                    weiterzuentwickeln.
+                  </p>
                 </div>
                 <div class="aboutme-textbox">
                   <img src="./icons/cognition.png" alt="" />
                   <p>
-                    Show that you are open-minded. Are you enthusiastic about learning new technologies and continually
-                    improving your skills?
+                    Ich bin offen für neue Technologien und freue mich darauf, mein Wissen kontinuierlich zu erweitern.
+                    Neue Herausforderungen motivieren mich, meine Fähigkeiten weiterzuentwickeln und mich sowohl
+                    fachlich als auch persönlich stetig zu verbessern.
                   </p>
                 </div>
                 <div class="aboutme-textbox">
                   <img src="./icons/new_releases.png" alt="" />
                   <p>
-                    A brief description of your problem-solving approach. Do you learn from each challenge as you search
-                    for the most efficient or elegant solution? You can include some keywords like: analytical thinking,
-                    creativity, persistence and collaboration.
+                    Ich gehe Herausforderungen mit analytischem Denken und einer strukturierten Arbeitsweise an. Mein
+                    Ziel ist es, nicht nur eine funktionierende, sondern auch eine saubere und effiziente Lösung zu
+                    finden. Dabei helfen mir Kreativität, Ausdauer und die Bereitschaft, aus jeder neuen Herausforderung
+                    zu lernen. Den Austausch mit anderen sehe ich als wertvolle Möglichkeit, gemeinsam bessere Lösungen
+                    zu entwickeln.
                   </p>
                 </div>
               </div>
@@ -168,28 +160,33 @@
       </section>
 
       <section id="skills" class="gradient">
-        <h3 class="tech-color">Technologies</h3>
+        <h3 class="tech-color">Technologien</h3>
         <div class="skill-container">
           <div class="skillbox">
             <h1>Skill Set</h1>
             <div>
               <p>
-                A short introduction of your skills. Highlight your experience of using different front-end technologies
-                and emphasise your openness to learning and adapting to new technologies. Show how important it is for
-                you to keep up with the rapid changes in web development.
+                Ich entwickle moderne und responsive Webanwendungen mit HTML, CSS und JavaScript und erweitere mein
+                Wissen kontinuierlich durch neue Projekte und praktische Erfahrungen. Mir ist es wichtig, nicht nur
+                aktuelle Technologien zu beherrschen, sondern auch offen für neue Frameworks und Tools zu sein. Da sich
+                die Webentwicklung ständig verändert, sehe ich kontinuierliches Lernen als festen Bestandteil meiner
+                Arbeit und freue mich darauf, mein Wissen stetig auszubauen.
               </p>
             </div>
             <div class="textarea-skill">
               <div class="another-skill">
-                <span>You need</span>
-                <h3>another skill?</h3>
+                <span>Brauchst du noch eine</span>
+                <h3>Fähigkeit?</h3>
               </div>
               <div>
-                <p>Feel free to contact me. I look forward to expanding on my previous knowledge.</p>
+                <p>
+                  Kontaktiere mich gerne – ich freue mich darauf, mein Wissen einzubringen, Neues zu lernen und mich
+                  kontinuierlich weiterzuentwickeln.
+                </p>
               </div>
             </div>
             <div class="lets-talk-button">
-              <p>Let's Talk</p>
+              <p>Lass uns reden</p>
             </div>
           </div>
           <div class="skill-icon-box">
@@ -234,12 +231,27 @@
               <p>Scrum</p>
             </div>
             <div class="skill-innerbox growth">
-              <img src="./icons/growth-mindset.png" alt="Html" />
+              <img src="./icons/growth-mindset.png" alt="Growth Mindset" />
               <p>
                 Growth <br />
                 mindset
               </p>
-              <img class="mindset-bubble" src="./icons/mindset-bubble.png" alt="" />
+
+              <div class="mindset-bubble">
+                <p>Ich interessiere mich besonders für das Lernen.</p>
+
+                <div class="mindset-icons">
+                  <div class="mindset-skill">
+                    <img src="./icons/react-bubble.png" alt="React" />
+                    <span>React</span>
+                  </div>
+
+                  <div class="mindset-skill">
+                    <img src="./icons/vue-bubble.png" alt="Vue.js" />
+                    <span>Vue.js</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -249,11 +261,14 @@
         <div class="projects-section">
           <div class="headline-projects">
             <h3>Portfolio</h3>
-            <h1>Featured Projects</h1>
+            <h1>Ausgewählte Projekte</h1>
           </div>
 
           <div class="textfield-projects">
-            <p>Explore a selection of my work here - Interact with projects to see my skills in action.</p>
+            <p>
+              Entdecken Sie hier eine Auswahl meiner Arbeiten interagieren Sie mit den Projekten, um meine Fähigkeiten
+              in der Praxis zu sehen.
+            </p>
           </div>
 
           <div
@@ -321,7 +336,7 @@
         </div>
       </section>
       <div class="headline-colleagues">
-        <h1>What my colleagues say about me</h1>
+        <h1>Was meine Kollegen über mich sagen</h1>
       </div>
       <section class="container-carousel">
         <div class="component">
@@ -362,66 +377,58 @@
       <section id="contactMe" class="contact-me-section">
         <div class="work-container">
           <div class="headline-container">
-            <p>Contact me</p>
-            <h2>Let's work together</h2>
+            <p>Kontaktiere mich</p>
+            <h2>Lassen Sie uns zusammenarbeiten.</h2>
           </div>
           <div class="problem-container">
-            <h3>Got a problem to solve?</h3>
+            <h3>Gibt es ein Problem zu lösen?</h3>
             <p>
-              Encourage people to contact you and describe what role you are interested in. Show that you will add value
-              to their projects through your work. <br />
+              Ich bin auf der Suche nach einer Position als Frontend Developer, in der ich mein Wissen einbringen und
+              gleichzeitig weiter ausbauen kann. Mit Motivation, einer strukturierten Arbeitsweise und der Bereitschaft,
+              kontinuierlich dazuzulernen, möchte ich aktiv zum Erfolg spannender Projekte beitragen. Wenn du jemanden
+              suchst, der engagiert arbeitet und sich gerne neuen Herausforderungen stellt, freue ich mich darauf, von
+              dir zu hören. <br />
               <br />
-              Need a Frontend developer? <span>Let’s talk!</span>
+              Brauchen Sie einen Frontend-Entwickler? <span> Lass uns reden!</span>
             </p>
           </div>
         </div>
         <div class="contact-section">
           <form>
             <div class="border-form-container">
-              <h2>What's your name?</h2>
-              <input type="text" name="name" placeholder="Your name goes here" />
+              <h2>Wie ist dein Name?</h2>
+              <input type="text" name="name" placeholder="Hier steht Ihr Name" />
             </div>
             <div class="border-form-container">
-              <h2>What's your email?</h2>
+              <h2>Wie ist deine email?</h2>
               <input type="email" name="email" placeholder="yourmail@email.com" />
             </div>
             <div class="border-form-bottom">
-              <h2>How can I help you?</h2>
-              <textarea name="message" placeholder="Hello Marco, I am interested in..."></textarea>
+              <h2>Wie kann ich dir helfen?</h2>
+              <textarea
+                name="message"
+                placeholder="
+Hallo Marco, ich interessiere mich für ..."
+              ></textarea>
             </div>
             <div class="policy-container">
               <label class="checkbox">
                 <input type="checkbox" />
                 <img class="icon unchecked" src="./icons/checkbox-empty.svg" alt="" />
                 <img class="icon checked" src="./icons/check_box.svg" alt="" />
-                <p>I've read the <a href="">privacy policy </a>and agree to the processing of my data as outlined.</p>
+                <p>
+                  Ich habe die <a href="">Datenschutzerklärung </a>gelesen und stimme der Verarbeitung meiner Daten wie
+                  beschrieben zu.
+                </p>
               </label>
               <div class="button-section">
-                <button>Say Hello ;)</button>
+                <button>Sag Hallo 😎</button>
               </div>
             </div>
           </form>
         </div>
       </section>
-      <footer>
-        <div class="footer-left">
-          <div class="logo-container">
-            <img class="logo-filled" src="./icons/logo-initial.png" alt="" />
-            <a href="#hero"> <img class="logo-outline" src="./icons/logo-initial-hover.png" alt="" /></a>
-          </div>
-          <div class="footer-p">
-            <p>Web Developer</p>
-            <p>Paderborn Germany</p>
-          </div>
-        </div>
-        <span class="copyright">&copy; Marco Burdick 2026</span>
-        <div class="footer-right">
-          <a href="https://github.com/Marzzzo">Github</a>
-          <a href="">LinkedIn</a>
-          <a href="">Email</a>
-          <a href="">Legal Notice</a>
-        </div>
-      </footer>
+      <footer id="footer"></footer>
     </div>
     <script src="script.js"></script>
   </body>

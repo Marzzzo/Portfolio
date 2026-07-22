@@ -25,6 +25,33 @@
   background-size: cover;
   overflow-x: hidden;
   user-select: none;
+  animation: slideIn 0.4s ease forwards;
+}
+
+.closing {
+  animation: slideOut 0.4s ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(800px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(800px);
+  }
 }
 
 .d-none {

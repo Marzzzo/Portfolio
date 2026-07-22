@@ -55,14 +55,13 @@ input.input {
   aspect-ratio: 16/9;
   margin: 0 auto;
   transform-style: preserve-3d;
-  perspective: 1000px;
 }
 
 .item {
   position: absolute;
   top: 0;
-  width: 632px;
-  height: 274px;
+  min-width: 632px;
+  min-height: 274px;
   padding: 20px;
   border: 1px solid rgba(61, 207, 182, 1);
   border-radius: 32px;

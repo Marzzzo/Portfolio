@@ -38,6 +38,7 @@ body {
   width: 100%;
   margin: 0 auto;
   position: relative;
+  padding: 0 96px 0 96px;
 }
 
 @font-face {
@@ -75,8 +76,6 @@ h3 {
 .other-section {
   display: flex;
   position: relative;
-  padding-left: 96px;
-  padding-right: 96px;
   padding-bottom: 144px;
   gap: 70px;
 }
@@ -253,4 +252,8 @@ h3 {
   bottom: 16px;
   border-radius: 16px;
   display: none;
+}
+
+.no-scroll {
+  overflow: hidden;
 }

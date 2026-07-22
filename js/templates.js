@@ -43,9 +43,53 @@ function overlayTemplate(project) {
           <p>Next project</p>
           <img src="./icons/arrow-forward-green.png" alt="" />
         </div>
-        <div class="close-button" onclick="closeOverlay()">
+        <div class="close-button  " onclick="closeOverlay()">
           <img class="close-button-small" src="./icons/close-button.png" alt="" />
           <img class="close-button-big" src="./icons/close-button-hover.png" alt="" />
         </div>
       </div>`;
+}
+
+function headerTemplate() {
+  return `<div class="left-header-section">
+          <div class="language-switcher">
+            <div id="btnDE" class="language-button active" onclick="setLanguage('DE')">
+              <p>DE</p>
+            </div>
+            <div id="btnEN" class="language-button" onclick="setLanguage('EN')">
+              <p>EN</p>
+            </div>
+          </div>
+          <div class="header-headline">
+            <a href="#aboutMe"><h3>About me</h3></a>
+            <a href="#skills"><h3>Skills</h3></a>
+            <a href="#projects"><h3>Projects</h3></a>
+          </div>
+        </div>
+        <div>
+          <div class="logo-container">
+            <img class="logo-filled" src="./icons/logo-initial.png" alt="" />
+            <img class="logo-outline" src="./icons/logo-initial-hover.png" alt="" />
+          </div>
+        </div>`;
+}
+
+function footerTemplate() {
+  return `<div class="footer-left">
+          <div class="logo-container">
+            <img class="logo-filled" src="./icons/logo-initial.png" alt="" />
+            <a href="./index.html"> <img class="logo-outline" src="./icons/logo-initial-hover.png" alt="" /></a>
+          </div>
+          <div class="footer-p">
+            <p>Webentwickler</p>
+            <p>Büren Deutschland</p>
+          </div>
+        </div>
+        <span class="copyright">&copy; Marco Burdick 2026</span>
+        <div class="footer-right">
+          <a href="https://github.com/Marzzzo">Github</a>
+          <a href="">LinkedIn</a>
+          <a href="">Email</a>
+          <a href="./imprint.html">Impressum</a>
+        </div>`;
 }

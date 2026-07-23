@@ -5,11 +5,11 @@ header {
   justify-content: space-between;
   z-index: 10;
   width: 100%;
+  padding: 0 96px 0 96px;
   left: 0;
   right: 0;
   top: 0;
   height: 98px;
-
   gap: 20px;
 }
 
@@ -145,9 +145,11 @@ main {
   width: 172px;
   height: 48px;
   overflow: hidden;
+  background: transparent;
+  cursor: pointer;
 }
 
-.nametag-button a {
+.nametag-button span {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -162,7 +164,7 @@ main {
   border-color: rgba(61, 207, 182, 1);
 }
 
-.nametag-button:hover a {
+.nametag-button:hover span {
   color: rgba(61, 207, 182, 1);
   animation:
     buttonFirst 2s linear forwards,

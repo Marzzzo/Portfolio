@@ -36,7 +36,6 @@ body {
 .content-max-width {
   max-width: 1440px;
   width: 100%;
-  margin: 0 auto;
   position: relative;
   padding: 0 96px 0 96px;
 }

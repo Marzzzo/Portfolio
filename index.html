@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,14 +30,12 @@
           <h2>Frontend Entwickler</h2>
           <h1>Marco Burdick</h1>
           <div class="nametag-button-section">
-            <div class="nametag-button">
-              <a href="#projects">Meine Arbeiten</a>
-            </div>
-            <a href="#contactMe">
-              <div class="nametag-button">
-                <a href="">Kontakt</a>
-              </div>
-            </a>
+            <button class="nametag-button" onclick="location.href = '#projects'">
+              <span>Meine Arbeit</span>
+            </button>
+            <button class="nametag-button" onclick="location.href = '#contactMe'">
+              <span>Kontakt</span>
+            </button>
           </div>
         </div>
         <div class="textbar" id="scrollContainer">
@@ -394,7 +392,7 @@
             </p>
           </div>
         </div>
-        <div class="contact-section">
+        <div id="contactMe" class="contact-section">
           <form>
             <div class="border-form-container">
               <h2>Wie ist dein Name?</h2>
@@ -406,11 +404,7 @@
             </div>
             <div class="border-form-bottom">
               <h2>Wie kann ich dir helfen?</h2>
-              <textarea
-                name="message"
-                placeholder="
-Hallo Marco, ich interessiere mich für ..."
-              ></textarea>
+              <textarea name="message" placeholder="Hallo Marco, ich interessiere mich für ..."></textarea>
             </div>
             <div class="policy-container">
               <label class="checkbox">
@@ -418,8 +412,8 @@ Hallo Marco, ich interessiere mich für ..."
                 <img class="icon unchecked" src="./icons/checkbox-empty.svg" alt="" />
                 <img class="icon checked" src="./icons/check_box.svg" alt="" />
                 <p>
-                  Ich habe die <a href="">Datenschutzerklärung </a>gelesen und stimme der Verarbeitung meiner Daten wie
-                  beschrieben zu.
+                  Ich habe die <a href="./privacy-policy.html">Datenschutzerklärung </a>gelesen und stimme der
+                  Verarbeitung meiner Daten wie beschrieben zu.
                 </p>
               </label>
               <div class="button-section">

@@ -1,8 +1,10 @@
 let currentProject = 0;
+let trackCounter = 6;
 
 function init() {
   renderHeader();
   renderFooter();
+  renderTextbar(trackCounter);
 }
 
 function renderHeader() {
@@ -15,7 +17,15 @@ function renderFooter() {
   footer.innerHTML = footerTemplate();
 }
 
-// switch language German and English
+function renderTextbar(trackCounter) {
+  const counter = trackCounter;
+  const track = document.getElementById('textbarTrack');
+  track.innerHTML = '';
+  for (let i = 1; i <= counter; i++) {
+    track.innerHTML += trackTemplate(i);
+  }
+}
+
 function setLanguage(language) {
   const btnEN = document.getElementById('btnEN');
   const btnDE = document.getElementById('btnDE');
@@ -30,14 +40,12 @@ function setLanguage(language) {
 
 let images = document.querySelectorAll('.img-container img');
 
-//hide Image Exit hover in Projects
 function hideImages() {
   images.forEach((image) => {
     image.style.display = 'none';
   });
 }
 
-//show Image by hover in Projects
 function showImage(className) {
   hideImages();
   const image = document.querySelector(`.${className}`);

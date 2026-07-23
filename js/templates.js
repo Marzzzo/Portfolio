@@ -50,6 +50,23 @@ function overlayTemplate(project) {
       </div>`;
 }
 
+function trackTemplate(i) {
+  return `<div class="inline-container" id="scroll-${i}">
+            ${textbarTemplate()}
+          </div>`;
+}
+
+function textbarTemplate() {
+  return `<div>•</div>
+          <div>Frontend Entwickler</div>
+          <div>•</div>
+          <div>Komme aus Büren</div>
+          <div>•</div>
+          <div>Offen für neue Herausforderungen</div>
+          <div>•</div>
+          <div>Verfügbar für Remote</div>`;
+}
+
 function headerTemplate() {
   return `<div class="left-header-section">
           <div class="language-switcher">

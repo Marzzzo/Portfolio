@@ -50,7 +50,6 @@ input.input {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 33vw;
   height: 200px;
   aspect-ratio: 16/9;
   margin: 0 auto;
@@ -72,6 +71,8 @@ input.input {
   user-select: none;
   overflow: hidden;
   transition: transform 0.7s ease-in-out;
+  perspective: 1200px;
+  transform-style: preserve-3d;
 }
 
 .nav {
@@ -156,13 +157,13 @@ input.input {
 }
 
 #item_1:checked ~ .items div[for='item_2'] {
-  transform: translate3d(750px, 0, -100px);
+  transform: translate3d(620px, 0, -250px) scale(0.8);
   z-index: 1;
   animation: blur 1s forwards;
 }
 
 #item_1:checked ~ .items div[for='item_3'] {
-  transform: translate3d(-750px, 0, -100px);
+  transform: translate3d(-620px, 0, -250px) scale(0.8);
   z-index: 1;
   animation: blur 1s forwards;
 }
@@ -196,13 +197,13 @@ input.input {
 }
 
 #item_2:checked ~ .items div[for='item_3'] {
-  transform: translate3d(750px, 0, -100px);
+  transform: translate3d(620px, 0, -250px) scale(0.8);
   z-index: 1;
   animation: blur 1s forwards;
 }
 
 #item_2:checked ~ .items div[for='item_1'] {
-  transform: translate3d(-750px, 0, -100px);
+  transform: translate3d(-620px, 0, -250px) scale(0.8);
   z-index: 1;
   animation: blur 1s forwards;
 }
@@ -236,13 +237,13 @@ input.input {
 }
 
 #item_3:checked ~ .items div[for='item_1'] {
-  transform: translate3d(750px, 0, -100px);
+  transform: translate3d(620px, 0, -250px) scale(0.8);
   z-index: 1;
   animation: blur 1s forwards;
 }
 
 #item_3:checked ~ .items div[for='item_2'] {
-  transform: translate3d(-750px, 0, -100px);
+  transform: translate3d(-620px, 0, -250px) scale(0.8);
   z-index: 1;
   animation: blur 1s forwards;
 }

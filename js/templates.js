@@ -19,7 +19,7 @@ function overlayTemplate(project) {
             <h2>${project.title}</h2>
           </div>
           <div class="fonts-section">
-            <h3>Whats is this project about?</h3>
+            <h3>Worum geht es bei diesem Projekt?</h3>
             <span>${project.description}</span>
           </div>
           <div class="workframe">
@@ -40,7 +40,7 @@ function overlayTemplate(project) {
           <img class="image" src="${project.image}" alt="" />
         </div>
         <div class="next-button" onclick="nextProject()">
-          <p>Next project</p>
+          <p>Nächstes Projekt</p>
           <img src="./icons/arrow-forward-green.png" alt="" />
         </div>
         <div class="close-button  " onclick="closeOverlay()">

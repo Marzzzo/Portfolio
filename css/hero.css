@@ -147,7 +147,7 @@ main {
   overflow: hidden;
 }
 
-.nametag-button p {
+.nametag-button a {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -162,7 +162,7 @@ main {
   border-color: rgba(61, 207, 182, 1);
 }
 
-.nametag-button:hover p {
+.nametag-button:hover a {
   color: rgba(61, 207, 182, 1);
   animation:
     buttonFirst 2s linear forwards,

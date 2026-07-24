@@ -110,3 +110,16 @@ function footerTemplate() {
           <a href="./imprint.html">Impressum</a>
         </div>`;
 }
+
+function carouselCardTemplate(carouselCards) {
+  return `      <div class="card-descripton">
+                <p>${carouselCards.description}</p>
+              </div>
+              <div class="card-name-container">
+                <div class="horizonline"></div>
+                <div class="name-content">
+                <p>${carouselCards.name}</p>-
+                <p>${carouselCards.position}</p>
+                </div>
+              </div>`;
+}

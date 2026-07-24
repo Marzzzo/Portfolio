@@ -5,6 +5,7 @@ function init() {
   renderHeader();
   renderFooter();
   renderTextbar(trackCounter);
+  renderCarouselCards();
 }
 
 function renderHeader() {
@@ -107,4 +108,11 @@ function nextProject() {
     currentProject = 0;
   }
   document.getElementById('overlay').innerHTML = overlayTemplate(projects[currentProject]);
+}
+
+function renderCarouselCards() {
+  const cardContent = document.getElementById('itemsContent');
+  for (let i = 0; i < carouselCards.length; i++) {
+    cardContent.innerHTML += carouselCardTemplate(carouselCards[i]);
+  }
 }

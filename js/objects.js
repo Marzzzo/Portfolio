@@ -29,3 +29,13 @@ const projects = [
     technologies: ['JavaScript', 'HTML', 'CSS'],
   },
 ];
+
+const carouselCards = [
+  {
+    description: ` Marco ist ein zuverlässiger, engagierter und hilfsbereiter Kollege. Er arbeitet sich auch in komplexe Themen gründlich
+                  ein, gibt nicht vorschnell auf und findet nachhaltige Lösungen. Mit seiner strukturierten Arbeitsweise und seiner offenen
+                  Art ist er ein geschätztes Teammitglied, auf das jederzeit Verlass ist.`,
+    name: 'J.Hoffmann',
+    position: 'Freundin',
+  },
+];

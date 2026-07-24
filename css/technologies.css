@@ -26,8 +26,7 @@
 .skill-container {
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
-  padding-bottom: 144px;
+  padding: 20px 96px 144px 96px;
   gap: 96px;
 }
 
@@ -123,6 +122,7 @@
 .tech-color {
   font-size: 24px;
   font-family: 'fira';
+  padding-left: 96px;
   font-weight: 700;
   color: rgba(61, 207, 182, 1);
 }

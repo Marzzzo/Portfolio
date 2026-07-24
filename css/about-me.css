@@ -2,8 +2,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding-top: 144px;
-  padding-bottom: 144px;
+  padding: 144px 96px 144px 96px;
   gap: 96px;
 }
 

@@ -38,4 +38,16 @@ const carouselCards = [
     name: 'J.Hoffmann',
     position: 'Freundin',
   },
+  {
+    description: `Marco arbeitet gut im Team und bringt sich aktiv in die Gruppenarbeit ein. Herausforderungen nimmt er
+    motiviert an und gibt bei der Lösung von Problemen stets 100%. Mit seiner hilfsbereiten Art unterstützt er seine Kollegen jederzeit gerne.`,
+    name: 'C.Berke',
+    position: 'Kollege',
+  },
+  {
+    description:
+      'Marco ist ein äußerst zuverlässiger und engagierter Mensch, der jede Aufgabe mit großer Sorgfalt und Ehrgeiz angeht. Er arbeitet strukturiert, denkt lösungsorientiert und gibt auch bei anspruchsvollen Herausforderungen nicht auf. Durch seine hilfsbereite und offene Art trägt er zu einer angenehmen Zusammenarbeit bei und motiviert sein Umfeld. Auf Marco kann man sich jederzeit verlassen – sowohl fachlich als auch menschlich.',
+    name: 'F.Burdick',
+    position: 'Bruder & Kollege',
+  },
 ];

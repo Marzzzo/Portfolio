@@ -32,6 +32,7 @@ const projects = [
 
 const carouselCards = [
   {
+    id: '1',
     description: ` Marco ist ein zuverlässiger, engagierter und hilfsbereiter Kollege. Er arbeitet sich auch in komplexe Themen gründlich
                   ein, gibt nicht vorschnell auf und findet nachhaltige Lösungen. Mit seiner strukturierten Arbeitsweise und seiner offenen
                   Art ist er ein geschätztes Teammitglied, auf das jederzeit Verlass ist.`,
@@ -39,15 +40,18 @@ const carouselCards = [
     position: 'Freundin',
   },
   {
+    id: '2',
     description: `Marco arbeitet gut im Team und bringt sich aktiv in die Gruppenarbeit ein. Herausforderungen nimmt er
-    motiviert an und gibt bei der Lösung von Problemen stets 100%. Mit seiner hilfsbereiten Art unterstützt er seine Kollegen jederzeit gerne.`,
+    motiviert an und gibt bei der Lösung von Problemen stets 100%. Mit seiner hilfsbereiten Art unterstützt er seine Kollegen jederzeit gerne.
+    Auf Marco kann man sich jederzeit verlassen – sowohl fachlich als auch menschlich.`,
     name: 'C.Berke',
     position: 'Kollege',
   },
   {
+    id: '3',
     description:
-      'Marco ist ein äußerst zuverlässiger und engagierter Mensch, der jede Aufgabe mit großer Sorgfalt und Ehrgeiz angeht. Er arbeitet strukturiert, denkt lösungsorientiert und gibt auch bei anspruchsvollen Herausforderungen nicht auf. Durch seine hilfsbereite und offene Art trägt er zu einer angenehmen Zusammenarbeit bei und motiviert sein Umfeld. Auf Marco kann man sich jederzeit verlassen – sowohl fachlich als auch menschlich.',
+      'Marco ist ein äußerst zuverlässiger und engagierter Mensch, der jede Aufgabe mit großer Sorgfalt und Ehrgeiz angeht. Er arbeitet strukturiert, denkt lösungsorientiert und gibt auch bei anspruchsvollen Herausforderungen nicht auf. Durch seine hilfsbereite und offene Art trägt er zu einer angenehmen Zusammenarbeit bei und motiviert sein Umfeld. ',
     name: 'F.Burdick',
-    position: 'Bruder & Kollege',
+    position: 'Bruder',
   },
 ];

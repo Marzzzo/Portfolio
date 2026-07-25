@@ -1,11 +1,12 @@
 let currentProject = 0;
 let trackCounter = 6;
+let currentSlide = 0;
 
 function init() {
   renderHeader();
   renderFooter();
   renderTextbar(trackCounter);
-  renderCarouselCards();
+  renderCarousel();
 }
 
 function renderHeader() {
@@ -55,8 +56,6 @@ function showImage(className) {
   }
 }
 
-let currentSlide = 1;
-
 function updateCarousel() {
   document.getElementById('item_1').checked = false;
   document.getElementById('item_2').checked = false;
@@ -70,17 +69,73 @@ function updateCarousel() {
 
 function nextSlide() {
   currentSlide++;
-  if (currentSlide > 3) {
-    currentSlide = 1;
+
+  if (currentSlide >= carouselCards.length) {
+    currentSlide = 0;
   }
+
   updateCarousel();
 }
 
 function prevSlide() {
   currentSlide--;
-  if (currentSlide < 1) {
-    currentSlide = 3;
+
+  if (currentSlide < 0) {
+    currentSlide = carouselCards.length - 1;
   }
+
+  updateCarousel();
+}
+
+function updateCarousel() {
+  const items = document.querySelectorAll('.item');
+  const dots = document.querySelectorAll('.dot');
+  const totalSlides = items.length;
+  items.forEach((item, index) => {
+    item.classList.remove('active', 'left', 'right', 'hidden');
+    const previousSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    const nextSlide = (currentSlide + 1) % totalSlides;
+    if (index === currentSlide) {
+      item.classList.add('active');
+    } else if (index === previousSlide) {
+      item.classList.add('left');
+    } else if (index === nextSlide) {
+      item.classList.add('right');
+    } else {
+      item.classList.add('hidden');
+    }
+  });
+
+  dots.forEach((dot, index) => {
+    dot.classList.toggle('active', index === currentSlide);
+  });
+}
+
+function renderCarousel() {
+  const itemsContainer = document.getElementById('carouselItems');
+  const dotsContainer = document.getElementById('carouselDots');
+
+  const quotesImage = itemsContainer.querySelector('.quotes');
+
+  itemsContainer.innerHTML = '';
+  dotsContainer.innerHTML = '';
+
+  itemsContainer.appendChild(quotesImage);
+
+  carouselCards.forEach((card, index) => {
+    const carouselItem = document.createElement('div');
+
+    carouselItem.classList.add('item');
+    carouselItem.innerHTML = carouselCardTemplate(card);
+
+    itemsContainer.appendChild(carouselItem);
+
+    const dot = document.createElement('div');
+    dot.classList.add('dot');
+
+    dotsContainer.appendChild(dot);
+  });
+
   updateCarousel();
 }
 
@@ -108,11 +163,4 @@ function nextProject() {
     currentProject = 0;
   }
   document.getElementById('overlay').innerHTML = overlayTemplate(projects[currentProject]);
-}
-
-function renderCarouselCards() {
-  const cardContent = document.getElementById('itemsContent');
-  for (let i = 0; i < carouselCards.length; i++) {
-    cardContent.innerHTML += carouselCardTemplate(carouselCards[i]);
-  }
 }

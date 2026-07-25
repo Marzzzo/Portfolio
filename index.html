@@ -270,17 +270,11 @@
         <h1>Was meine Kollegen über mich sagen</h1>
       </div>
       <section class="container-carousel">
-        <div class="component">
-          <input type="radio" name="button" class="input" id="item_1" checked />
-          <input type="radio" name="button" class="input" id="item_2" />
-          <input type="radio" name="button" class="input" id="item_3" />
-
-          <div class="items">
+        <div class="component" id="carouselComponent">
+          <div class="items" id="carouselItems">
             <img class="quotes" src="./icons/quotes.png" alt="quotes" />
-            <div for="item_1" class="item" id="itemsContent"></div>
-            <div for="item_2" class="item">Label #2</div>
-            <div for="item_3" class="item">Label #3</div>
           </div>
+
           <div class="nav">
             <div class="arrow-button">
               <svg onclick="prevSlide()" width="19" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -290,9 +284,9 @@
                 />
               </svg>
             </div>
-            <div id="dot1" class="dot active"></div>
-            <div id="dot2" class="dot"></div>
-            <div id="dot3" class="dot"></div>
+
+            <div class="dots" id="carouselDots"></div>
+
             <div class="arrow-button">
               <svg onclick="nextSlide()" width="19" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path

@@ -19,8 +19,15 @@
 section h2 {
   font-family: 'karla';
   font-weight: 700;
-  font-size: 19px;
+  font-size: 26px;
   color: rgba(255, 255, 255, 1);
+}
+
+section h4 {
+  font-family: 'karla';
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
 }
 
 section p {
@@ -28,6 +35,15 @@ section p {
   font-weight: 300;
   font-size: 19px;
   color: rgba(61, 207, 182, 1);
+}
+
+section a {
+  color: rgba(61, 207, 182, 1);
+  font-size: 16px;
+}
+
+section a:hover {
+  color: rgb(77, 255, 225);
 }
 
 .list-container {

@@ -2,15 +2,22 @@ let currentProject = 0;
 let trackCounter = 6;
 let currentSlide = 0;
 let images = document.querySelectorAll('.img-container img');
-const itemsContainer = document.getElementById('carouselItems');
-const dotsContainer = document.getElementById('carouselDots');
-const quotesImage = itemsContainer.querySelector('.quotes');
 
 function init() {
   renderHeader();
   renderFooter();
   renderTextbar(trackCounter);
   renderCarousel();
+}
+
+function initPolicyPage() {
+  renderHeader();
+  renderFooter();
+}
+
+function initImpressumPage() {
+  renderHeader();
+  renderFooter();
 }
 
 function renderHeader() {
@@ -71,21 +78,17 @@ function updateCarousel() {
 
 function nextSlide() {
   currentSlide++;
-
   if (currentSlide >= carouselCards.length) {
     currentSlide = 0;
   }
-
   updateCarousel();
 }
 
 function prevSlide() {
   currentSlide--;
-
   if (currentSlide < 0) {
     currentSlide = carouselCards.length - 1;
   }
-
   updateCarousel();
 }
 
@@ -107,29 +110,38 @@ function updateCarousel() {
       item.classList.add('hidden');
     }
   });
-
   dots.forEach((dot, index) => {
     dot.classList.toggle('active', index === currentSlide);
   });
 }
 
 function renderCarousel() {
+  const itemsContainer = document.getElementById('carouselItems');
+  const dotsContainer = document.getElementById('carouselDots');
+
+  if (!itemsContainer || !dotsContainer) return;
+
   itemsContainer.innerHTML = '';
   dotsContainer.innerHTML = '';
-  itemsContainer.appendChild(quotesImage);
+
   carouselCards.forEach((card, index) => {
-    createCard(card);
+    createCard(card, index, itemsContainer, dotsContainer);
   });
+
   updateCarousel();
 }
 
-function createCard(card) {
+function createCard(card, index, itemsContainer, dotsContainer) {
   const carouselItem = document.createElement('div');
+
   carouselItem.classList.add('item');
   carouselItem.innerHTML = carouselCardTemplate(card);
+
   itemsContainer.appendChild(carouselItem);
+
   const dot = document.createElement('div');
   dot.classList.add('dot');
+
   dotsContainer.appendChild(dot);
 }
 

@@ -85,8 +85,8 @@ function headerTemplate() {
         </div>
         <div>
           <div class="logo-container">
-            <img class="logo-filled" src="/assetsicons/logo-initial.png" alt="" />
-            <img class="logo-outline" src="/assetsicons/logo-initial-hover.png" alt="" />
+            <img class="logo-filled" src="/assets/icons/logo-initial.png" alt="" />
+            <img class="logo-outline" src="/assets/icons/logo-initial-hover.png" alt="" />
           </div>
         </div>`;
 }

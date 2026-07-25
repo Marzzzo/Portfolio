@@ -3,7 +3,7 @@ function renderTechnologies(technologies) {
     .map(
       (tech) => `
     <div class="single-content">
-      <img src="./icons/overlay-${tech.toLowerCase()}.png" alt="${tech}">
+      <img src="/assets/icons/overlay-${tech.toLowerCase()}.png" alt="${tech}">
       <p>${tech}</p>
     </div>
   `,
@@ -28,11 +28,11 @@ function overlayTemplate(project) {
           <div class="overlay-buttons">
             <div class="overlay-button">
               <a href="${project.github}">GitHub</a>
-              <img src="./icons/arrow-outward-green.png" alt="" />
+              <img src="/assets/icons/arrow-outward-green.png" alt="" />
             </div>
             <div class="overlay-button">
               <a href="">Live Test</a>
-              <img src="./icons/arrow-outward-green.png" alt="" />
+              <img src="/assets/icons/arrow-outward-green.png" alt="" />
             </div>
           </div>
         </div>
@@ -41,11 +41,11 @@ function overlayTemplate(project) {
         </div>
         <div class="next-button" onclick="nextProject()">
           <p>Nächstes Projekt</p>
-          <img src="./icons/arrow-forward-green.png" alt="" />
+          <img src="/assets/icons/arrow-forward-green.png" alt="" />
         </div>
         <div class="close-button  " onclick="closeOverlay()">
-          <img class="close-button-small" src="./icons/close-button.png" alt="" />
-          <img class="close-button-big" src="./icons/close-button-hover.png" alt="" />
+          <img class="close-button-small" src="/assets/icons/close-button.png" alt="" />
+          <img class="close-button-big" src="/assets/icons/close-button-hover.png" alt="" />
         </div>
       </div>`;
 }
@@ -85,8 +85,8 @@ function headerTemplate() {
         </div>
         <div>
           <div class="logo-container">
-            <img class="logo-filled" src="./icons/logo-initial.png" alt="" />
-            <img class="logo-outline" src="./icons/logo-initial-hover.png" alt="" />
+            <img class="logo-filled" src="/assetsicons/logo-initial.png" alt="" />
+            <img class="logo-outline" src="/assetsicons/logo-initial-hover.png" alt="" />
           </div>
         </div>`;
 }
@@ -94,8 +94,8 @@ function headerTemplate() {
 function footerTemplate() {
   return `<div class="footer-left">
           <div class="logo-container">
-            <img class="logo-filled" src="./icons/logo-initial.png" alt="" />
-            <a href="./index.html"> <img class="logo-outline" src="./icons/logo-initial-hover.png" alt="" /></a>
+            <img class="logo-filled" src="/assets/icons/logo-initial.png" alt="" />
+            <a href="/index.html"> <img class="logo-outline" src="/assets/icons/logo-initial-hover.png" alt="" /></a>
           </div>
           <div class="footer-p">
             <p>Webentwickler</p>
@@ -107,7 +107,7 @@ function footerTemplate() {
           <a href="https://github.com/Marzzzo">Github</a>
           <a href="">LinkedIn</a>
           <a href="mailto:kontakt@marco-burdick.de">Email</a>
-          <a href="./imprint.html">Impressum</a>
+          <a href="/imprint.html">Impressum</a>
         </div>`;
 }
 

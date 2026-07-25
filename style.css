@@ -9,7 +9,7 @@ body {
   justify-content: center;
   height: 100%;
   font-family: 'fira';
-  background-image: url(images/Background.jpg);
+  background-image: url(/assets/images/Background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
@@ -42,13 +42,13 @@ body {
 
 @font-face {
   font-family: 'fira';
-  src: url('fonts/FiraCode-VariableFont_wght.ttf') format('truetype');
+  src: url('/assets/fonts/FiraCode-VariableFont_wght.ttf') format('truetype');
   font-style: normal;
 }
 
 @font-face {
   font-family: 'karla';
-  src: url('fonts/Karla-VariableFont_wght.ttf') format('truetype');
+  src: url('/assets/fonts/Karla-VariableFont_wght.ttf') format('truetype');
   font-style: normal;
 }
 a {
@@ -200,7 +200,7 @@ h3 {
   transform: translateY(-50%);
   width: 12.56px;
   height: 12.56px;
-  background: url('./icons/arrow_outward.png') no-repeat center;
+  background: url('/assets/icons/arrow_outward.png') no-repeat center;
   background-size: contain;
   opacity: 0;
   transition: opacity 0.2s ease;

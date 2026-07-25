@@ -256,3 +256,19 @@ h3 {
 .no-scroll {
   overflow: hidden;
 }
+
+.error-message {
+  font-family: 'karla';
+  font-weight: 400;
+  font-size: 18px;
+  color: #ec7b7bcc;
+  display: none;
+}
+
+.error-message.active {
+  display: block;
+}
+
+.input-error {
+  border-color: #ff4d4d;
+}

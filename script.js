@@ -1,6 +1,10 @@
 let currentProject = 0;
 let trackCounter = 6;
 let currentSlide = 0;
+let images = document.querySelectorAll('.img-container img');
+const itemsContainer = document.getElementById('carouselItems');
+const dotsContainer = document.getElementById('carouselDots');
+const quotesImage = itemsContainer.querySelector('.quotes');
 
 function init() {
   renderHeader();
@@ -39,8 +43,6 @@ function setLanguage(language) {
     btnEN.classList.remove('active');
   }
 }
-
-let images = document.querySelectorAll('.img-container img');
 
 function hideImages() {
   images.forEach((image) => {
@@ -112,31 +114,23 @@ function updateCarousel() {
 }
 
 function renderCarousel() {
-  const itemsContainer = document.getElementById('carouselItems');
-  const dotsContainer = document.getElementById('carouselDots');
-
-  const quotesImage = itemsContainer.querySelector('.quotes');
-
   itemsContainer.innerHTML = '';
   dotsContainer.innerHTML = '';
-
   itemsContainer.appendChild(quotesImage);
-
   carouselCards.forEach((card, index) => {
-    const carouselItem = document.createElement('div');
-
-    carouselItem.classList.add('item');
-    carouselItem.innerHTML = carouselCardTemplate(card);
-
-    itemsContainer.appendChild(carouselItem);
-
-    const dot = document.createElement('div');
-    dot.classList.add('dot');
-
-    dotsContainer.appendChild(dot);
+    createCard(card);
   });
-
   updateCarousel();
+}
+
+function createCard(card) {
+  const carouselItem = document.createElement('div');
+  carouselItem.classList.add('item');
+  carouselItem.innerHTML = carouselCardTemplate(card);
+  itemsContainer.appendChild(carouselItem);
+  const dot = document.createElement('div');
+  dot.classList.add('dot');
+  dotsContainer.appendChild(dot);
 }
 
 function openOverlay(index) {

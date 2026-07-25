@@ -318,22 +318,25 @@
           </div>
         </div>
         <div id="contactMe" class="contact-section">
-          <form>
+          <form id="contactForm">
             <div class="border-form-container">
               <h2>Wie ist dein Name?</h2>
-              <input type="text" name="name" placeholder="Hier steht Ihr Name" />
+              <input id="name" type="text" name="name" placeholder="Hier steht Ihr Name" />
+              <p class="error-message">Oops! Es scheint, als würde Ihr Name fehlen.</p>
             </div>
             <div class="border-form-container">
               <h2>Wie ist deine email?</h2>
-              <input type="email" name="email" placeholder="yourmail@email.com" />
+              <input id="email" type="email" name="email" placeholder="yourmail@email.com" />
+              <p class="error-message">Hoppla! Ihre E-Mail-Adresse wird benötigt.</p>
             </div>
             <div class="border-form-bottom">
               <h2>Wie kann ich dir helfen?</h2>
-              <textarea name="message" placeholder="Hallo Marco, ich interessiere mich für ..."></textarea>
+              <textarea id="message" name="message" placeholder="Hallo Marco, ich interessiere mich für ..."></textarea>
+              <p class="error-message">Was müssen Sie entwickeln?</p>
             </div>
             <div class="policy-container">
               <label class="checkbox">
-                <input type="checkbox" />
+                <input id="privacy" type="checkbox" />
                 <img class="icon unchecked" src="./icons/checkbox-empty.svg" alt="" />
                 <img class="icon checked" src="./icons/check_box.svg" alt="" />
                 <p>
@@ -342,7 +345,7 @@
                 </p>
               </label>
               <div class="button-section">
-                <button>Sag Hallo 😎</button>
+                <button id="submitButton" type="submit">Sag Hallo 😎</button>
               </div>
             </div>
           </form>
@@ -350,6 +353,7 @@
       </section>
       <footer id="footer"></footer>
     </div>
+    <script src="./js/formvalidate.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

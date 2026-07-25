@@ -8,8 +8,10 @@
 
 .profil-wrapper {
   position: relative;
-  width: 568px;
+  width: 400px;
   height: 568px;
+  flex-shrink: 0;
+  isolation: isolate;
 }
 
 .profil-image {
@@ -57,11 +59,11 @@
 }
 
 .about-me p {
-  word-spacing: 5px;
   font-size: 18px;
   font-weight: 400;
   font-family: 'karla';
   color: rgba(255, 255, 255, 1);
+  text-align: center;
 }
 
 .who-i-am-container {
@@ -74,13 +76,14 @@
 .text-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 16px;
   padding-top: 32px;
 }
 
 .aboutme-textbox {
   display: flex;
-  gap: 30px;
+  gap: 6px;
 }
 
 .aboutme-textbox img {

@@ -118,30 +118,22 @@ function updateCarousel() {
 function renderCarousel() {
   const itemsContainer = document.getElementById('carouselItems');
   const dotsContainer = document.getElementById('carouselDots');
-
   if (!itemsContainer || !dotsContainer) return;
-
   itemsContainer.innerHTML = '';
   dotsContainer.innerHTML = '';
-
   carouselCards.forEach((card, index) => {
     createCard(card, index, itemsContainer, dotsContainer);
   });
-
   updateCarousel();
 }
 
 function createCard(card, index, itemsContainer, dotsContainer) {
   const carouselItem = document.createElement('div');
-
   carouselItem.classList.add('item');
   carouselItem.innerHTML = carouselCardTemplate(card);
-
   itemsContainer.appendChild(carouselItem);
-
   const dot = document.createElement('div');
   dot.classList.add('dot');
-
   dotsContainer.appendChild(dot);
 }
 
@@ -153,7 +145,10 @@ function openOverlay(index) {
   document.body.classList.add('no-scroll');
 }
 
-function closeOverlay() {
+function closeOverlay(event) {
+  if (event && event.target !== event.currentTarget) {
+    return;
+  }
   const overlay = document.getElementById('overlay');
   overlay.classList.add('closing');
   document.body.classList.remove('no-scroll');

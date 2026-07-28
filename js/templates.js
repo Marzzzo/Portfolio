@@ -31,7 +31,7 @@ function overlayTemplate(project) {
               <img src="/assets/icons/arrow-outward-green.png" alt="" />
             </div>
             <div class="overlay-button">
-              <a href="">Live Test</a>
+              <a href="${project.liveTest}">Live Test</a>
               <img src="/assets/icons/arrow-outward-green.png" alt="" />
             </div>
           </div>
@@ -95,7 +95,7 @@ function footerTemplate() {
   return `<div class="footer-left">
           <div class="logo-container">
             <img class="logo-filled" src="/assets/icons/logo-initial.png" alt="" />
-            <a href="/index.html"> <img class="logo-outline" src="/assets/icons/logo-initial-hover.png" alt="" /></a>
+            <a href="/"> <img class="logo-outline" src="/assets/icons/logo-initial-hover.png" alt="" /></a>
           </div>
           <div class="footer-p">
             <p>Webentwickler</p>
@@ -107,7 +107,7 @@ function footerTemplate() {
           <a href="https://github.com/Marzzzo">Github</a>
           <a href="">LinkedIn</a>
           <a href="mailto:kontakt@marco-burdick.de">Email</a>
-          <a href="/imprint.html">Impressum</a>
+          <a href="/imprint">Impressum</a>
         </div>`;
 }
 

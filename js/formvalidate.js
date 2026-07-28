@@ -82,3 +82,42 @@ function checkForm() {
 }
 initContactForm();
 checkForm();
+
+contactForm.addEventListener('submit', sendContactForm);
+
+async function sendContactForm(event) {
+  event.preventDefault();
+  const formData = {
+    name: nameInput.value.trim(),
+    email: emailInput.value.trim(),
+    message: messageInput.value.trim(),
+  };
+
+  submitButton.disabled = true;
+  submitButton.textContent = 'Sending...';
+
+  try {
+    const response = await fetch('./contact_form_mail.php', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+    const result = await response.json();
+    if (!response.ok || !result.success) {
+      throw new Error(result.error || 'Mail konnte nicht gesendet werden.');
+    }
+
+    contactForm.reset();
+    submitButton.textContent = 'gesendet';
+  } catch (error) {
+    console.error(error);
+    submitButton.textContent = 'fehlgeschlagen';
+  } finally {
+    setTimeout(() => {
+      submitButton.textContent = 'Sag Hallo 😎';
+      checkForm();
+    }, 2000);
+  }
+}

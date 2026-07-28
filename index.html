@@ -19,7 +19,12 @@
     <script src="/js/templates.js"></script>
   </head>
   <body onload="init()">
-    <section class="overlay d-none" id="overlay">
+    <!----------------------------------------------------------------------->
+    <!-- <div class="overlay" style="background-color: rgba(0, 0, 0, 0.7)">
+      <h1 style="color: red">The website is under construction.</h1>
+    </div> -->
+    <!----------------------------------------------------------------------->
+    <section class="overlay d-none" id="overlay" onclick="closeOverlay(event)">
       <!--overlays rendered here-->
     </section>
 
@@ -334,7 +339,7 @@
                 <img class="icon unchecked" src="/assets/icons/checkbox-empty.svg" alt="" />
                 <img class="icon checked" src="/assets/icons/check_box.svg" alt="" />
                 <p>
-                  Ich habe die <a href="/privacy-policy.html">Datenschutzerklärung </a>gelesen und stimme der Verarbeitung meiner Daten wie
+                  Ich habe die <a href="/privacy-policy">Datenschutzerklärung </a>gelesen und stimme der Verarbeitung meiner Daten wie
                   beschrieben zu.
                 </p>
               </label>

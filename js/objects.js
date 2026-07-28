@@ -6,7 +6,7 @@ const projects = [
       'Ein vom Kanban-System inspirierter Aufgabenmanager. Erstellen und organisieren Sie Aufgaben per Drag-and-Drop und weisen Sie Benutzer sowie Kategorien zu.',
     image: '/assets/images/overlay-join-image.jpg',
     github: 'https://github.com/Marzzzo/Join',
-    liveTest: '',
+    liveTest: 'https://join.marco-burdick.de/',
     technologies: ['CSS', 'HTML', 'Firebase', 'Angular', 'Typescript'],
   },
   {
@@ -15,7 +15,7 @@ const projects = [
     description: 'Ein Jump-’n’-Run-Spiel, das auf einem objektorientierten Ansatz basiert.',
     image: '/assets/images/overlay-el-pollo-loco.png',
     github: 'https://github.com/Marzzzo/El-Pollo-Loco',
-    liveTest: '',
+    liveTest: 'https://el-pollo-loco.marco-burdick.de',
     technologies: ['HTML', 'CSS', 'JavaScript'],
   },
   {
@@ -24,8 +24,8 @@ const projects = [
     description:
       'Eine interaktive Pokédex-Webanwendung, die Pokémon-Daten über die PokéAPI lädt. Nutzer können Pokémon suchen, filtern und detaillierte Informationen wie Typen, Fähigkeiten und Statuswerte anzeigen.',
     image: '/assets/images/overlay-pokedex.png',
-    github: '',
-    liveTest: '',
+    github: 'https://github.com/Marzzzo/Pokedex',
+    liveTest: 'https://pokedex.marco-burdick.de/',
     technologies: ['JavaScript', 'HTML', 'CSS'],
   },
 ];

@@ -58,13 +58,13 @@ function trackTemplate(i) {
 
 function textbarTemplate() {
   return `<div>•</div>
-          <div>Frontend Entwickler</div>
+          <div data-i18n="hero_headline">Frontend Entwickler</div>
           <div>•</div>
-          <div>Komme aus Büren</div>
+          <div data-i18n="come_from">Komme aus Büren</div>
           <div>•</div>
-          <div>Offen für neue Herausforderungen</div>
+          <div data-i18n='challenges'>Offen für neue Herausforderungen</div>
           <div>•</div>
-          <div>Verfügbar für Remote</div>`;
+          <div data-i18n='remote_work'>Verfügbar für Remote</div>`;
 }
 
 function headerTemplate() {

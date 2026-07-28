@@ -19,11 +19,6 @@
     <script src="/js/templates.js"></script>
   </head>
   <body onload="init()">
-    <!----------------------------------------------------------------------->
-    <!-- <div class="overlay" style="background-color: rgba(0, 0, 0, 0.7)">
-      <h1 style="color: red">The website is under construction.</h1>
-    </div> -->
-    <!----------------------------------------------------------------------->
     <section class="overlay d-none" id="overlay" onclick="closeOverlay(event)">
       <!--overlays rendered here-->
     </section>
@@ -33,14 +28,14 @@
 
       <main id="hero">
         <div class="nametag">
-          <h2>Frontend Entwickler</h2>
+          <h2 data-i18n="hero_headline">Frontend Entwickler</h2>
           <h1>Marco Burdick</h1>
           <div class="nametag-button-section">
             <button class="nametag-button" onclick="location.href = '#projects'">
-              <span>Meine Arbeit</span>
+              <span data-i18n="my_work">Meine Arbeit</span>
             </button>
             <button class="nametag-button" onclick="location.href = '#contactMe'">
-              <span>Kontakt</span>
+              <span data-i18n="contact_me">Kontaktieren</span>
             </button>
           </div>
         </div>
@@ -58,35 +53,36 @@
             <div class="profil-image"></div>
           </div>
           <div class="who-i-am-container">
-            <h3>Wer ich bin</h3>
+            <h3 data-i18n="who_iam">Wer ich bin</h3>
             <div class="about-me">
-              <h1>Über mich</h1>
+              <h1 data-i18n="aboutme_headline">Über mich</h1>
               <div>
-                <p>
-                  Hallo, ich bin Marco. Mich begeistert die Webentwicklung, weil sie Kreativität und logisches Denken verbindet. Ich
-                  entwickle moderne, benutzerfreundliche Anwendungen und lerne dabei ständig neue Technologien kennen.
+                <p data-i18n="aboutMe_content">
+                  Hallo, ich bin Marco. Mich begeistert die Webentwicklung, weil sie Kreativität und logisches Denken
+                  verbindet. Ich entwickle moderne, benutzerfreundliche Anwendungen und lerne dabei ständig neue
+                  Technologien kennen.
                 </p>
               </div>
               <div class="text-container">
                 <div class="aboutme-textbox">
                   <img src="/assets/icons/location_on.png" alt="" />
-                  <p>
-                    Ich komme aus Büren (NRW) und bin offen für Remote- oder Vor-Ort-Arbeit. Besonders freue ich mich auf Projekte, bei
-                    denen ich mich weiterentwickeln kann.
+                  <p data-i18n="location">
+                    Ich komme aus Büren (NRW) und bin offen für Remote- oder Vor-Ort-Arbeit. Besonders freue ich mich
+                    auf Projekte, bei denen ich mich weiterentwickeln kann.
                   </p>
                 </div>
                 <div class="aboutme-textbox">
                   <img src="/assets/icons/cognition.png" alt="" />
-                  <p>
-                    Ich bin offen für neue Technologien und erweitere mein Wissen kontinuierlich, um mich fachlich und persönlich
-                    weiterzuentwickeln.
+                  <p data-i18n="cognition">
+                    Ich bin offen für neue Technologien und erweitere mein Wissen kontinuierlich, um mich fachlich und
+                    persönlich weiterzuentwickeln.
                   </p>
                 </div>
                 <div class="aboutme-textbox">
                   <img src="/assets/icons/new_releases.png" alt="" />
-                  <p>
-                    Herausforderungen gehe ich analytisch und lösungsorientiert an. Dabei helfen mir Kreativität, Ausdauer und der Austausch
-                    im Team, um saubere und effiziente Lösungen zu entwickeln.
+                  <p data-i18n="releases">
+                    Herausforderungen gehe ich analytisch und lösungsorientiert an. Dabei helfen mir Kreativität,
+                    Ausdauer und der Austausch im Team, um saubere und effiziente Lösungen zu entwickeln.
                   </p>
                 </div>
               </div>
@@ -102,10 +98,11 @@
             <h1>Skill Set</h1>
             <div>
               <p>
-                Ich entwickle moderne und responsive Webanwendungen mit HTML, CSS und JavaScript und erweitere mein Wissen kontinuierlich
-                durch neue Projekte und praktische Erfahrungen. Mir ist es wichtig, nicht nur aktuelle Technologien zu beherrschen, sondern
-                auch offen für neue Frameworks und Tools zu sein. Da sich die Webentwicklung ständig verändert, sehe ich kontinuierliches
-                Lernen als festen Bestandteil meiner Arbeit und freue mich darauf, mein Wissen stetig auszubauen.
+                Ich entwickle moderne und responsive Webanwendungen mit HTML, CSS und JavaScript und erweitere mein
+                Wissen kontinuierlich durch neue Projekte und praktische Erfahrungen. Mir ist es wichtig, nicht nur
+                aktuelle Technologien zu beherrschen, sondern auch offen für neue Frameworks und Tools zu sein. Da sich
+                die Webentwicklung ständig verändert, sehe ich kontinuierliches Lernen als festen Bestandteil meiner
+                Arbeit und freue mich darauf, mein Wissen stetig auszubauen.
               </p>
             </div>
             <div class="textarea-skill">
@@ -115,8 +112,8 @@
               </div>
               <div>
                 <p>
-                  Kontaktiere mich gerne – ich freue mich darauf, mein Wissen einzubringen, Neues zu lernen und mich kontinuierlich
-                  weiterzuentwickeln.
+                  Kontaktiere mich gerne – ich freue mich darauf, mein Wissen einzubringen, Neues zu lernen und mich
+                  kontinuierlich weiterzuentwickeln.
                 </p>
               </div>
             </div>
@@ -201,12 +198,17 @@
 
           <div class="textfield-projects">
             <p>
-              Entdecken Sie hier eine Auswahl meiner Arbeiten interagieren Sie mit den Projekten, um meine Fähigkeiten in der Praxis zu
-              sehen.
+              Entdecken Sie hier eine Auswahl meiner Arbeiten interagieren Sie mit den Projekten, um meine Fähigkeiten
+              in der Praxis zu sehen.
             </p>
           </div>
 
-          <div class="projects-container" onmouseenter="showImage('join-image')" onmouseleave="hideImages()" onclick="openOverlay(0)">
+          <div
+            class="projects-container"
+            onmouseenter="showImage('join-image')"
+            onmouseleave="hideImages()"
+            onclick="openOverlay(0)"
+          >
             <div>
               <span>Join</span>
             </div>
@@ -307,10 +309,11 @@
           <div class="problem-container">
             <h3>Gibt es ein Problem zu lösen?</h3>
             <p>
-              Ich bin auf der Suche nach einer Position als Frontend Developer, in der ich mein Wissen einbringen und gleichzeitig weiter
-              ausbauen kann. Mit Motivation, einer strukturierten Arbeitsweise und der Bereitschaft, kontinuierlich dazuzulernen, möchte ich
-              aktiv zum Erfolg spannender Projekte beitragen. Wenn du jemanden suchst, der engagiert arbeitet und sich gerne neuen
-              Herausforderungen stellt, freue ich mich darauf, von dir zu hören. <br />
+              Ich bin auf der Suche nach einer Position als Frontend Developer, in der ich mein Wissen einbringen und
+              gleichzeitig weiter ausbauen kann. Mit Motivation, einer strukturierten Arbeitsweise und der Bereitschaft,
+              kontinuierlich dazuzulernen, möchte ich aktiv zum Erfolg spannender Projekte beitragen. Wenn du jemanden
+              suchst, der engagiert arbeitet und sich gerne neuen Herausforderungen stellt, freue ich mich darauf, von
+              dir zu hören. <br />
               <br />
               Brauchen Sie einen Frontend-Entwickler? <span> Lass uns reden!</span>
             </p>
@@ -339,8 +342,8 @@
                 <img class="icon unchecked" src="/assets/icons/checkbox-empty.svg" alt="" />
                 <img class="icon checked" src="/assets/icons/check_box.svg" alt="" />
                 <p>
-                  Ich habe die <a href="/privacy-policy">Datenschutzerklärung </a>gelesen und stimme der Verarbeitung meiner Daten wie
-                  beschrieben zu.
+                  Ich habe die <a href="/privacy-policy">Datenschutzerklärung </a>gelesen und stimme der Verarbeitung
+                  meiner Daten wie beschrieben zu.
                 </p>
               </label>
               <div class="button-section">
@@ -352,7 +355,7 @@
       </section>
       <footer id="footer"></footer>
     </div>
-    <script src="/js/translations.js"></script>
+    <script src="/js/translate-object.js"></script>
     <script src="/js/formvalidate.js"></script>
     <script src="/js/postToPhp.js"></script>
     <script src="script.js"></script>

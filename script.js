@@ -1,6 +1,7 @@
 let currentProject = 0;
 let trackCounter = 6;
 let currentSlide = 0;
+let currentLanguage = 'DE';
 let images = document.querySelectorAll('.img-container img');
 
 function init() {
@@ -36,18 +37,6 @@ function renderTextbar(trackCounter) {
   track.innerHTML = '';
   for (let i = 1; i <= counter; i++) {
     track.innerHTML += trackTemplate(i);
-  }
-}
-
-function setLanguage(language) {
-  const btnEN = document.getElementById('btnEN');
-  const btnDE = document.getElementById('btnDE');
-  if (language === 'EN') {
-    btnEN.classList.add('active');
-    btnDE.classList.remove('active');
-  } else {
-    btnDE.classList.add('active');
-    btnEN.classList.remove('active');
   }
 }
 
@@ -164,4 +153,27 @@ function nextProject() {
     currentProject = 0;
   }
   document.getElementById('overlay').innerHTML = overlayTemplate(projects[currentProject]);
+}
+
+function getCurrentTranslation() {
+  return currentLanguage === 'de' ? translationDE : translationEN;
+}
+
+function setLanguage(language) {
+  const btnEN = document.getElementById('btnEN');
+  const btnDE = document.getElementById('btnDE');
+  currentLanguage = language === 'EN' ? 'en' : 'de';
+  btnDE.classList.toggle('active', currentLanguage === 'de');
+  btnEN.classList.toggle('active', currentLanguage === 'en');
+  updateLanguage();
+}
+
+function updateLanguage() {
+  const translation = getCurrentTranslation();
+  document.querySelectorAll('[data-i18n]').forEach((element) => {
+    const key = element.dataset.i18n;
+    if (translation[key] !== undefined) {
+      element.textContent = translation[key];
+    }
+  });
 }

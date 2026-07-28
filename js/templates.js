@@ -78,9 +78,9 @@ function headerTemplate() {
             </div>
           </div>
           <div class="header-headline">
-            <a href="#aboutMe"><h3>About me</h3></a>
+            <a  href="#aboutMe"><h3 data-i18n="headlineAboutMe">Über mich</h3></a>
             <a href="#skills"><h3>Skills</h3></a>
-            <a href="#projects"><h3>Projects</h3></a>
+            <a href="#projects"><h3 data-i18n="headlineProjects">Projekte</h3></a>
           </div>
         </div>
         <div>

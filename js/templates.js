@@ -111,15 +111,15 @@ function footerTemplate() {
         </div>`;
 }
 
-function carouselCardTemplate(carouselCards) {
+function carouselCardTemplate(card) {
   return `      <div class="card-descripton">
-                <p>${carouselCards.description}</p>
+                <p>${card.description[currentLanguage]}</p>
               </div>
               <div class="card-name-container">
                 <div class="horizonline"></div>
                 <div class="name-content">
-                <p>${carouselCards.name}</p>-
-                <p>${carouselCards.position}</p>
+                <p>${card.name}</p>-
+                <p>${card.position[currentLanguage]}</p>
                 </div>
               </div>`;
 }

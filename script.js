@@ -1,7 +1,7 @@
 let currentProject = 0;
 let trackCounter = 6;
 let currentSlide = 0;
-let currentLanguage = 'DE';
+let currentLanguage = 'de';
 let images = document.querySelectorAll('.img-container img');
 
 function init() {
@@ -176,4 +176,5 @@ function updateLanguage() {
       element.textContent = translation[key];
     }
   });
+  renderCarousel();
 }

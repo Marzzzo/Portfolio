@@ -2,7 +2,6 @@ contactForm.addEventListener('submit', sendContactForm);
 
 async function sendContactForm(event) {
   event.preventDefault();
-
   const formData = {
     name: nameInput.value.trim(),
     email: emailInput.value.trim(),
@@ -20,13 +19,10 @@ async function sendContactForm(event) {
       },
       body: JSON.stringify(formData),
     });
-
     const result = await response.json();
-
     if (!response.ok || !result.success) {
       throw new Error(result.error || 'Mail konnte nicht gesendet werden.');
     }
-
     contactForm.reset();
     submitButton.textContent = getCurrentTranslation().sent;
   } catch (error) {

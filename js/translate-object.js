@@ -13,11 +13,25 @@ const translationDE = {
   remote_work: 'Verfügbar für Remote',
   who_iam: 'Wer ich bin',
   aboutme_headline: 'Über mich',
-  aboutMe_content: `Hallo, ich bin Marco. Mich begeistert die Webentwicklung, weil sie Kreativität und logisches Denken verbindet. Ich entwickle moderne, benutzerfreundliche Anwendungen und lerne dabei ständig neue Technologien kennen.`,
+  aboutMe_content: `Hallo, ich bin Marco. Mich begeistert die Webentwicklung, weil sie Kreativität und logisches Denken verbindet. Ich entwickle moderne,          benutzerfreundliche Anwendungen und lerne dabei ständig neue Technologien kennen.`,
   location: `Ich komme aus Büren (NRW) und bin offen für Remote- oder Vor-Ort-Arbeit. Besonders freue ich mich auf Projekte, bei denen ich mich weiterentwickeln kann.`,
   cognition: `Ich bin offen für neue Technologien und erweitere mein Wissen kontinuierlich, um mich fachlich und persönlich weiterzuentwickeln.`,
   releases: `Herausforderungen gehe ich analytisch lösungsorientiert an. Dabei helfen mir Kreativität,
-  Ausdauer und der Austausch im Team, um saubere und effiziente Lösungen zu entwickeln.`,
+              Ausdauer und der Austausch im Team, um saubere und effiziente Lösungen zu entwickeln.`,
+  tech: `Technologien`,
+  skill_content: `Ich entwickle moderne und responsive Webanwendungen mit HTML, CSS und JavaScript und erweitere mein Wissen kontinuierlich
+                  durch neue Projekte und praktische Erfahrungen. Mir ist es wichtig, nicht nur aktuelle Technologien zu beherrschen, sondern
+                  auch offen für neue Frameworks und Tools zu sein. Da sich die Webentwicklung ständig verändert, sehe ich kontinuierliches
+                  Lernen als festen Bestandteil meiner Arbeit und freue mich darauf, mein Wissen stetig auszubauen.`,
+  skill_headline_2: `Brauchst du noch eine`,
+  skill: `Fähigkeit?`,
+  skill_p: `Kontaktiere mich gerne ich freue mich darauf, mein Wissen einzubringen, Neues zu lernen und mich kontinuierlich
+            weiterzuentwickeln.`,
+  skill_button: `Lass uns reden`,
+  bubble_content: `Ich interessiere mich besonders für das Lernen.`,
+  project_headline_h1: `Ausgewählte Projekte`,
+  project_p: `Entdecken Sie hier eine Auswahl meiner Arbeiten interagieren Sie mit den Projekten, um meine Fähigkeiten in der Praxis zu
+              sehen.`,
 };
 
 const translationEN = {
@@ -39,4 +53,13 @@ const translationEN = {
   location: `I'm based in Büren, North Rhine-Westphalia, and I'm open to both remote and on-site opportunities. I'm especially excited about projects that allow me to grow and further develop my skills.`,
   cognition: `I'm open to learning new technologies and continuously expanding my knowledge to grow both professionally and personally.`,
   releases: `I approach challenges with an analytical and solution-oriented mindset. Creativity, perseverance, and collaboration with my team help me develop clean and efficient solutions.`,
+  tech: `Technologies`,
+  skill_content: `I develop modern, responsive web applications using HTML, CSS, and JavaScript while continuously expanding my knowledge through new projects and hands-on experience. I believe it's important not only to master current technologies but also to stay open to new frameworks and tools. As web development is constantly evolving, I see continuous learning as an essential part of my work and enjoy steadily growing my skills.`,
+  skill_headline_2: `Do you need another`,
+  skill: `Skill?`,
+  skill_p: `Feel free to get in touch I look forward to contributing my knowledge, learning new things, and continuously developing my skills.`,
+  skill_button: `Let's Talk`,
+  bubble_content: `I am particularly passionate about learning.`,
+  project_headline_h1: `Selected Projects`,
+  project_p: `Explore a selection of my work and interact with the projects to see my skills in action.`,
 };

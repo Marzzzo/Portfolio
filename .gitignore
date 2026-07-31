@@ -1,0 +1,8 @@
+# VS Code
+.vscode/
+
+# Batch-Dateien
+*.bat
+
+# PHP-Mailscript
+contact_form_mail.php

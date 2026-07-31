@@ -105,7 +105,7 @@ function footerTemplate() {
         <span class="copyright">&copy; Marco Burdick 2026</span>
         <div class="footer-right">
           <a href="https://github.com/Marzzzo">Github</a>
-          <a href="">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/marco-burdick-767a22422/">LinkedIn</a>
           <a href="mailto:kontakt@marco-burdick.de">Email</a>
           <a href="/imprint">Impressum</a>
         </div>`;

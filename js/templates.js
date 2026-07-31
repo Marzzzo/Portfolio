@@ -8,7 +8,7 @@ function renderTechnologies(technologies) {
     </div>
   `,
     )
-    .join('');
+    .join("");
 }
 
 function overlayTemplate(project) {
@@ -98,8 +98,8 @@ function footerTemplate() {
             <a href="/"> <img class="logo-outline" src="/assets/icons/logo-initial-hover.png" alt="" /></a>
           </div>
           <div class="footer-p">
-            <p>Webentwickler</p>
-            <p>Büren Deutschland</p>
+            <p data-i18n="footer_webdeveloper">Webentwickler</p>
+            <p data-i18n="footer_location">Büren Deutschland</p>
           </div>
         </div>
         <span class="copyright">&copy; Marco Burdick 2026</span>

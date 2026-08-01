@@ -136,7 +136,6 @@
   flex-wrap: wrap;
   gap: 40px 72px;
   max-width: 632px;
-  justify-items: center;
 }
 
 .mindset-bubble {

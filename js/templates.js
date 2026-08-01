@@ -36,7 +36,7 @@ function overlayTemplate(project) {
             </div>
           </div>
         </div>
-        <div>
+        <div class="right-section">
           <img class="image" src="${project.image}" alt="" />
         </div>
         <div class="next-button" onclick="nextProject()">

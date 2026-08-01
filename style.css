@@ -14,7 +14,7 @@ body {
   background-image: url(/assets/images/Background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   user-select: none;
 }
 
@@ -78,7 +78,7 @@ h3 {
   display: flex;
   position: relative;
   padding: 144px 96px 0 96px;
-  gap: 70px;
+  gap: 36px;
 }
 
 .headline-projects {
@@ -166,7 +166,6 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 109px;
   padding: 40px 32px 40px 32px;
   border-bottom: 1px solid rgba(61, 207, 182, 1);
 }
@@ -181,6 +180,7 @@ h3 {
   justify-content: center;
   align-items: center;
   gap: 4px;
+  flex-wrap: wrap;
 }
 
 .projects-container span,

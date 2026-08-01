@@ -1,11 +1,14 @@
 .overlay {
   position: fixed;
+  inset: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  padding: 24px;
   overflow: hidden;
+  box-sizing: border-box;
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -15,15 +18,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1248px;
-  height: 656px;
-  padding: 0 80px 0 80px;
+  width: 100%;
+  max-width: 1248px;
+  height: 100vh;
+  max-height: 656px;
+  padding: 0 80px;
+  box-sizing: border-box;
   border: 1px solid rgba(61, 207, 182, 1);
   border-radius: 30px;
-  background-image: url('/assets/images/Background.jpg');
+  background-image: url("/assets/images/Background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  overflow-x: hidden;
+  background-position: center;
+  overflow: hidden;
   user-select: none;
   animation: slideIn 0.4s ease forwards;
 }
@@ -70,7 +77,7 @@
 }
 
 .headline h1 {
-  font-family: 'karla', sans-serif;
+  font-family: "karla", sans-serif;
   font-size: 128px;
   font-weight: 700;
   color: rgba(61, 207, 182, 1);
@@ -83,9 +90,17 @@
 }
 
 .image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
   max-width: 520px;
   max-height: 370px;
   border-radius: 30px;
+  transition: transform 0.3s ease;
+}
+
+.image:hover {
+  transform: rotate(3deg);
 }
 
 .fonts-section {
@@ -102,7 +117,7 @@
 }
 
 .fonts-section span {
-  font-family: 'karla', sans-serif;
+  font-family: "karla", sans-serif;
   font-size: 18px;
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
@@ -120,7 +135,7 @@
 }
 
 .single-content p {
-  font-family: 'karla', sans-serif;
+  font-family: "karla", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
@@ -155,7 +170,7 @@
 }
 
 .overlay-button a {
-  font-family: 'karla', sans-serif;
+  font-family: "karla", sans-serif;
   font-size: 18px;
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
@@ -186,7 +201,7 @@
 }
 
 .next-button p {
-  font-family: 'karla', sans-serif;
+  font-family: "karla", sans-serif;
   font-weight: 400;
   font-size: 18px;
   color: rgba(61, 207, 182, 1);

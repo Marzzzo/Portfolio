@@ -47,6 +47,7 @@ function hideImages() {
 }
 
 function showImage(className) {
+  if (window.innerWidth <= 1265) return;
   hideImages();
   const image = document.querySelector(`.${className}`);
   if (image) {

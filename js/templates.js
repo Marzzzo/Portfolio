@@ -107,7 +107,7 @@ function footerTemplate() {
           <a href="https://github.com/Marzzzo">Github</a>
           <a href="https://www.linkedin.com/in/marco-burdick-767a22422/">LinkedIn</a>
           <a href="mailto:kontakt@marco-burdick.de">Email</a>
-          <a href="./imprint.html">Impressum</a>
+          <a href="/imprint">Impressum</a>
         </div>`;
 }
 

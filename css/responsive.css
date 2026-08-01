@@ -1,0 +1,245 @@
+@media (max-width: 1020px) {
+  .carousel::before,
+  .carousel::after {
+    width: 70px;
+  }
+
+  .item {
+    width: min(560px, calc(100% - 40px));
+  }
+
+  .item.left {
+    transform: translate3d(-480px, 0, -250px) scale(0.8);
+  }
+
+  .item.right {
+    transform: translate3d(480px, 0, -250px) scale(0.8);
+  }
+
+  .quotes {
+    left: calc(50% - 315px);
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h1 {
+    font-size: 62px;
+  }
+
+  .left-header-section {
+    display: none;
+  }
+
+  .logo-container {
+    display: none;
+  }
+
+  .stripes {
+    display: none;
+  }
+
+  .about-me-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 100px 0;
+    gap: 40px;
+  }
+
+  .profil-wrapper {
+    width: 100%;
+    max-width: 568px;
+  }
+
+  .other-section {
+    flex-direction: column;
+    padding: 144px 16px 0 16px;
+  }
+
+  .skill-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 16px;
+  }
+
+  .skill-icon-box {
+    gap: 20px 16px;
+  }
+
+  .contact-me-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 650px) {
+  .carousel {
+    height: 440px;
+  }
+
+  .carousel::before,
+  .carousel::after {
+    width: 30px;
+  }
+
+  .items {
+    height: 290px;
+    margin-top: 35px;
+  }
+
+  .item {
+    width: calc(100% - 32px);
+    min-width: 0;
+    min-height: 290px;
+    padding: 28px 18px 20px;
+    border-radius: 24px;
+  }
+
+  .card-description {
+    font-size: 17px;
+    line-height: 1.35;
+  }
+
+  .card-footer {
+    gap: 15px;
+    margin-top: 25px;
+  }
+
+  .card-name {
+    font-size: 16px;
+    white-space: normal;
+  }
+
+  .item.left {
+    transform: translate3d(-105%, 0, -250px) scale(0.8);
+  }
+
+  .item.right {
+    transform: translate3d(105%, 0, -250px) scale(0.8);
+  }
+
+  .quotes {
+    top: -30px;
+    left: 10px;
+    width: 60px;
+  }
+
+  .nav {
+    margin-top: 48px;
+  }
+
+  .arrow-button {
+    width: 42px;
+    height: 42px;
+  }
+
+  .dot {
+    margin: 7px;
+  }
+
+  .textfield-projects {
+    text-align: center;
+  }
+
+  .headline-projects {
+    align-items: center;
+  }
+
+  .headline-projects h1 {
+    font-size: 42px;
+  }
+
+  .projects-container,
+  .projects-container-bottom {
+    flex-direction: column;
+  }
+
+  header {
+    padding: 0 16px;
+  }
+
+  footer {
+    flex-wrap: wrap;
+    padding: 40px 16px;
+  }
+
+  .footer-left {
+    width: 50%;
+  }
+
+  .footer-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .copyright {
+    order: 3; 
+    width: 100%; 
+    text-align: center;
+    margin-top: 16px;
+  }
+
+  .headline-container p {
+    font-size: 21px;
+  }
+
+  .contact-me-section {
+    flex-direction: column;
+    padding: 0 48px;
+    gap: 64px;
+  }
+
+  .work-container {
+    width: 100%;
+    max-width: none;
+  }
+
+  .headline-container h2 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-me-section {
+    margin-top: 80px;
+    padding: 0 16px;
+    gap: 48px;
+  }
+
+  .headline-container h2 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 420px) {
+  .carousel {
+    height: 470px;
+  }
+
+  .items {
+    height: 320px;
+  }
+
+  .item {
+    min-height: 320px;
+  }
+
+  .card-footer {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .horizonline {
+    width: 100%;
+    flex: none;
+  }
+
+  .card-name {
+    width: 100%;
+  }
+}

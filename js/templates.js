@@ -107,19 +107,22 @@ function footerTemplate() {
           <a href="https://github.com/Marzzzo">Github</a>
           <a href="https://www.linkedin.com/in/marco-burdick-767a22422/">LinkedIn</a>
           <a href="mailto:kontakt@marco-burdick.de">Email</a>
-          <a href="/imprint">Impressum</a>
+          <a href="./imprint.html">Impressum</a>
         </div>`;
 }
 
 function carouselCardTemplate(card) {
-  return `      <div class="card-descripton">
-                <p>${card.description[currentLanguage]}</p>
-              </div>
-              <div class="card-name-container">
-                <div class="horizonline"></div>
-                <div class="name-content">
-                <p>${card.name}</p>-
-                <p>${card.position[currentLanguage]}</p>
-                </div>
-              </div>`;
+  return `
+    <p class="card-description">
+      ${card.description[currentLanguage]}
+    </p>
+    <div class="card-footer">
+      <div class="horizonline"></div>
+
+      <p class="card-name">
+        ${card.name}
+        <span>- ${card.position[currentLanguage]}</span>
+      </p>
+    </div>
+  `;
 }

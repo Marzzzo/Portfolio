@@ -34,7 +34,7 @@ header {
 }
 
 .header-headline h3::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   bottom: -10px;
@@ -121,8 +121,9 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-height: 900px;
-  height: 100vh;
+  width: 100%;
+  min-height: 100svh;
+  overflow: hidden;
 }
 
 .nametag {
@@ -134,6 +135,8 @@ main {
 
 .nametag-button-section {
   display: flex;
+  justify-content: center;
+  width: 100%;
   gap: 48px;
   cursor: pointer;
 }
@@ -142,7 +145,7 @@ main {
   position: relative;
   border: 1px solid white;
   border-radius: 100px;
-  width: 172px;
+  width: 153px;
   height: 48px;
   overflow: hidden;
   background: transparent;
@@ -224,7 +227,7 @@ main {
   gap: 56px;
   padding-right: 56px;
   flex-shrink: 0;
-  font-family: 'karla';
+  font-family: "karla";
   font-weight: 400;
   font-size: 32px;
   color: rgba(61, 207, 182, 1);

@@ -6,13 +6,15 @@
 
 body {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   height: 100%;
-  font-family: 'fira';
+  font-family: "fira";
   background-image: url(/assets/images/Background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   user-select: none;
 }
 
@@ -41,14 +43,14 @@ body {
 }
 
 @font-face {
-  font-family: 'fira';
-  src: url('/assets/fonts/FiraCode-VariableFont_wght.ttf') format('truetype');
+  font-family: "fira";
+  src: url("/assets/fonts/FiraCode-VariableFont_wght.ttf") format("truetype");
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'karla';
-  src: url('/assets/fonts/Karla-VariableFont_wght.ttf') format('truetype');
+  font-family: "karla";
+  src: url("/assets/fonts/Karla-VariableFont_wght.ttf") format("truetype");
   font-style: normal;
 }
 a {
@@ -86,14 +88,14 @@ h3 {
 }
 
 .headline-projects h3 {
-  font-family: 'karla';
+  font-family: "karla";
   font-weight: 700;
   font-size: 24px;
   color: rgba(61, 207, 182, 1);
 }
 
 .headline-projects h1 {
-  font-family: 'fira';
+  font-family: "fira";
   font-weight: 700;
   font-size: 64px;
   color: rgba(61, 207, 182, 1);
@@ -101,7 +103,7 @@ h3 {
 
 .headline-colleagues h1 {
   width: 100%;
-  font-family: 'fira';
+  font-family: "fira";
   font-weight: 700;
   font-size: 32px;
   color: rgba(61, 207, 182, 1);
@@ -115,7 +117,7 @@ h3 {
 }
 
 .textfield-projects p {
-  font-family: 'karla';
+  font-family: "karla";
   font-size: 18px;
   color: white;
 }
@@ -150,7 +152,6 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 109px;
   padding: 40px 32px 40px 32px;
   border-top: 1px solid rgba(61, 207, 182, 1);
   border-bottom: 1px solid rgba(61, 207, 182, 1);
@@ -185,7 +186,7 @@ h3 {
 .projects-container span,
 .projects-container-bottom span {
   position: relative;
-  font-family: 'fira';
+  font-family: "fira";
   font-weight: 700;
   font-size: 24px;
   color: white;
@@ -193,14 +194,14 @@ h3 {
 
 .projects-container span::after,
 .projects-container-bottom span::after {
-  content: '';
+  content: "";
   position: absolute;
   right: -20px;
   top: 50%;
   transform: translateY(-50%);
   width: 12.56px;
   height: 12.56px;
-  background: url('/assets/icons/arrow_outward.png') no-repeat center;
+  background: url("/assets/icons/arrow_outward.png") no-repeat center;
   background-size: contain;
   opacity: 0;
   transition: opacity 0.2s ease;
@@ -213,7 +214,7 @@ h3 {
 
 .projects-container p,
 .projects-container-bottom p {
-  font-family: 'karla';
+  font-family: "karla";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -259,7 +260,7 @@ h3 {
 }
 
 .error-message {
-  font-family: 'karla';
+  font-family: "karla";
   font-weight: 400;
   font-size: 18px;
   color: #ec7b7bcc;

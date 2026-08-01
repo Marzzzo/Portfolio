@@ -24,17 +24,19 @@
   }
 }
 
-.container-carousel {
+/* Gesamter Carousel-Bereich */
+.carousel {
   position: relative;
   width: 100%;
   height: 472px;
-  box-sizing: border-box;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
-.container-carousel::before,
-.container-carousel::after {
-  content: '';
+/* Verlauf links und rechts */
+.carousel::before,
+.carousel::after {
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
@@ -43,128 +45,149 @@
   pointer-events: none;
 }
 
-.container-carousel::before {
+.carousel::before {
   left: 0;
-  background: linear-gradient(to right, #1c1c1c 0%, rgba(28, 28, 28, 0.9) 25%, rgba(28, 28, 28, 0) 100%);
+  background: linear-gradient(
+    to right,
+    #1c1c1c 0%,
+    rgba(28, 28, 28, 0.9) 25%,
+    rgba(28, 28, 28, 0) 100%
+  );
 }
 
-.container-carousel::after {
+.carousel::after {
   right: 0;
-  background: linear-gradient(to left, #1c1c1c 0%, rgba(28, 28, 28, 0.9) 25%, rgba(28, 28, 28, 0) 100%);
+  background: linear-gradient(
+    to left,
+    #1c1c1c 0%,
+    rgba(28, 28, 28, 0.9) 25%,
+    rgba(28, 28, 28, 0) 100%
+  );
 }
 
-.component {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  width: 100%;
-  box-sizing: border-box;
-}
-
-input.input {
-  display: none;
-}
-
+/* Bereich mit den Karten */
 .items {
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 200px;
-  aspect-ratio: 16/9;
-  margin: 0 auto;
-  transform-style: preserve-3d;
-}
-
-.item {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-  top: 0;
-  min-width: 632px;
-  min-height: 274px;
-  padding: 20px;
-  border: 1px solid rgba(61, 207, 182, 1);
-  border-radius: 32px;
-  box-sizing: border-box;
-  background: rgb(31, 91, 82);
-  color: #eee;
-  text-align: center;
-  user-select: none;
-  overflow: hidden;
-  transition: transform 0.7s ease-in-out;
+  align-items: flex-start;
+  width: 100%;
+  height: 274px;
+  margin: 42px auto 0;
   perspective: 1200px;
   transform-style: preserve-3d;
 }
 
-.item p {
-  font-family: 'karla';
-  font-weight: 300;
+/* Einzelne Bewertungskarte */
+.item {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: min(632px, calc(100% - 48px));
+  min-height: 274px;
+  padding: 32px 24px 24px;
+  border: 1px solid rgba(61, 207, 182, 1);
+  border-radius: 32px;
+  box-sizing: border-box;
+  background-color: rgb(31, 91, 82);
+  color: #ffffff;
+  text-align: center;
+  user-select: none;
+  overflow: hidden;
+  transition:
+    transform 0.7s ease-in-out,
+    opacity 0.7s ease-in-out,
+    filter 0.7s ease-in-out,
+    background-color 0.7s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+/* Bewertungstext */
+.card-description {
+  width: 100%;
+  margin: 0;
+  font-family: "Karla", sans-serif;
   font-size: 20px;
+  font-weight: 300;
+  line-height: 1.4;
   color: #ffffff;
 }
 
+/* Unterer Bereich mit Linie und Name */
+.card-footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Horizontale Linie */
+.horizonline {
+  flex: 1;
+  min-width: 30px;
+  height: 1px;
+  background-color: #ffffff;
+}
+
+/* Name und Position */
+.card-name {
+  flex-shrink: 0;
+  margin: 0;
+  font-family: "Karla", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.card-name span {
+  font-weight: 300;
+}
+
+/* Aktive mittlere Karte */
 .item.active {
   transform: translate3d(0, 0, 0) scale(1);
   opacity: 1;
   filter: blur(0);
   z-index: 8;
   pointer-events: auto;
-  background: rgb(31, 91, 82);
+  background-color: rgb(31, 91, 82);
 }
 
+/* Linke Karte */
 .item.left {
   transform: translate3d(-620px, 0, -250px) scale(0.8);
   opacity: 1;
   filter: blur(1px);
   z-index: 2;
+  pointer-events: none;
   background-color: rgb(12, 41, 37);
 }
 
+/* Rechte Karte */
 .item.right {
   transform: translate3d(620px, 0, -250px) scale(0.8);
   opacity: 1;
   filter: blur(1px);
   z-index: 2;
+  pointer-events: none;
   background-color: rgb(12, 41, 37);
 }
 
+/* Nicht sichtbare Karten */
 .item.hidden {
   transform: translate3d(0, 0, -500px) scale(0.6);
-  opacity: 1;
+  opacity: 0;
   filter: blur(1px);
   z-index: 0;
+  pointer-events: none;
   background-color: rgb(12, 41, 37);
 }
 
-.nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 110px;
-}
-
-.dots {
-  display: flex;
-}
-
-.dot {
-  width: 8px;
-  height: 8px;
-  margin: 10px;
-  border-radius: 50%;
-  background: #444;
-  cursor: pointer;
-}
-
-.dot.active {
-  background: rgba(61, 207, 182, 1);
-}
-
+/* Anführungszeichen */
 .quotes {
   position: absolute;
   top: -42px;
@@ -173,12 +196,43 @@ input.input {
   pointer-events: none;
 }
 
-.arrow-button {
-  width: 48px;
-  height: 48px;
+/* Navigation */
+.nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 64px;
+}
+
+/* Punkte */
+.dots {
+  display: flex;
+  align-items: center;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  margin: 10px;
+  border: none;
+  border-radius: 50%;
+  background-color: #444444;
+}
+
+.dot.active {
+  background-color: rgba(61, 207, 182, 1);
+}
+
+/* Pfeil-Buttons */
+.arrow-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
@@ -191,35 +245,15 @@ input.input {
   fill: rgba(61, 207, 182, 1);
 }
 
+.arrow-button:focus-visible {
+  outline: 2px solid rgba(61, 207, 182, 1);
+  outline-offset: 2px;
+  border-radius: 50%;
+}
+
 .arrow {
   width: 19px;
   height: 19px;
-  fill: white;
+  fill: #ffffff;
   transition: fill 0.3s ease;
-}
-
-.card-descripton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  text-align: center;
-}
-
-.card-name-container {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  gap: 30px;
-}
-
-.horizonline {
-  width: 100%;
-  height: 0;
-  border: solid 1px #ffffff;
-}
-
-.name-content {
-  display: flex;
-  gap: 3px;
 }

@@ -37,9 +37,9 @@ const translationDE = {
   contact_me_headline: `Lassen Sie uns zusammenarbeiten.`,
   problem_title: `Gibt es ein Problem zu lösen?`,
   problem_content: `Ich bin auf der Suche nach einer Position als Frontend Developer, in der ich mein Wissen einbringen und gleichzeitig weiter
-  ausbauen kann. Mit Motivation, einer strukturierten Arbeitsweise und der Bereitschaft, kontinuierlich dazuzulernen, möchte ich
-  aktiv zum Erfolg spannender Projekte beitragen. Wenn du jemanden suchst, der engagiert arbeitet und sich gerne neuen
-  Herausforderungen stellt, dann lass uns zusammenarbeiten!`,
+                    ausbauen kann. Mit Motivation, einer strukturierten Arbeitsweise und der Bereitschaft, kontinuierlich dazuzulernen, möchte ich
+                    aktiv zum Erfolg spannender Projekte beitragen. Wenn du jemanden suchst, der engagiert arbeitet und sich gerne neuen
+                    Herausforderungen stellt, dann lass uns zusammenarbeiten!`,
   problem_content_2: `Brauchen Sie einen Frontend-Entwickler?`,
   problem_content_2_span: ` Lass uns reden!`,
   name_question: `Wie ist dein Name?`,
@@ -90,7 +90,9 @@ const translationEN = {
   contact_me: `Contact me`,
   contact_me_headline: `Let's work together.`,
   problem_title: `Is there a problem to solve?`,
-  problem_content: `I am looking for a position as a Frontend Developer where I can contribute my knowledge and continue to grow. With motivation, a structured approach, and a willingness to continuously learn, I aim to actively contribute to the success of exciting projects. If you're looking for someone who works with dedication and enjoys taking on new challenges, let's collaborate!`,
+  problem_content: `I am looking for a position as a Frontend Developer where I can contribute my knowledge and continue to grow.
+                    With motivation, a structured approach, and a willingness to continuously learn, I aim to actively contribute to the success of exciting projects.
+                    If you're looking for someone who works with dedication and enjoys taking on new challenges, let's collaborate!`,
   problem_content_2: `Do you need a Frontend Developer?`,
   problem_content_2_span: ` Let's talk!`,
   name_question: `What's your name?`,

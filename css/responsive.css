@@ -1,4 +1,9 @@
 @media (max-width: 1020px) {
+  #header {
+    height: 80px;
+    padding: 0 32px;
+  }
+
   .carousel::before,
   .carousel::after {
     width: 70px;
@@ -28,14 +33,6 @@
     font-size: 62px;
   }
 
-  .left-header-section {
-    display: none;
-  }
-
-  .logo-container {
-    display: none;
-  }
-
   .stripes {
     display: none;
   }
@@ -54,7 +51,8 @@
 
   .other-section {
     flex-direction: column;
-    padding: 144px 16px 0 16px;
+    justify-content: center;
+    padding: 100px 16px 0 16px;
   }
 
   .skill-container {
@@ -68,9 +66,127 @@
     align-items: center;
     padding: 0 16px;
   }
+
+  .who-i-am-container {
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 650px) {
+  #header {
+    padding: 0 16px;
+  }
+
+  .mobile-menu {
+    padding: 80px 20px 0;
+  }
+
+  .mobile-navigation {
+    width: 100%;
+    max-width: 240px;
+  }
+
+  .desktop-header {
+    display: none;
+  }
+
+  .mobile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+
+  .mobile-logo {
+    display: block;
+    width: 48px;
+    height: 48px;
+  }
+
+  .mobile-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .burger-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 12;
+  }
+
+  .burger-button img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    inset: 0;
+    z-index: 11;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 88px 32px 0;
+    background-color: rgba(0, 0, 0, 0.45);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition:
+      opacity 0.25s ease,
+      visibility 0.25s ease;
+  }
+
+  .mobile-menu.open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .mobile-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 240px;
+    padding: 40px 24px;
+    border: 1px solid #3dcfb6;
+    border-radius: 30px;
+    background-color: #1c1c1c;
+  }
+
+  .mobile-navigation a {
+    position: relative;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  .mobile-navigation a:hover {
+    color: #3dcfb6;
+  }
+
+  .mobile-navigation .language-switcher {
+    margin-top: 8px;
+  }
+
+  .left-header-section {
+    display: none;
+  }
+
+  .logo-container {
+    display: none;
+  }
+
   .carousel {
     height: 440px;
   }
@@ -197,6 +313,14 @@
   .headline-container h2 {
     font-size: 42px;
   }
+
+  .nametag-button span {
+    font-size: 14px;
+  }
+
+  .about-me {
+    padding: 16px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -234,61 +358,38 @@
 @media (max-width: 1265px) {
   .card {
     flex-direction: column-reverse;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    width: 100%;
+width: min(90%, 760px);
+    max-height: 90vh;
     height: auto;
-    max-height: none;
-    padding: 80px 40px 100px;
-    gap: 40px;
-    overflow-y: auto;
+ padding: 56px 32px 80px;
+    gap: 28px;
+ overflow-y: hidden;
   }
 
-  .skill-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-  }
-
-  .other-section {
-    justify-content: center;
-  }
-
-  .tech-color {
-    text-align: center;
-    padding-left: 0;
-  }
-
-  .skill-icon-box {
-    gap: 40px 40px;
-    max-width: 520px;
-  }
-
-  .left-section {
+  .image {
+    width: 100%;
+    max-width: 420px;
     height: auto;
   }
 
   .headline h1 {
-    font-size: 96px;
+    font-size: 72px;
   }
 
   .headline h2 {
-    font-size: 48px;
-  }
-
-  .image {
-    height: auto;
-    max-width: 480px;
+    font-size: 36px;
   }
 
   .close-button {
-    top: 32px;
-    right: 40px;
+    top: 20px;
+    right: 24px;
   }
 
   .next-button {
-    right: 48px;
-    bottom: 32px;
+    right: 32px;
+    bottom: 24px;
   }
 }
 

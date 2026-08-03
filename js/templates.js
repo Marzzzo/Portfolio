@@ -68,27 +68,60 @@ function textbarTemplate() {
 }
 
 function headerTemplate() {
-  return `<div class="left-header-section">
-          <div class="language-switcher">
-            <div id="btnDE" class="language-button active" onclick="setLanguage('DE')">
-              <p>DE</p>
-            </div>
-            <div id="btnEN" class="language-button" onclick="setLanguage('EN')">
-              <p>EN</p>
-            </div>
-          </div>
-          <div class="header-headline">
-            <a  href="#aboutMe"><h3 data-i18n="headlineAboutMe">Über mich</h3></a>
-            <a href="#skills"><h3>Skills</h3></a>
-            <a href="#projects"><h3 data-i18n="headlineProjects">Projekte</h3></a>
-          </div>
+  return `
+    <div class="mobile-header">
+      <div class="mobile-logo">
+        <img src="/assets/icons/favicon.png" alt="Logo">
+      </div>
+
+      <button class="burger-button" onclick="toggleMobileMenu()">
+        <img src="/assets/icons/burger-menu.png" alt="Menü">
+      </button>
+    </div>
+
+    <div class="desktop-header">
+      <div class="left-header-section">
+        <div class="language-switcher">
+          <button class="language-button active" data-language="de" onclick="setLanguage('de')">
+            DE
+          </button>
+
+          <button class="language-button" data-language="en" onclick="setLanguage('en')">
+            EN
+          </button>
         </div>
-        <div>
-          <div class="logo-container">
-            <img class="logo-filled" src="/assets/icons/logo-initial.png" alt="" />
-            <img class="logo-outline" src="/assets/icons/logo-initial-hover.png" alt="" />
-          </div>
-        </div>`;
+
+        <nav class="header-navigation">
+          <a href="#aboutMe" data-i18n="headlineAboutMe">Über mich</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects" data-i18n="headlineProjects">Projekte</a>
+        </nav>
+      </div>
+
+      <div class="logo-container">
+        <img class="logo-filled" src="/assets/icons/logo-initial.png" alt="">
+        <img class="logo-outline" src="/assets/icons/logo-initial-hover.png" alt="">
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <nav class="mobile-navigation">
+        <a href="#aboutMe" data-i18n="headlineAboutMe" onclick="closeMobileMenu()">Über mich</a>
+        <a href="#skills" onclick="closeMobileMenu()">Skills</a>
+        <a href="#projects" data-i18n="headlineProjects" onclick="closeMobileMenu()">Projekte</a>
+
+        <div class="language-switcher">
+          <button class="language-button" data-language="de" onclick="setLanguage('de')">
+            DE
+          </button>
+
+          <button class="language-button" data-language="en" onclick="setLanguage('en')">
+            EN
+          </button>
+        </div>
+      </nav>
+    </div>
+  `;
 }
 
 function footerTemplate() {

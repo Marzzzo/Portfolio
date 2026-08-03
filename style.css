@@ -42,6 +42,14 @@ body {
   position: relative;
 }
 
+#hero {
+  overflow: visible;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
 @font-face {
   font-family: "fira";
   src: url("/assets/fonts/FiraCode-VariableFont_wght.ttf") format("truetype");

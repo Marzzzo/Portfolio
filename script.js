@@ -5,7 +5,7 @@ let currentLanguage = "de";
 let images = document.querySelectorAll(".img-container img");
 
 function init() {
-  renderHeader();
+  // renderHeader();
   renderFooter();
   renderTextbar(trackCounter);
   renderCarousel();
@@ -153,9 +153,7 @@ function nextProject() {
   if (currentProject >= projects.length) {
     currentProject = 0;
   }
-  document.getElementById("overlay").innerHTML = overlayTemplate(
-    projects[currentProject],
-  );
+  document.getElementById("overlay").innerHTML = overlayTemplate(projects[currentProject]);
 }
 
 function getCurrentTranslation() {
@@ -163,11 +161,11 @@ function getCurrentTranslation() {
 }
 
 function setLanguage(language) {
-  const btnEN = document.getElementById("btnEN");
-  const btnDE = document.getElementById("btnDE");
-  currentLanguage = language === "EN" ? "en" : "de";
-  btnDE.classList.toggle("active", currentLanguage === "de");
-  btnEN.classList.toggle("active", currentLanguage === "en");
+  currentLanguage = language;
+  document.querySelectorAll(".language-button").forEach((button) => {
+    button.classList.toggle("active", button.dataset.language === language);
+  });
+
   updateLanguage();
 }
 
@@ -187,4 +185,22 @@ function updateLanguage() {
     }
   });
   renderCarousel();
+}
+
+function toggleMobileMenu() {
+  const mobileMenu = document.getElementById("mobileMenu");
+  const burgerButton = document.querySelector(".burger-button");
+  const isOpen = mobileMenu.classList.toggle("open");
+  burgerButton.setAttribute("aria-expanded", String(isOpen));
+  burgerButton.setAttribute("aria-label", isOpen ? "Menü schließen" : "Menü öffnen");
+  document.body.classList.toggle("menu-open", isOpen);
+}
+
+function closeMobileMenu() {
+  const mobileMenu = document.getElementById("mobileMenu");
+  const burgerButton = document.querySelector(".burger-button");
+  mobileMenu.classList.remove("open");
+  burgerButton.setAttribute("aria-expanded", "false");
+  burgerButton.setAttribute("aria-label", "Menü öffnen");
+  document.body.classList.remove("menu-open");
 }

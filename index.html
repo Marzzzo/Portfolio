@@ -22,46 +22,15 @@
     <section class="overlay d-none" id="overlay" onclick="closeOverlay(event)">
       <!--overlays rendered here-->
     </section>
+    <div class="textbar" id="scrollContainer">
+      <div class="textbar-track" id="textbarTrack">
+        <!--Textbar rendered here-->
+      </div>
+    </div>
     <div class="content-max-width">
       <header id="header">
-        <div class="mobile-header">
-          <div class="mobile-logo">
-            <img src="/assets/icons/favicon.png" alt="Logo" />
-          </div>
-          <button class="burger-button" onclick="toggleMobileMenu()">
-            <img src="/assets/icons/burger-menu.png" alt="Menü" />
-          </button>
-        </div>
-        <div class="desktop-header">
-          <div class="left-header-section">
-            <div class="language-switcher">
-              <button class="language-button" data-language="de" onclick="setLanguage('de')">DE</button>
-              <button class="language-button" data-language="en" onclick="setLanguage('en')">EN</button>
-            </div>
-            <nav class="header-navigation">
-              <a href="#aboutMe" data-i18n="navigation.about">Über mich</a>
-              <a href="#skills">Skills</a>
-              <a href="#projects" data-i18n="navigation.projects">Projekte</a>
-            </nav>
-          </div>
-          <div class="logo-container">
-            <img class="logo-filled" src="/assets/icons/logo-initial.png" alt="" />
-            <img class="logo-outline" src="/assets/icons/logo-initial-hover.png" alt="" />
-          </div>
-        </div>
-        <div class="mobile-menu" id="mobileMenu">
-          <nav class="mobile-navigation">
-            <a href="#aboutMe" data-i18n="navigation.about" onclick="closeMobileMenu()">Über mich</a>
-            <a href="#skills" onclick="closeMobileMenu()">Skills</a>
-            <a href="#projects" data-i18n="navigation.projects" onclick="closeMobileMenu()">Projekte</a>
-            <div class="language-switcher">
-              <button class="language-button active" data-language="de" onclick="setLanguage('de')">DE</button>
-              <button class="language-button" data-language="en" onclick="setLanguage('en')">EN</button>
-            </div>
-          </nav>
-        </div>
+        <!--Header rendered here-->
       </header>
-
       <main id="hero">
         <div class="nametag">
           <h2 data-i18n="hero.headline">Frontend Entwickler</h2>
@@ -75,13 +44,7 @@
             </button>
           </div>
         </div>
-        <div class="textbar" id="scrollContainer">
-          <div class="textbar-track" id="textbarTrack">
-            <!--Textbar rendered here-->
-          </div>
-        </div>
       </main>
-
       <section id="aboutMe" class="other-section">
         <div class="about-me-container">
           <div class="profil-wrapper">

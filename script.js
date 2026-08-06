@@ -12,9 +12,11 @@ async function init() {
   updateLanguage();
 }
 
-function initPolicyPage() {
+async function initPolicyPage() {
+  await loadTranslations();
   renderHeader();
   renderFooter();
+  updateLanguage();
 }
 
 function initImpressumPage() {

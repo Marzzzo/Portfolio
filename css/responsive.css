@@ -75,6 +75,74 @@
   .headline-projects {
     align-items: center;
   }
+
+  .card {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    width: min(90%, 760px);
+    max-height: 90vh;
+    height: auto;
+    padding: 56px 32px 80px;
+    gap: 28px;
+    overflow-y: hidden;
+  }
+
+  .image {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+  }
+
+  .headline h1 {
+    font-size: 72px;
+  }
+
+  .headline h2 {
+    font-size: 36px;
+  }
+
+  .close-button {
+    top: 20px;
+    right: 24px;
+  }
+
+  .next-button {
+    right: 32px;
+    bottom: 24px;
+  }
+}
+
+@media (max-width: 900px) { 
+
+  .main-impressum {
+    padding: 0 16px;
+        gap: 16px;
+  }
+
+  .imprint-headline {
+    font-size: 22px;
+  }
+
+  section h2 {
+    font-size: 20px;
+  }
+
+  section h4 {
+    font-size: 18px;
+  }
+
+  section p {
+    font-size: 16px;
+  }
+
+  .list-container {
+    font-size: 14px;
+  }
+
+  .footer-left{
+    gap: 8px;
+  }
 }
 
 @media (max-width: 650px) {
@@ -325,76 +393,6 @@
   }
 }
 
-@media (max-width: 420px) {
-  .carousel {
-    height: 470px;
-  }
-
-  .items {
-    height: 320px;
-  }
-
-  .item {
-    min-height: 320px;
-  }
-
-  .card-footer {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .horizonline {
-    width: 100%;
-    flex: none;
-  }
-
-  .card-name {
-    width: 100%;
-  }
-
-  .nametag-button-section {
-    gap: 24px;
-  }
-}
-
-@media (max-width: 1265px) {
-  .card {
-    flex-direction: column-reverse;
-    justify-content: flex-start;
-    align-items: center;
-    width: min(90%, 760px);
-    max-height: 90vh;
-    height: auto;
-    padding: 56px 32px 80px;
-    gap: 28px;
-    overflow-y: hidden;
-  }
-
-  .image {
-    width: 100%;
-    max-width: 420px;
-    height: auto;
-  }
-
-  .headline h1 {
-    font-size: 72px;
-  }
-
-  .headline h2 {
-    font-size: 36px;
-  }
-
-  .close-button {
-    top: 20px;
-    right: 24px;
-  }
-
-  .next-button {
-    right: 32px;
-    bottom: 24px;
-  }
-}
-
 @media (max-width: 600px) {
   .overlay {
     align-items: center;
@@ -541,5 +539,37 @@
 
   .next-button p {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 420px) {
+  .carousel {
+    height: 470px;
+  }
+
+  .items {
+    height: 320px;
+  }
+
+  .item {
+    min-height: 320px;
+  }
+
+  .card-footer {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .horizonline {
+    width: 100%;
+    flex: none;
+  }
+
+  .card-name {
+    width: 100%;
+  }
+
+  .nametag-button-section {
+    gap: 24px;
   }
 }

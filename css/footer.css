@@ -2,16 +2,13 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  width: 100%;
+width: 100%;
   min-height: 126px;
   height: auto;
-
-  padding: 40px 96px;
-  margin-top: 144px;
+ padding: 40px 96px;
+  margin-top: 130px;
   margin-bottom: 0;
-
-  box-sizing: border-box;
+box-sizing: border-box;
 }
 
 .footer-left {

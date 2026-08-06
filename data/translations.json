@@ -60,6 +60,9 @@
       "developerQuestion": "Brauchen Sie einen Frontend-Entwickler?",
       "developerHighlight": " Lass uns reden!",
       "form": {
+        "sending": "Senden...",
+        "sent": "Gesendet",
+        "failed": "Fehlgeschlagen",
         "nameLabel": "Wie ist dein Name?",
         "namePlaceholder": "Hier steht dein Name",
         "nameError": "Oops! Es scheint, als würde dein Name fehlen.",
@@ -276,6 +279,9 @@
       "developerQuestion": "Do you need a Frontend Developer?",
       "developerHighlight": " Let's talk!",
       "form": {
+        "sending": "Sending...",
+        "sent": "Sent",
+        "failed": "Failed",
         "nameLabel": "What's your name?",
         "namePlaceholder": "Your name goes here",
         "nameError": "Oops! It seems like your name is missing.",

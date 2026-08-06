@@ -94,9 +94,9 @@ function headerTemplate() {
         </div>
 
         <nav class="header-navigation">
-          <a href="#aboutMe" data-i18n="navigation.about">Über mich</a>
-          <a href="#skills" data-i18n="navigation.skills">Skills</a>
-          <a href="#projects" data-i18n="navigation.projects">Projekte</a>
+          <a href="index.html#aboutMe" data-i18n="navigation.about">Über mich</a>
+          <a href="index.html#skills" data-i18n="navigation.skills">Skills</a>
+          <a href="index.html#projects" data-i18n="navigation.projects">Projekte</a>
         </nav>
       </div>
 
@@ -108,9 +108,9 @@ function headerTemplate() {
 
     <div class="mobile-menu" id="mobileMenu">
       <nav class="mobile-navigation">
-        <a href="#aboutMe" data-i18n="navigation.about" onclick="closeMobileMenu()">Über mich</a>
-        <a href="#skills" data-i18n="navigation.skills" onclick="closeMobileMenu()">Skills</a>
-        <a href="#projects" data-i18n="navigation.projects" onclick="closeMobileMenu()">Projekte</a>
+        <a href="index.html#aboutMe" data-i18n="navigation.about" onclick="closeMobileMenu()">Über mich</a>
+        <a href="index.html#skills" data-i18n="navigation.skills" onclick="closeMobileMenu()">Skills</a>
+        <a href="index.html#projects" data-i18n="navigation.projects" onclick="closeMobileMenu()">Projekte</a>
 
         <div class="language-switcher">
           <button class="language-button" data-language="de" onclick="setLanguage('de')">

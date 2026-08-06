@@ -1,0 +1,161 @@
+{
+  "de": {
+    "general": {
+      "send": "Senden...",
+      "sent": "Gesendet",
+      "failed": "Fehlgeschlagen",
+      "button": "Auf gehts 😎"
+    },
+    "navigation": {
+      "about": "Über mich",
+      "projects": "Projekte",
+      "contact": "Kontaktiere mich"
+    },
+    "hero": {
+      "headline": "Frontend Entwickler",
+      "work": "Meine Arbeit",
+      "contact": "Kontaktieren",
+      "location": "Komme aus Büren",
+      "challenges": "Offen für neue Herausforderungen",
+      "remote": "Verfügbar für Remote"
+    },
+    "about": {
+      "title": "Wer ich bin",
+      "headline": "Über mich",
+      "content": "Hallo, ich bin Marco. Mich begeistert die Webentwicklung, weil sie Kreativität und logisches Denken verbindet. Ich entwickle moderne, benutzerfreundliche Anwendungen und lerne dabei ständig neue Technologien kennen.",
+      "location": "Ich komme aus Büren (NRW) und bin offen für Remote- oder Vor-Ort-Arbeit. Besonders freue ich mich auf Projekte, bei denen ich mich weiterentwickeln kann.",
+      "cognition": "Ich bin offen für neue Technologien und erweitere mein Wissen kontinuierlich, um mich fachlich und persönlich weiterzuentwickeln.",
+      "approach": "Herausforderungen gehe ich analytisch und lösungsorientiert an. Dabei helfen mir Kreativität, Ausdauer und der Austausch im Team, um saubere und effiziente Lösungen zu entwickeln."
+    },
+    "skills": {
+      "title": "Technologien",
+      "content": "Ich entwickle moderne und responsive Webanwendungen mit HTML, CSS und JavaScript und erweitere mein Wissen kontinuierlich durch neue Projekte und praktische Erfahrungen. Mir ist es wichtig, nicht nur aktuelle Technologien zu beherrschen, sondern auch offen für neue Frameworks und Tools zu sein. Da sich die Webentwicklung ständig verändert, sehe ich kontinuierliches Lernen als festen Bestandteil meiner Arbeit und freue mich darauf, mein Wissen stetig auszubauen.",
+      "headlineBefore": "Brauchst du noch eine",
+      "headlineSkill": "Fähigkeit?",
+      "text": "Kontaktiere mich gerne. Ich freue mich darauf, mein Wissen einzubringen, Neues zu lernen und mich kontinuierlich weiterzuentwickeln.",
+      "button": "Lass uns reden",
+      "bubble": "Ich interessiere mich besonders für das Lernen."
+    },
+    "projects": {
+      "headline": "Ausgewählte Projekte",
+      "intro": "Entdecke hier eine Auswahl meiner Arbeiten und interagiere mit den Projekten, um meine Fähigkeiten in der Praxis zu sehen.",
+      "join": {
+        "description": "Ein vom Kanban-System inspirierter Aufgabenmanager. Erstellen und organisieren Sie Aufgaben per Drag-and-Drop und weisen Sie Benutzer sowie Kategorien zu."
+      },
+      "elPolloLoco": {
+        "description": "Ein Jump-'n'-Run-Spiel, das auf einem objektorientierten Ansatz basiert."
+      },
+      "pokedex": {
+        "description": "Eine interaktive Pokédex-Webanwendung, die Pokémon-Daten über die PokéAPI lädt. Nutzer können Pokémon suchen, filtern und detaillierte Informationen wie Typen, Fähigkeiten und Statuswerte anzeigen."
+      }
+    },
+
+    "references": {
+      "headline": "Was Kollegen über mich sagen"
+    },
+    "contact": {
+      "title": "Kontaktiere mich",
+      "headline": "Lass uns zusammenarbeiten.",
+      "problemTitle": "Gibt es ein Problem zu lösen?",
+      "content": "Ich bin auf der Suche nach einer Position als Frontend Developer, in der ich mein Wissen einbringen und gleichzeitig weiter ausbauen kann. Mit Motivation, einer strukturierten Arbeitsweise und der Bereitschaft, kontinuierlich dazuzulernen, möchte ich aktiv zum Erfolg spannender Projekte beitragen. Wenn du jemanden suchst, der engagiert arbeitet und sich gerne neuen Herausforderungen stellt, dann lass uns zusammenarbeiten!",
+      "developerQuestion": "Brauchen Sie einen Frontend-Entwickler?",
+      "developerHighlight": " Lass uns reden!",
+      "form": {
+        "nameLabel": "Wie ist dein Name?",
+        "namePlaceholder": "Hier steht dein Name",
+        "nameError": "Oops! Es scheint, als würde dein Name fehlen.",
+        "emailLabel": "Wie ist deine E-Mail?",
+        "emailError": "Oops! Deine E-Mail-Adresse wird benötigt.",
+        "messageLabel": "Wie kann ich dir helfen?",
+        "messagePlaceholder": "Hallo Marco, ich interessiere mich für ...",
+        "messageError": "Was möchtest du entwickeln?",
+        "privacyBefore": "Ich habe die ",
+        "privacyLink": "Datenschutzerklärung",
+        "privacyAfter": " gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu."
+      }
+    },
+    "footer": {
+      "role": "Webentwickler",
+      "location": "Büren, Deutschland"
+    }
+  },
+  "en": {
+    "general": {
+      "send": "Sending...",
+      "sent": "Sent",
+      "failed": "Failed",
+      "button": "Let's go 😎"
+    },
+    "navigation": {
+      "about": "About me",
+      "projects": "Projects",
+      "contact": "Contact me"
+    },
+    "hero": {
+      "headline": "Frontend Developer",
+      "work": "My Work",
+      "contact": "Contact me",
+      "location": "Based in Büren",
+      "challenges": "Open to new challenges",
+      "remote": "Available for remote work"
+    },
+    "about": {
+      "title": "Who I am",
+      "headline": "About me",
+      "content": "Hello, I'm Marco. I'm passionate about web development because it combines creativity with logical thinking. I build modern, user-friendly applications while continuously learning and exploring new technologies.",
+      "location": "I'm based in Büren, North Rhine-Westphalia, and I'm open to both remote and on-site opportunities. I'm especially excited about projects that allow me to grow and further develop my skills.",
+      "cognition": "I'm open to learning new technologies and continuously expanding my knowledge to grow both professionally and personally.",
+      "approach": "I approach challenges with an analytical and solution-oriented mindset. Creativity, perseverance, and collaboration with my team help me develop clean and efficient solutions."
+    },
+    "skills": {
+      "title": "Technologies",
+      "content": "I develop modern, responsive web applications using HTML, CSS, and JavaScript while continuously expanding my knowledge through new projects and hands-on experience. I believe it's important not only to master current technologies but also to stay open to new frameworks and tools. As web development is constantly evolving, I see continuous learning as an essential part of my work and enjoy steadily growing my skills.",
+      "headlineBefore": "Do you need another",
+      "headlineSkill": "skill?",
+      "text": "Feel free to get in touch. I look forward to contributing my knowledge, learning new things, and continuously developing my skills.",
+      "button": "Let's talk",
+      "bubble": "I am particularly passionate about learning."
+    },
+    "projects": {
+      "headline": "Selected Projects",
+      "intro": "Explore a selection of my work and interact with the projects to see my skills in action.",
+      "join": {
+        "description": "A task manager inspired by the Kanban system. Create and organize tasks using drag and drop while assigning users and categories."
+      },
+      "elPolloLoco": {
+        "description": "A jump-and-run game based on an object-oriented programming approach."
+      },
+      "pokedex": {
+        "description": "An interactive Pokédex web application that loads Pokémon data from the PokéAPI. Users can search, filter, and view detailed information such as types, abilities, and stats."
+      }
+    },
+    "references": {
+      "headline": "What my colleagues say about me"
+    },
+    "contact": {
+      "title": "Contact me",
+      "headline": "Let's work together.",
+      "problemTitle": "Is there a problem to solve?",
+      "content": "I am looking for a Frontend Developer position where I can contribute my knowledge and continue to grow. With motivation, a structured approach, and a willingness to continuously learn, I aim to contribute actively to the success of exciting projects. If you're looking for someone who works with dedication and enjoys taking on new challenges, let's collaborate!",
+      "developerQuestion": "Do you need a Frontend Developer?",
+      "developerHighlight": " Let's talk!",
+      "form": {
+        "nameLabel": "What's your name?",
+        "namePlaceholder": "Your name goes here",
+        "nameError": "Oops! It seems like your name is missing.",
+        "emailLabel": "What's your email?",
+        "emailError": "Oops! Your email address is required.",
+        "messageLabel": "How can I help you?",
+        "messagePlaceholder": "Hello Marco, I am interested in ...",
+        "messageError": "What would you like to develop?",
+        "privacyBefore": "I have read the ",
+        "privacyLink": "privacy policy",
+        "privacyAfter": " and agree to the processing of my data as described."
+      }
+    },
+    "footer": {
+      "role": "Web Developer",
+      "location": "Büren, Germany"
+    }
+  }
+}

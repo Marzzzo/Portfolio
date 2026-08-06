@@ -35,13 +35,13 @@
         <div class="desktop-header">
           <div class="left-header-section">
             <div class="language-switcher">
-              <button class="language-button active" data-language="de" onclick="setLanguage('de')">DE</button>
+              <button class="language-button" data-language="de" onclick="setLanguage('de')">DE</button>
               <button class="language-button" data-language="en" onclick="setLanguage('en')">EN</button>
             </div>
             <nav class="header-navigation">
-              <a href="#aboutMe" data-i18n="headlineAboutMe">Über mich</a>
+              <a href="#aboutMe" data-i18n="navigation.about">Über mich</a>
               <a href="#skills">Skills</a>
-              <a href="#projects" data-i18n="headlineProjects">Projekte</a>
+              <a href="#projects" data-i18n="navigation.projects">Projekte</a>
             </nav>
           </div>
           <div class="logo-container">
@@ -51,9 +51,9 @@
         </div>
         <div class="mobile-menu" id="mobileMenu">
           <nav class="mobile-navigation">
-            <a href="#aboutMe" data-i18n="headlineAboutMe" onclick="closeMobileMenu()">Über mich</a>
+            <a href="#aboutMe" data-i18n="navigation.about" onclick="closeMobileMenu()">Über mich</a>
             <a href="#skills" onclick="closeMobileMenu()">Skills</a>
-            <a href="#projects" data-i18n="headlineProjects" onclick="closeMobileMenu()">Projekte</a>
+            <a href="#projects" data-i18n="navigation.projects" onclick="closeMobileMenu()">Projekte</a>
             <div class="language-switcher">
               <button class="language-button active" data-language="de" onclick="setLanguage('de')">DE</button>
               <button class="language-button" data-language="en" onclick="setLanguage('en')">EN</button>
@@ -64,14 +64,14 @@
 
       <main id="hero">
         <div class="nametag">
-          <h2 data-i18n="hero_headline">Frontend Entwickler</h2>
+          <h2 data-i18n="hero.headline">Frontend Entwickler</h2>
           <h1>Marco Burdick</h1>
           <div class="nametag-button-section">
             <button class="nametag-button" onclick="location.href = '#projects'">
-              <span data-i18n="my_work">Meine Arbeit</span>
+              <span data-i18n="hero.work">Meine Arbeit</span>
             </button>
             <button class="nametag-button" onclick="location.href = '#contactMe'">
-              <span data-i18n="contact_me">Kontaktieren</span>
+              <span data-i18n="hero.contact">Kontaktieren</span>
             </button>
           </div>
         </div>
@@ -89,11 +89,11 @@
             <div class="profil-image"></div>
           </div>
           <div class="who-i-am-container">
-            <h3 data-i18n="who_iam">Wer ich bin</h3>
+            <h3 data-i18n="about.title">Wer ich bin</h3>
             <div class="about-me">
-              <h1 data-i18n="aboutme_headline">Über mich</h1>
+              <h1 data-i18n="about.headline">Über mich</h1>
               <div>
-                <p data-i18n="aboutMe_content">
+                <p data-i18n="about.content">
                   Hallo, ich bin Marco. Mich begeistert die Webentwicklung, weil sie Kreativität und logisches Denken verbindet. Ich
                   entwickle moderne, benutzerfreundliche Anwendungen und lerne dabei ständig neue Technologien kennen.
                 </p>
@@ -101,21 +101,21 @@
               <div class="text-container">
                 <div class="aboutme-textbox">
                   <img src="/assets/icons/location_on.png" alt="" />
-                  <p data-i18n="location">
+                  <p data-i18n="about.location">
                     Ich komme aus Büren (NRW) und bin offen für Remote- oder Vor-Ort-Arbeit. Besonders freue ich mich auf Projekte, bei
                     denen ich mich weiterentwickeln kann.
                   </p>
                 </div>
                 <div class="aboutme-textbox">
                   <img src="/assets/icons/cognition.png" alt="" />
-                  <p data-i18n="cognition">
+                  <p data-i18n="about.cognition">
                     Ich bin offen für neue Technologien und erweitere mein Wissen kontinuierlich, um mich fachlich und persönlich
                     weiterzuentwickeln.
                   </p>
                 </div>
                 <div class="aboutme-textbox">
                   <img src="/assets/icons/new_releases.png" alt="" />
-                  <p data-i18n="releases">
+                  <p data-i18n="about.approach">
                     Herausforderungen gehe ich analytisch und lösungsorientiert an. Dabei helfen mir Kreativität, Ausdauer und der Austausch
                     im Team, um saubere und effiziente Lösungen zu entwickeln.
                   </p>
@@ -129,11 +129,11 @@
       <section id="skills" class="gradient">
         <div class="skill-container">
           <div class="skill-content">
-            <h3 data-i18n="tech" class="tech-color">Technologien</h3>
+            <h3 data-i18n="skills.title" class="tech-color">Technologien</h3>
             <div class="skillbox">
               <h1>Skill Set</h1>
               <div>
-                <p data-i18n="skill_content">
+                <p data-i18n="skills.content">
                   Ich entwickle moderne und responsive Webanwendungen mit HTML, CSS und JavaScript und erweitere mein Wissen kontinuierlich
                   durch neue Projekte und praktische Erfahrungen. Mir ist es wichtig, nicht nur aktuelle Technologien zu beherrschen,
                   sondern auch offen für neue Frameworks und Tools zu sein. Da sich die Webentwicklung ständig verändert, sehe ich
@@ -142,18 +142,18 @@
               </div>
               <div class="textarea-skill">
                 <div class="another-skill">
-                  <span data-i18n="skill_headline_2">Brauchst du noch eine</span>
-                  <h3 data-i18n="skill">Fähigkeit?</h3>
+                  <span data-i18n="skills.headlineBefore">Brauchst du noch eine</span>
+                  <h3 data-i18n="skills.headlineSkill">Fähigkeit?</h3>
                 </div>
                 <div>
-                  <p data-i18n="skill_p">
+                  <p data-i18n="skills.text">
                     Kontaktiere mich gerne ich freue mich darauf, mein Wissen einzubringen, Neues zu lernen und mich kontinuierlich
                     weiterzuentwickeln.
                   </p>
                 </div>
               </div>
               <div class="lets-talk-button">
-                <p data-i18n="skill_button">Lass uns reden</p>
+                <p data-i18n="skills.button">Lass uns reden</p>
               </div>
             </div>
           </div>
@@ -206,7 +206,7 @@
               </p>
 
               <div class="mindset-bubble">
-                <p data-i18n="bubble_content">Ich interessiere mich besonders für das Lernen.</p>
+                <p data-i18n="skills.bubble">Ich interessiere mich besonders für das Lernen.</p>
 
                 <div class="mindset-icons">
                   <div class="mindset-skill">
@@ -229,11 +229,11 @@
         <div class="projects-section">
           <div class="headline-projects">
             <h3>Portfolio</h3>
-            <h1 data-i18n="project_headline_h1">Ausgewählte Projekte</h1>
+            <h1 data-i18n="projects.headline">Ausgewählte Projekte</h1>
           </div>
 
           <div id="projects" class="textfield-projects">
-            <p data-i18n="project_p">
+            <p data-i18n="projects.intro">
               Entdecken Sie hier eine Auswahl meiner Arbeiten interagieren Sie mit den Projekten, um meine Fähigkeiten in der Praxis zu
               sehen.
             </p>
@@ -299,45 +299,44 @@
         </div>
       </section>
       <div class="headline-colleagues">
-        <h1 data-i18n="headline_colleagues">Was meine Kollegen über mich sagen</h1>
+        <h1 data-i18n="references.headline">Was meine Kollegen über mich sagen</h1>
       </div>
       <section class="carousel">
         <div class="items" id="carouselItems">
           <img class="quotes" src="/assets/icons/quotes.png" alt="quotes" />
         </div>
-
-        <div class="nav">
-          <button class="arrow-button" onclick="prevSlide()" aria-label="Vorherige Bewertung">
-            <svg width="19" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                class="arrow"
-                d="M2.123 9.729l7.251 7.251c.13.13.198.283.204.46.006.175-.064.337-.211.484a.688.688 0 01-.472.217c-.168.002-.325-.07-.472-.217L.316 9.816A1.046 1.046 0 01.07 9.46 1.089 1.089 0 010 9.062c0-.143.024-.276.07-.397.048-.121.13-.24.246-.357L8.423.201a.668.668 0 01.455-.2.642.642 0 01.489.2c.147.147.22.305.22.475 0 .17-.073.33-.22.476L2.123 8.396h15.439c.19 0 .348.063.475.19a.645.645 0 01.191.476c0 .19-.063.349-.19.476a.646.646 0 01-.476.191H2.123z"
-              />
-            </svg>
-          </button>
-
-          <div class="dots" id="carouselDots"></div>
-
-          <button class="arrow-button" onclick="nextSlide()" aria-label="Nächste Bewertung">
-            <svg width="19" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                class="arrow"
-                d="M16.105 9.745H.667a.646.646 0 01-.476-.19A.646.646 0 010 9.077c0-.19.064-.348.191-.475a.646.646 0 01.476-.191h15.438L8.854 1.16A.66.66 0 018.65.701c-.006-.176.065-.337.212-.484A.688.688 0 019.333 0c.168-.002.325.07.472.217l8.108 8.107c.116.117.198.236.245.357.047.121.07.254.07.397 0 .144-.023.276-.07.398-.047.121-.129.24-.245.356L9.805 17.94a.668.668 0 01-.455.2.642.642 0 01-.488-.2c-.147-.147-.221-.306-.221-.476 0-.17.074-.328.22-.475l7.244-7.244z"
-              />
-            </svg>
-          </button>
-        </div>
       </section>
+      <div class="nav">
+        <button class="arrow-button" onclick="prevSlide()" aria-label="Vorherige Bewertung">
+          <svg width="19" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              class="arrow"
+              d="M2.123 9.729l7.251 7.251c.13.13.198.283.204.46.006.175-.064.337-.211.484a.688.688 0 01-.472.217c-.168.002-.325-.07-.472-.217L.316 9.816A1.046 1.046 0 01.07 9.46 1.089 1.089 0 010 9.062c0-.143.024-.276.07-.397.048-.121.13-.24.246-.357L8.423.201a.668.668 0 01.455-.2.642.642 0 01.489.2c.147.147.22.305.22.475 0 .17-.073.33-.22.476L2.123 8.396h15.439c.19 0 .348.063.475.19a.645.645 0 01.191.476c0 .19-.063.349-.19.476a.646.646 0 01-.476.191H2.123z"
+            />
+          </svg>
+        </button>
+
+        <div class="dots" id="carouselDots"></div>
+
+        <button class="arrow-button" onclick="nextSlide()" aria-label="Nächste Bewertung">
+          <svg width="19" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              class="arrow"
+              d="M16.105 9.745H.667a.646.646 0 01-.476-.19A.646.646 0 010 9.077c0-.19.064-.348.191-.475a.646.646 0 01.476-.191h15.438L8.854 1.16A.66.66 0 018.65.701c-.006-.176.065-.337.212-.484A.688.688 0 019.333 0c.168-.002.325.07.472.217l8.108 8.107c.116.117.198.236.245.357.047.121.07.254.07.397 0 .144-.023.276-.07.398-.047.121-.129.24-.245.356L9.805 17.94a.668.668 0 01-.455.2.642.642 0 01-.488-.2c-.147-.147-.221-.306-.221-.476 0-.17.074-.328.22-.475l7.244-7.244z"
+            />
+          </svg>
+        </button>
+      </div>
 
       <section id="contactMe" class="contact-me-section">
         <div class="work-container">
           <div class="headline-container">
-            <p data-i18n="contact_me">Kontaktiere mich</p>
-            <h2 data-i18n="contact_me_headline">Lassen Sie uns zusammenarbeiten.</h2>
+            <p data-i18n="contact.title">Kontaktiere mich</p>
+            <h2 data-i18n="contact.headline">Lassen Sie uns zusammenarbeiten.</h2>
           </div>
           <div class="problem-container">
-            <h3 data-i18n="problem_title">Gibt es ein Problem zu lösen?</h3>
-            <p data-i18n="problem_content">
+            <h3 data-i18n="contact.problemTitle">Gibt es ein Problem zu lösen?</h3>
+            <p data-i18n="contact.content">
               Ich bin auf der Suche nach einer Position als Frontend Developer, in der ich mein Wissen einbringen und gleichzeitig weiter
               ausbauen kann. Mit Motivation, einer strukturierten Arbeitsweise und der Bereitschaft, kontinuierlich dazuzulernen, möchte ich
               aktiv zum Erfolg spannender Projekte beitragen. Wenn du jemanden suchst, der engagiert arbeitet und sich gerne neuen
@@ -345,32 +344,44 @@
             </p>
 
             <div class="problem-content-2">
-              <p data-i18n="problem_content_2">Brauchen Sie einen Frontend-Entwickler?</p>
-              <span data-i18n="problem_content_2_span"> Lass uns reden!</span>
+              <p data-i18n="contact.developerQuestion">Brauchen Sie einen Frontend-Entwickler?</p>
+              <span data-i18n="contact.developerHighlight"> Lass uns reden!</span>
             </div>
           </div>
         </div>
         <div id="contactMe" class="contact-section">
           <form id="contactForm">
             <div class="border-form-container">
-              <h2 data-i18n="name_question">Wie ist dein Name?</h2>
-              <input id="name" type="text" name="name" data-i18n-placeholder="name_placeholder" placeholder="Hier steht Ihr Name" />
-              <p data-i18n="name_error" class="error-message">Oops! Es scheint, als würde Ihr Name fehlen.</p>
+              <h2 data-i18n="contact.form.nameLabel">Wie ist dein Name?</h2>
+              <input
+                id="name"
+                type="text"
+                name="name"
+                data-i18n-placeholder="contact.form.namePlaceholder"
+                placeholder="Hier steht Ihr Name"
+              />
+              <p data-i18n="contact.form.nameError" class="error-message">Oops! Es scheint, als würde Ihr Name fehlen.</p>
             </div>
             <div class="border-form-container">
-              <h2 data-i18n="email_question">Wie ist deine email?</h2>
-              <input id="email" type="email" name="email" placeholder="yourmail@email.com" />
-              <p data-i18n="email_error" class="error-message">Hoppla! Ihre E-Mail-Adresse wird benötigt.</p>
+              <h2 data-i18n="contact.form.emailLabel">Wie ist deine email?</h2>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                data-i18n-placeholder="contact.form.emailPlaceholder"
+                placeholder="yourmail@email.com"
+              />
+              <p data-i18n="contact.form.emailError" class="error-message">Hoppla! Ihre E-Mail-Adresse wird benötigt.</p>
             </div>
             <div class="border-form-bottom">
-              <h2 data-i18n="message_question">Wie kann ich dir helfen?</h2>
+              <h2 data-i18n="contact.form.messageLabel">Wie kann ich dir helfen?</h2>
               <textarea
                 id="message"
                 name="message"
-                data-i18n-placeholder="message_placeholder"
+                data-i18n-placeholder="contact.form.messagePlaceholder"
                 placeholder="Hallo Marco, ich interessiere mich für ..."
               ></textarea>
-              <p class="error-message">Was müssen Sie entwickeln?</p>
+              <p data-i18n="contact.form.messageError" class="error-message">Was müssen Sie entwickeln?</p>
             </div>
             <div class="policy-container">
               <label class="checkbox">
@@ -378,13 +389,13 @@
                 <img class="icon unchecked" src="/assets/icons/checkbox-empty.svg" alt="" />
                 <img class="icon checked" src="/assets/icons/check_box.svg" alt="" />
                 <p>
-                  <span data-i18n="privacy_before">Ich habe die </span>
-                  <a href="/privacy-policy" data-i18n="privacy_link">Datenschutzerklärung</a>
-                  <span data-i18n="privacy_after"> gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu. </span>
+                  <span data-i18n="contact.form.privacyBefore">Ich habe die </span>
+                  <a href="/privacy-policy" data-i18n="contact.form.privacyLink">Datenschutzerklärung</a>
+                  <span data-i18n="contact.form.privacyAfter"> gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu. </span>
                 </p>
               </label>
               <div class="button-section">
-                <button data-i18n="button" id="submitButton" type="submit">Auf gehts 😎</button>
+                <button data-i18n="general.button" id="submitButton" type="submit">Auf gehts 😎</button>
               </div>
             </div>
           </form>
@@ -392,7 +403,7 @@
       </section>
       <footer id="footer"></footer>
     </div>
-    <script src="/js/translate-object.js"></script>
+    <script src="/js/translate.js"></script>
     <script src="/js/formvalidate.js"></script>
     <script src="/js/postToPhp.js"></script>
     <script src="script.js"></script>

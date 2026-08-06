@@ -1,14 +1,15 @@
 let currentProject = 0;
 let trackCounter = 6;
 let currentSlide = 0;
-let currentLanguage = "de";
 let images = document.querySelectorAll(".img-container img");
 
-function init() {
-  // renderHeader();
+async function init() {
+  await loadTranslations();
+  renderHeader();
   renderFooter();
   renderTextbar(trackCounter);
   renderCarousel();
+  updateLanguage();
 }
 
 function initPolicyPage() {
@@ -156,35 +157,45 @@ function nextProject() {
   document.getElementById("overlay").innerHTML = overlayTemplate(projects[currentProject]);
 }
 
-function getCurrentTranslation() {
-  return currentLanguage === "de" ? translationDE : translationEN;
-}
-
 function setLanguage(language) {
   currentLanguage = language;
-  document.querySelectorAll(".language-button").forEach((button) => {
-    button.classList.toggle("active", button.dataset.language === language);
-  });
-
+  localStorage.setItem("language", language);
   updateLanguage();
 }
 
 function updateLanguage() {
-  const translation = getCurrentTranslation();
+  document.documentElement.lang = currentLanguage;
+  updateTexts();
+  updatePlaceholders();
+  updateLanguageButtons();
+  renderCarousel();
+}
+
+function updateTexts() {
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const key = element.dataset.i18n;
-    if (translation[key] !== undefined) {
-      element.textContent = translation[key];
+    const translatedText = translate(key);
+    if (translatedText !== key) {
+      element.textContent = translatedText;
     }
   });
+}
+
+function updatePlaceholders() {
   document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
     const key = element.dataset.i18nPlaceholder;
-
-    if (translation[key] !== undefined) {
-      element.placeholder = translation[key];
+    const translatedText = translate(key);
+    if (translatedText !== key) {
+      element.placeholder = translatedText;
+      element.dataset.placeholder = translatedText;
     }
   });
-  renderCarousel();
+}
+
+function updateLanguageButtons() {
+  document.querySelectorAll(".language-button").forEach((button) => {
+    button.classList.toggle("active", button.dataset.language === currentLanguage);
+  });
 }
 
 function toggleMobileMenu() {

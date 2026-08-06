@@ -20,7 +20,7 @@ function overlayTemplate(project) {
           </div>
           <div class="fonts-section">
             <h3>Worum geht es bei diesem Projekt?</h3>
-            <span>${project.description}</span>
+            <span>${translate(project.descriptionKey)}</span>
           </div>
           <div class="workframe">
           ${renderTechnologies(project.technologies)}
@@ -57,14 +57,16 @@ function trackTemplate(i) {
 }
 
 function textbarTemplate() {
-  return `<div>•</div>
-          <div data-i18n="hero_headline">Frontend Entwickler</div>
-          <div>•</div>
-          <div data-i18n="come_from">Komme aus Büren</div>
-          <div>•</div>
-          <div data-i18n='challenges'>Offen für neue Herausforderungen</div>
-          <div>•</div>
-          <div data-i18n='remote_work'>Verfügbar für Remote</div>`;
+  return `
+    <div>•</div>
+    <div data-i18n="hero.headline">Frontend Entwickler</div>
+    <div>•</div>
+    <div data-i18n="hero.location">Komme aus Büren</div>
+    <div>•</div>
+    <div data-i18n="hero.challenges">Offen für neue Herausforderungen</div>
+    <div>•</div>
+    <div data-i18n="hero.remote">Verfügbar für Remote</div>
+  `;
 }
 
 function headerTemplate() {
@@ -92,9 +94,9 @@ function headerTemplate() {
         </div>
 
         <nav class="header-navigation">
-          <a href="#aboutMe" data-i18n="headlineAboutMe">Über mich</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects" data-i18n="headlineProjects">Projekte</a>
+          <a href="#aboutMe" data-i18n="navigation.about">Über mich</a>
+          <a href="#skills" data-i18n="navigation.skills">Skills</a>
+          <a href="#projects" data-i18n="navigation.projects">Projekte</a>
         </nav>
       </div>
 
@@ -106,9 +108,9 @@ function headerTemplate() {
 
     <div class="mobile-menu" id="mobileMenu">
       <nav class="mobile-navigation">
-        <a href="#aboutMe" data-i18n="headlineAboutMe" onclick="closeMobileMenu()">Über mich</a>
-        <a href="#skills" onclick="closeMobileMenu()">Skills</a>
-        <a href="#projects" data-i18n="headlineProjects" onclick="closeMobileMenu()">Projekte</a>
+        <a href="#aboutMe" data-i18n="navigation.about" onclick="closeMobileMenu()">Über mich</a>
+        <a href="#skills" data-i18n="navigation.skills" onclick="closeMobileMenu()">Skills</a>
+        <a href="#projects" data-i18n="navigation.projects" onclick="closeMobileMenu()">Projekte</a>
 
         <div class="language-switcher">
           <button class="language-button" data-language="de" onclick="setLanguage('de')">

@@ -9,10 +9,6 @@
     width: 70px;
   }
 
-  .item {
-    width: min(560px, calc(100% - 40px));
-  }
-
   .item.left {
     transform: translate3d(-480px, 0, -250px) scale(0.8);
   }
@@ -76,8 +72,6 @@
   #header {
     padding: 0 16px;
   }
-
- 
 
   .mobile-menu {
     padding: 80px 20px 0;
@@ -190,7 +184,7 @@
   }
 
   .carousel {
-    height: 440px;
+    overflow: unset;
   }
 
   .carousel::before,
@@ -241,7 +235,7 @@
   }
 
   .nav {
-    margin-top: 48px;
+    margin-top: 8px;
   }
 
   .arrow-button {
@@ -363,12 +357,12 @@
     flex-direction: column-reverse;
     justify-content: flex-start;
     align-items: center;
-width: min(90%, 760px);
+    width: min(90%, 760px);
     max-height: 90vh;
     height: auto;
- padding: 56px 32px 80px;
+    padding: 56px 32px 80px;
     gap: 28px;
- overflow-y: hidden;
+    overflow-y: hidden;
   }
 
   .image {

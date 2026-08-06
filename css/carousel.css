@@ -28,7 +28,7 @@
 .carousel {
   position: relative;
   width: 100%;
-  height: 386px;
+  /* height: 386px; */
   overflow: hidden;
   box-sizing: border-box;
 }

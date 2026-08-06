@@ -113,11 +113,10 @@
   }
 }
 
-@media (max-width: 900px) { 
-
+@media (max-width: 900px) {
   .main-impressum {
     padding: 0 16px;
-        gap: 16px;
+    gap: 16px;
   }
 
   .imprint-headline {
@@ -140,7 +139,7 @@
     font-size: 14px;
   }
 
-  .footer-left{
+  .footer-left {
     gap: 8px;
   }
 }
@@ -258,10 +257,6 @@
 
   .logo-container {
     display: none;
-  }
-
-  .carousel {
-    overflow: unset;
   }
 
   .carousel::before,
@@ -544,7 +539,7 @@
 
 @media (max-width: 420px) {
   .carousel {
-    height: 470px;
+    height: 490px;
   }
 
   .items {

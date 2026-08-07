@@ -11,9 +11,6 @@ body {
   justify-content: center;
   height: 100%;
   font-family: "fira";
-  background-image: url(/assets/images/Background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   overflow-x: hidden;
   user-select: none;
 }
@@ -36,17 +33,10 @@ body {
 }
 
 .content-max-width {
-  position: relative;
   width: 100%;
   max-width: 1440px;
-  min-height: 100%;
   margin: 0 auto;
-}
-
-#hero {
-  position: relative;
-  overflow-x: clip;
-  overflow-y: visible;
+  box-sizing: border-box;
 }
 
 body.menu-open {

@@ -2,7 +2,10 @@ html,
 body {
   min-height: 100vh;
   margin: 0;
-  background-color: #1c1c1c;
+  background-image: url(/assets/images/Background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .main-impressum {
@@ -24,21 +27,21 @@ body {
 }
 
 section h2 {
-  font-family: 'karla';
+  font-family: "karla";
   font-weight: 700;
   font-size: 26px;
   color: rgba(255, 255, 255, 1);
 }
 
 section h4 {
-  font-family: 'karla';
+  font-family: "karla";
   color: white;
   font-weight: 500;
   font-size: 20px;
 }
 
 section p {
-  font-family: 'karla';
+  font-family: "karla";
   font-weight: 300;
   font-size: 19px;
   color: rgba(61, 207, 182, 1);

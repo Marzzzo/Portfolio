@@ -22,16 +22,32 @@
     <section class="overlay d-none" id="overlay" onclick="closeOverlay(event)">
       <!--overlays rendered here-->
     </section>
-    <div class="textbar" id="scrollContainer">
-      <div class="textbar-track" id="textbarTrack">
-        <!--Textbar rendered here-->
+    <main id="hero">
+      <div class="textbar" id="scrollContainer">
+        <div class="textbar-track" id="textbarTrack">
+          <!--Textbar rendered here-->
+        </div>
       </div>
-    </div>
-    <div class="content-max-width">
       <header id="header">
-        <!--Header rendered here-->
+        <div class="content-max-width">
+          <!--Header rendered here-->
+        </div>
       </header>
-      <main id="hero">
+      <div class="verticalflow-right">
+        <div class="mailto-link">
+          <a href="mailto:kontakt@marco-burdick.de"> kontakt@marco-burdick.de </a>
+        </div>
+        <div class="social-icons">
+          <a href="https://github.com/Marzzzo" target="_blank">
+            <img src="/assets/icons/github.png" alt="GitHub" />
+          </a>
+          <a href="DEIN-LINKEDIN-LINK" target="_blank">
+            <img src="/assets/icons/linkedin.png" alt="LinkedIn" />
+          </a>
+        </div>
+        <div class="vertical-line"></div>
+      </div>
+      <div class="content-max-width">
         <div class="nametag">
           <h2 data-i18n="hero.headline">Frontend Entwickler</h2>
           <h1>Marco Burdick</h1>
@@ -44,7 +60,9 @@
             </button>
           </div>
         </div>
-      </main>
+      </div>
+    </main>
+    <div class="content-max-width">
       <section id="aboutMe" class="other-section">
         <div class="about-me-container">
           <div class="profil-wrapper">
@@ -115,9 +133,11 @@
                   </p>
                 </div>
               </div>
-              <div class="lets-talk-button">
-                <p data-i18n="skills.button">Lass uns reden</p>
-              </div>
+              <a href="#contactMe">
+                <div class="lets-talk-button">
+                  <p data-i18n="skills.button">Lass uns reden</p>
+                </div>
+              </a>
             </div>
           </div>
           <div class="skill-icon-box">

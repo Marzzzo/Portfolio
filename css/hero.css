@@ -1,8 +1,14 @@
 #hero {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100svh;
   overflow-x: clip;
   overflow-y: visible;
-  background-image: url(/assets/images/Background.jpg);
+  background-image: url("/assets/images/Background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -172,14 +178,7 @@
 }
 
 main {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 100%;
-  min-height: 100svh;
-  overflow: hidden;
 }
 
 .nametag {
@@ -435,8 +434,96 @@ main {
   transform: scale(1.15);
 }
 
-.vertical-line {
+.line-right {
   width: 1px;
   height: 186px;
   background-color: white;
+}
+
+.mail {
+  display: none;
+}
+
+.verticalflow-left {
+  position: absolute;
+  z-index: 1;
+  left: 96px;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 48px;
+  border: 1px solid #3dcfb6;
+  border-radius: 32px;
+  margin-bottom: 24px;
+}
+
+.arrow-down {
+  display: block;
+  color: white;
+  font-size: 20px;
+  line-height: 1;
+  animation: arrowMove 1.5s ease-in-out infinite;
+}
+
+@keyframes arrowMove {
+  0%,
+  100% {
+    transform: translateY(-4px);
+  }
+
+  50% {
+    transform: translateY(4px);
+  }
+}
+
+.line-left {
+  width: 1px;
+  height: 240px;
+  background-color: #3dcfb6;
+}
+
+.social-icons a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+.social-icons img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  transition: filter 0.2s ease;
+}
+
+.social-icons a::after {
+  content: "";
+  position: absolute;
+  left: calc(50% + 14px + 4px);
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #3dcfb6;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.social-icons a:hover img {
+  filter: brightness(0) invert(1);
+}
+
+.social-icons a:hover::after {
+  opacity: 1;
 }

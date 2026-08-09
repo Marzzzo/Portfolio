@@ -148,6 +148,41 @@
   }
 }
 
+@media (max-width: 850px) {
+  .mailto-link {
+    display: none;
+  }
+
+  .mail {
+    display: block;
+  }
+
+  .verticalflow-right {
+    right: 16px;
+  }
+
+  .verticalflow-left {
+    left: 16px;
+  }
+
+  .verticalflow-left,
+  .verticalflow-right {
+    bottom: 0;
+  }
+
+  .line-left {
+    height: 224px;
+  }
+
+  .line-right {
+    height: 112px;
+  }
+
+  .textbar {
+    bottom: 20px;
+  }
+}
+
 @media (max-width: 650px) {
   #header {
     padding: 0 16px;

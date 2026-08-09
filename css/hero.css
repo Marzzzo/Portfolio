@@ -258,12 +258,15 @@ main {
 
 .textbar {
   position: absolute;
+  z-index: 2;
   bottom: 40px;
   left: 50%;
   transform: translateX(-50%) rotate(-3deg);
   width: 100vw;
   height: 62px;
   background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   overflow: hidden;
   white-space: nowrap;
 }
@@ -375,6 +378,7 @@ main {
 
 .verticalflow-right {
   position: absolute;
+  z-index: 1;
   right: 96px;
   bottom: 0;
   display: flex;

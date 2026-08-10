@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Impressum</title>
-    <link rel="shortcut icon" href="./icons/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/assets/icons/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="/css/hero.css" />
     <link rel="stylesheet" href="/css/footer.css" />
@@ -14,9 +14,9 @@
   <body onload="initImpressumPage()">
     <div class="content-max-width">
       <header id="header"></header>
-      <h1 class="imprint-headline">Rechtliche Hinweise</h1>
+      <h1 class="imprint-headline" data-i18n="legalNotice.headline">Rechtliche Hinweise</h1>
       <section class="main-impressum">
-        <h2>Impressum</h2>
+        <h2 data-i18n="legalNotice.imprint">Impressum</h2>
 
         <p>
           Marco Burdick<br />
@@ -24,17 +24,15 @@
           33142 Büren
         </p>
 
-        <h2>Kontakt</h2>
-        <p>
-          Telefon: 015156033437<br />
-          E-Mail: kontakt@marco-burdick.de
-        </p>
+        <h2 data-i18n="legalNotice.contact">Kontakt</h2>
+        <p><span data-i18n="legalNotice.email">E-Mail:</span> kontakt@marco-burdick.de</p>
 
-        <p>Quelle: <a href="https://www.e-recht24.de">eRecht24</a></p>
+        <p><span data-i18n="legalNotice.source">Quelle:</span> <a href="https://www.e-recht24.de">eRecht24</a></p>
       </section>
       <footer id="footer"></footer>
     </div>
     <script src="./js/templates.js"></script>
+    <script src="/js/translate.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>

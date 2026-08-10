@@ -1,5 +1,12 @@
 {
   "de": {
+    "legalNotice": {
+      "headline": "Rechtliche Hinweise",
+      "imprint": "Impressum",
+      "contact": "Kontakt",
+      "email": "E-Mail:",
+      "source": "Quelle:"
+    },
     "general": {
       "send": "Senden...",
       "sent": "Gesendet",
@@ -219,6 +226,13 @@
     }
   },
   "en": {
+    "legalNotice": {
+      "headline": "Legal Notice",
+      "imprint": "Legal Notice",
+      "contact": "Contact",
+      "email": "Email:",
+      "source": "Source:"
+    },
     "general": {
       "send": "Sending...",
       "sent": "Sent",

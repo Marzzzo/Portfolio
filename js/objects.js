@@ -1,3 +1,16 @@
+/**
+ * List of portfolio projects displayed on the website.
+ *
+ * @type {Array<{
+ *   number: string,
+ *   title: string,
+ *   descriptionKey: string,
+ *   image: string,
+ *   github: string,
+ *   liveTest: string,
+ *   technologies: string[]
+ * }>}
+ */
 const projects = [
   {
     number: "01",
@@ -28,6 +41,17 @@ const projects = [
   },
 ];
 
+/**
+ * List of testimonial cards displayed in the carousel.
+ * Each card contains localized descriptions and positions.
+ *
+ * @type {Array<{
+ *   id: string,
+ *   description: {de: string, en: string},
+ *   name: string,
+ *   position: {de: string, en: string}
+ * }>}
+ */
 const carouselCards = [
   {
     id: "1",

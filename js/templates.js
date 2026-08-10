@@ -1,3 +1,9 @@
+/**
+ * Generates the HTML markup for a list of project technologies.
+ *
+ * @param {string[]} technologies - The technologies used in the project.
+ * @returns {string} The generated HTML markup for the technologies.
+ */
 function renderTechnologies(technologies) {
   return technologies
     .map(
@@ -11,6 +17,19 @@ function renderTechnologies(technologies) {
     .join("");
 }
 
+/**
+ * Generates the HTML markup for a project overlay.
+ *
+ * @param {Object} project - The project data to display.
+ * @param {string} project.number - The project number.
+ * @param {string} project.title - The project title.
+ * @param {string} project.descriptionKey - The translation key for the project description.
+ * @param {string} project.image - The path to the project image.
+ * @param {string} project.github - The URL of the GitHub repository.
+ * @param {string} project.liveTest - The URL of the live project.
+ * @param {string[]} project.technologies - The technologies used in the project.
+ * @returns {string} The generated HTML markup for the project overlay.
+ */
 function overlayTemplate(project) {
   return `      <div class="card">
         <div class="left-section">
@@ -50,12 +69,23 @@ function overlayTemplate(project) {
       </div>`;
 }
 
+/**
+ * Generates the HTML markup for a textbar track.
+ *
+ * @param {number} i - The index used to create the unique track ID.
+ * @returns {string} The generated HTML markup for the track.
+ */
 function trackTemplate(i) {
   return `<div class="inline-container" id="scroll-${i}">
             ${textbarTemplate()}
           </div>`;
 }
 
+/**
+ * Generates the HTML markup for the textbar content.
+ *
+ * @returns {string} The generated HTML markup for the textbar.
+ */
 function textbarTemplate() {
   return `
     <div>•</div>
@@ -69,6 +99,12 @@ function textbarTemplate() {
   `;
 }
 
+/**
+ * Generates the HTML markup for the desktop and mobile header,
+ * including navigation, language selection, and the mobile menu.
+ *
+ * @returns {string} The generated HTML markup for the header.
+ */
 function headerTemplate() {
   return `
     <div class="mobile-header">
@@ -126,6 +162,12 @@ function headerTemplate() {
   `;
 }
 
+/**
+ * Generates the HTML markup for the footer,
+ * including contact links, legal information, and personal details.
+ *
+ * @returns {string} The generated HTML markup for the footer.
+ */
 function footerTemplate() {
   return `
     <div class="footer-left">
@@ -150,6 +192,16 @@ function footerTemplate() {
   `;
 }
 
+/**
+ * Generates the HTML markup for a carousel testimonial card
+ * based on the currently selected language.
+ *
+ * @param {Object} card - The testimonial card data.
+ * @param {Object} card.description - The localized testimonial descriptions.
+ * @param {string} card.name - The name of the person giving the testimonial.
+ * @param {Object} card.position - The localized relationship or position.
+ * @returns {string} The generated HTML markup for the carousel card.
+ */
 function carouselCardTemplate(card) {
   return `
     <p class="card-description">

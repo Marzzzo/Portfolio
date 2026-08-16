@@ -131,25 +131,22 @@
 .item.active {
   transform: translate3d(0, 0, 0) scale(1);
   opacity: 1;
-  filter: blur(0);
   z-index: 8;
   pointer-events: auto;
   background-color: rgb(31, 91, 82);
 }
 
 .item.left {
-  transform: translate3d(-620px, 0, -250px) scale(0.8);
+  transform: translate3d(-700px, 0, -250px) scale(0.9);
   opacity: 1;
-  filter: blur(1px);
   z-index: 2;
   pointer-events: none;
   background-color: rgb(12, 41, 37);
 }
 
 .item.right {
-  transform: translate3d(620px, 0, -250px) scale(0.8);
+  transform: translate3d(700px, 0, -250px) scale(0.9);
   opacity: 1;
-  filter: blur(1px);
   z-index: 2;
   pointer-events: none;
   background-color: rgb(12, 41, 37);
@@ -158,7 +155,6 @@
 .item.hidden {
   transform: translate3d(0, 0, -500px) scale(0.6);
   opacity: 0;
-  filter: blur(1px);
   z-index: 0;
   pointer-events: none;
   background-color: rgb(12, 41, 37);

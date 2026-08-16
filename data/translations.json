@@ -41,7 +41,7 @@
       "headlineSkill": "Fähigkeit?",
       "text": "Kontaktiere mich gerne. Ich freue mich darauf, mein Wissen einzubringen, Neues zu lernen und mich kontinuierlich weiterzuentwickeln.",
       "button": "Lass uns reden",
-      "bubble": "Ich interessiere mich besonders für das Lernen."
+      "bubble": "Ich interessiere mich besonders für das Lernen:"
     },
     "projects": {
       "headline": "Ausgewählte Projekte",
@@ -72,9 +72,9 @@
         "failed": "Fehlgeschlagen",
         "nameLabel": "Wie ist dein Name?",
         "namePlaceholder": "Hier steht dein Name",
-        "nameError": "Oops! Es scheint, als würde dein Name fehlen.",
+        "nameError": "Ohwei! Es scheint, als würde dein Name fehlen.",
         "emailLabel": "Wie ist deine E-Mail?",
-        "emailError": "Oops! Deine E-Mail-Adresse wird benötigt.",
+        "emailError": "Ohwei! Deine E-Mail-Adresse wird benötigt.",
         "messageLabel": "Wie kann ich dir helfen?",
         "messagePlaceholder": "Hallo Marco, ich interessiere mich für ...",
         "messageError": "Was möchtest du entwickeln?",
@@ -85,7 +85,8 @@
     },
     "footer": {
       "role": "Webentwickler",
-      "location": "Büren, Deutschland"
+      "location": "Büren, Deutschland",
+      "imprint": "Impressum"
     },
     "privacy": {
       "browserTitle": "Datenschutz",
@@ -267,7 +268,7 @@
       "headlineSkill": "skill?",
       "text": "Feel free to get in touch. I look forward to contributing my knowledge, learning new things, and continuously developing my skills.",
       "button": "Let's talk",
-      "bubble": "I am particularly passionate about learning."
+      "bubble": "I am particularly passionate about learning:"
     },
     "projects": {
       "headline": "Selected Projects",
@@ -311,7 +312,8 @@
     },
     "footer": {
       "role": "Web Developer",
-      "location": "Büren, Germany"
+      "location": "Büren, Germany",
+      "imprint": "Legal Notice"
     },
     "privacy": {
       "browserTitle": "Data protection",

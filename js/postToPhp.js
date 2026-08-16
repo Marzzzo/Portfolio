@@ -66,3 +66,5 @@ function resetContactForm() {
     checkForm();
   }, 2000);
 }
+
+contactForm.addEventListener("submit", sendContactForm);

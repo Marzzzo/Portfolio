@@ -30,15 +30,6 @@ const projects = [
     liveTest: "https://el-pollo-loco.marco-burdick.de",
     technologies: ["HTML", "CSS", "JavaScript"],
   },
-  {
-    number: "03",
-    title: "Pokedex",
-    descriptionKey: "projects.pokedex.description",
-    image: "/assets/images/overlay-pokedex.png",
-    github: "https://github.com/Marzzzo/Pokedex",
-    liveTest: "https://pokedex.marco-burdick.de/",
-    technologies: ["JavaScript", "HTML", "CSS"],
-  },
 ];
 
 /**

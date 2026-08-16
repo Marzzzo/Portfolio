@@ -138,7 +138,9 @@ function headerTemplate() {
 
       <div class="logo-container">
         <img class="logo-filled" src="/assets/icons/logo-initial.png" alt="">
-        <img class="logo-outline" src="/assets/icons/logo-initial-hover.png" alt="">
+        <a href="/">
+          <img class="logo-outline" src="/assets/icons/logo-initial-hover.png" alt="" />
+        </a>
       </div>
     </div>
 
@@ -184,8 +186,8 @@ function footerTemplate() {
       </div>
         <span class="copyright">&copy; Marco Burdick 2026</span>
       <div class="footer-right">
-        <a href="https://github.com/Marzzzo" data-i18n="footer.github">Github</a>
-        <a href="https://www.linkedin.com/in/marco-burdick-767a22422/" data-i18n="footer.linkedin">LinkedIn</a>
+        <a href="https://github.com/Marzzzo" target="_blank" rel="noopener noreferrer" data-i18n="footer.github">Github</a>
+        <a href="https://www.linkedin.com/in/marco-burdick-767a22422/" target="_blank" rel="noopener noreferrer" data-i18n="footer.linkedin">LinkedIn</a>
         <a href="mailto:kontakt@marco-burdick.de" data-i18n="footer.email">Email</a>
         <a href="/imprint" data-i18n="footer.imprint">Impressum</a>
     </div>

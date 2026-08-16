@@ -11,8 +11,8 @@
   width: 100%;
   padding: 32px;
   border: 1px solid rgba(61, 207, 182, 1);
+  background-color: rgba(61, 207, 182, 0.1);
   border-radius: 30px;
-  background: radial-gradient(22.43% 43.85% at 1.22% 52.45%, rgba(44, 236, 201, 0.3) 0%, #192525 100%);
   gap: 32px;
 }
 
@@ -33,6 +33,7 @@
   display: flex;
   justify-content: space-between;
   padding: 20px 96px 144px 96px;
+  background: radial-gradient(40% 67% at 0% 50%, rgba(44, 236, 201, 0.22) 0%, rgba(44, 236, 201, 0.1) 0%, rgba(28, 28, 28, 0) 75%);
   gap: 96px;
 }
 
@@ -53,7 +54,6 @@
 .textarea-skill {
   display: flex;
   flex-direction: column;
-  max-width: 331px;
   gap: 16px;
 }
 

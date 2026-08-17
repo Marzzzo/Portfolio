@@ -158,9 +158,19 @@
   align-items: center;
   width: 130px;
   height: 48px;
-  border: 1px solid rgba(255, 255, 255, 1);
+  border: 1px solid white;
   border-radius: 100px;
   gap: 4px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.overlay-button span {
+  font-family: "karla", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: inherit;
 }
 
 .overlay-button img {
@@ -169,19 +179,8 @@
   transition: transform 0.2s ease;
 }
 
-.overlay-button a {
-  font-family: "karla", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 1);
-}
-
 .overlay-button:hover {
   border-color: rgba(61, 207, 182, 1);
-  cursor: pointer;
-}
-
-.overlay-button:hover a {
   color: rgba(61, 207, 182, 1);
 }
 

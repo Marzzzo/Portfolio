@@ -3,9 +3,46 @@
     "legalNotice": {
       "headline": "Rechtliche Hinweise",
       "imprint": "Impressum",
-      "contact": "Kontakt",
+      "representative": "Vertretungsberechtigt",
       "email": "E-Mail:",
-      "source": "Quelle:"
+
+      "acceptanceTitle": "Geltungsbereich",
+      "acceptanceText1": "Mit dem Zugriff auf und der Nutzung dieses",
+      "acceptanceText2": "erkennen Sie die folgenden Bedingungen sowie alle Richtlinien oder Änderungen an, die von Zeit zu Zeit veröffentlicht werden können. Der Betreiber behält sich das Recht vor, diese Bedingungen jederzeit ohne vorherige Ankündigung zu ändern.",
+
+      "scopeTitle": "Umfang und Eigentum des Produkts",
+      "scopeText1": "Dieses Portfolio wurde im Rahmen eines Webentwicklungs-Bootcamps bei der",
+      "scopeText2": "erstellt. Es dient zu Ausbildungszwecken und ist nicht für eine umfangreiche private oder geschäftliche Nutzung vorgesehen. Daher kann keine gleichbleibende Verfügbarkeit, Zuverlässigkeit, Genauigkeit oder sonstige Qualität des Produkts garantiert werden.",
+
+      "designText1": "Das Design des",
+      "designText2": "ist Eigentum der",
+      "designText3": ". Eine unbefugte Nutzung, Vervielfältigung, Veränderung, Verbreitung oder Reproduktion des Designs ist strengstens untersagt.",
+
+      "proprietaryTitle": "Eigentumsrechte",
+      "proprietaryText1": "Abgesehen vom Design, das Eigentum der",
+      "proprietaryText2": "ist, verbleiben alle Eigentumsrechte an diesem",
+      "proprietaryText3": "beim Betreiber. Dies umfasst insbesondere urheberrechtlich geschützte Inhalte, Marken und sonstige geschützte Informationen.",
+
+      "useTitle": "Nutzung des Produkts",
+      "useText1": "Dieses",
+      "useText2": "darf ausschließlich für rechtmäßige Zwecke und in Übereinstimmung mit den geltenden Gesetzen und Vorschriften verwendet werden. Jegliche Nutzung für illegale Aktivitäten sowie zur Belästigung, Schädigung, Bedrohung oder Einschüchterung anderer Personen ist strengstens untersagt. Sie sind allein für Ihre Interaktionen mit anderen Nutzern dieses",
+      "useText3": "verantwortlich.",
+
+      "disclaimerTitle": "Gewährleistungsausschluss und Haftungsbeschränkung",
+      "disclaimerText1": "Dieses",
+      "disclaimerText2": "wird ohne ausdrückliche oder stillschweigende Gewährleistung bereitgestellt. Dies umfasst insbesondere Garantien hinsichtlich Marktgängigkeit, Eignung für einen bestimmten Zweck und Nichtverletzung von Rechten Dritter.",
+
+      "liabilityText1": "Soweit gesetzlich zulässig, haften weder der Betreiber noch die",
+      "liabilityText2": "für direkte, indirekte, zufällige, besondere oder Folgeschäden, die aus der Nutzung oder der Nichtverfügbarkeit dieses",
+      "liabilityText3": "entstehen.",
+
+      "indemnityTitle": "Freistellung",
+      "indemnityText1": "Sie erklären sich damit einverstanden, den Betreiber, die",
+      "indemnityText2": "sowie deren verbundene Unternehmen, Partner, Mitarbeiter und Beauftragte von Ansprüchen, Forderungen, Verlusten, Schäden, Kosten oder Haftungen freizustellen, die aus Ihrer Nutzung dieses",
+      "indemnityText3": "oder einem Verstoß gegen diese rechtlichen Hinweise entstehen.",
+
+      "questions": "Bei Fragen oder Hinweisen kontaktieren Sie mich bitte unter:",
+      "date": "Stand:"
     },
     "general": {
       "send": "Senden...",
@@ -229,10 +266,47 @@
   "en": {
     "legalNotice": {
       "headline": "Legal Notice",
-      "imprint": "Legal Notice",
-      "contact": "Contact",
+      "imprint": "Imprint",
+      "representative": "Responsible for the content",
       "email": "Email:",
-      "source": "Source:"
+
+      "acceptanceTitle": "Acceptance of Terms",
+      "acceptanceText1": "By accessing and using this",
+      "acceptanceText2": "you acknowledge and agree to the following terms and conditions, as well as any policies, guidelines, or amendments that may be presented from time to time. The operator reserves the right to update or change these terms and conditions at any time without prior notice.",
+
+      "scopeTitle": "Scope and Ownership of the Product",
+      "scopeText1": "This portfolio was developed as part of a web development bootcamp at",
+      "scopeText2": "It is intended for educational purposes and is not designed for extensive personal or business use. Therefore, consistent availability, reliability, accuracy, or any other aspect of quality regarding this product cannot be guaranteed.",
+
+      "designText1": "The design of this",
+      "designText2": "is owned by",
+      "designText3": ". Unauthorized use, reproduction, modification, distribution, or replication of the design is strictly prohibited.",
+
+      "proprietaryTitle": "Proprietary Rights",
+      "proprietaryText1": "Aside from the design owned by",
+      "proprietaryText2": ", all proprietary rights to this",
+      "proprietaryText3": "remain with the operator. This includes any associated copyrighted material, trademarks, and other proprietary information.",
+
+      "useTitle": "Use of the Product",
+      "useText1": "This",
+      "useText2": "may only be used for lawful purposes and in accordance with all applicable laws and regulations. Any use for illegal activities, or to harass, harm, threaten, or intimidate another person, is strictly prohibited. You are solely responsible for your interactions with other users of this",
+      "useText3": ".",
+
+      "disclaimerTitle": "Disclaimer of Warranties and Limitation of Liability",
+      "disclaimerText1": "This",
+      "disclaimerText2": "is provided without any warranty, whether express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, and non-infringement.",
+
+      "liabilityText1": "To the extent permitted by law, neither the operator nor",
+      "liabilityText2": "shall be liable for any direct, indirect, incidental, special, or consequential damages arising from the use or unavailability of this",
+      "liabilityText3": ".",
+
+      "indemnityTitle": "Indemnity",
+      "indemnityText1": "You agree to indemnify, defend, and hold harmless the operator,",
+      "indemnityText2": "and its affiliates, partners, officers, directors, agents, and employees from and against any claims, demands, losses, damages, costs, or liabilities arising out of or relating to your use of this",
+      "indemnityText3": "or your breach of this Legal Notice.",
+
+      "questions": "For any questions or notices, please contact me at:",
+      "date": "Date:"
     },
     "general": {
       "send": "Sending...",

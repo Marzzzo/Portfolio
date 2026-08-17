@@ -31,42 +31,61 @@ function renderTechnologies(technologies) {
  * @returns {string} The generated HTML markup for the project overlay.
  */
 function overlayTemplate(project) {
-  return `      <div class="card">
-        <div class="left-section">
-          <div class="headline">
-            <h1>${project.number}</h1>
-            <h2>${project.title}</h2>
-          </div>
-          <div class="fonts-section">
-            <h3>Worum geht es bei diesem Projekt?</h3>
-            <span>${translate(project.descriptionKey)}</span>
-          </div>
-          <div class="workframe">
+  return `
+    <div class="card">
+      <div class="left-section">
+        <div class="headline">
+          <h1>${project.number}</h1>
+          <h2>${project.title}</h2>
+        </div>
+
+        <div class="fonts-section">
+          <h3>Worum geht es bei diesem Projekt?</h3>
+          <span>${translate(project.descriptionKey)}</span>
+        </div>
+
+        <div class="workframe">
           ${renderTechnologies(project.technologies)}
-          </div>
-          <div class="overlay-buttons">
-            <div class="overlay-button">
-              <a href="${project.github}">GitHub</a>
-              <img src="/assets/icons/arrow-outward-green.png" alt="" />
-            </div>
-            <div class="overlay-button">
-              <a href="${project.liveTest}">Live Test</a>
-              <img src="/assets/icons/arrow-outward-green.png" alt="" />
-            </div>
-          </div>
         </div>
-        <div class="right-section">
-          <img class="image" src="${project.image}" alt="" />
+
+        <div class="overlay-buttons">
+          <a
+            class="overlay-button"
+            href="${project.github}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>Github</span>
+            <img src="/assets/icons/arrow-outward-green.png" alt="" />
+          </a>
+
+          <a
+            class="overlay-button"
+            href="${project.liveTest}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>Live Test</span>
+            <img src="/assets/icons/arrow-outward-green.png" alt="" />
+          </a>
         </div>
-        <div class="next-button" onclick="nextProject()">
-          <p>Nächstes Projekt</p>
-          <img src="/assets/icons/arrow-forward-green.png" alt="" />
-        </div>
-        <div class="close-button  " onclick="closeOverlay()">
-          <img class="close-button-small" src="/assets/icons/close-button.png" alt="" />
-          <img class="close-button-big" src="/assets/icons/close-button-hover.png" alt="" />
-        </div>
-      </div>`;
+      </div>
+
+      <div class="right-section">
+        <img class="image" src="${project.image}" alt="" />
+      </div>
+
+      <div class="next-button" onclick="nextProject()">
+        <p>Nächstes Projekt</p>
+        <img src="/assets/icons/arrow-forward-green.png" alt="" />
+      </div>
+
+      <div class="close-button" onclick="closeOverlay()">
+        <img class="close-button-small" src="/assets/icons/close-button.png" alt="" />
+        <img class="close-button-big" src="/assets/icons/close-button-hover.png" alt="" />
+      </div>
+    </div>
+  `;
 }
 
 /**

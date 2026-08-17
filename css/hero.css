@@ -282,15 +282,15 @@ main {
 
 @media (min-height: 950px) {
   .textbar {
-    bottom: 90px;
+    bottom: 55px;
   }
 
   .line-left {
-    height: 300px !important;
+    height: 200px !important;
   }
 
   .line-right {
-    height: 300px !important;
+    height: 200px !important;
   }
 }
 
@@ -428,7 +428,7 @@ main {
   flex-direction: column;
   align-items: center;
   bottom: 0;
-  right: max(32px, calc((100vw - 1440px) / 2));
+  right: max(24px, calc((100vw - 1440px) / 2));
 }
 
 .mailto-link {

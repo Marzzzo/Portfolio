@@ -4,6 +4,10 @@
   scroll-behavior: smooth;
 }
 
+html:not(.translations-ready) body {
+  visibility: hidden;
+}
+
 body {
   display: flex;
   flex-direction: column;

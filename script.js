@@ -17,6 +17,7 @@ async function init() {
   renderTextbar(trackCounter);
   renderCarousel();
   updateLanguage();
+  document.documentElement.classList.add("translations-ready");
 }
 
 /**
@@ -31,6 +32,7 @@ async function initPolicyPage() {
   renderHeader();
   renderFooter();
   updateLanguage();
+  document.documentElement.classList.add("translations-ready");
 }
 
 /**
@@ -43,6 +45,7 @@ async function initImpressumPage() {
   renderHeader();
   renderFooter();
   updateLanguage();
+  document.documentElement.classList.add("translations-ready");
 }
 
 /**

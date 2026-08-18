@@ -371,6 +371,9 @@ function closeMobileMenu() {
   document.body.classList.remove("menu-open");
 }
 
+/**
+ * Shows the stripes when the profile is hovered for the first time.
+ */
 const profilWrapper = document.querySelector(".profil-wrapper");
 profilWrapper.addEventListener(
   "mouseenter",
@@ -380,6 +383,9 @@ profilWrapper.addEventListener(
   { once: true },
 );
 
+/**
+ * Updates navigation links when the user is on the home page.
+ */
 function initNavigation() {
   const isHomePage = window.location.pathname.endsWith("/") || window.location.pathname.endsWith("index.html");
   document.querySelectorAll("[data-section]").forEach((link) => {

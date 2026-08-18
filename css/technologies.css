@@ -33,8 +33,42 @@
   display: flex;
   justify-content: space-between;
   padding: 20px 96px 144px 96px;
-  background: radial-gradient(40% 67% at 0% 50%, rgba(44, 236, 201, 0.22) 0%, rgba(44, 236, 201, 0.1) 0%, rgba(28, 28, 28, 0) 75%);
+  
   gap: 96px;
+}
+
+.gradient {
+  position: relative;
+  overflow: visible;
+}
+
+.gradient::before {
+  content: "";
+  position: absolute;
+
+  width: 500px;
+  height: 900px;
+
+  left: -150px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  background: radial-gradient(
+    ellipse,
+    rgba(44, 236, 201, 0.22) 0%,
+    rgba(44, 236, 201, 0.12) 25%,
+    rgba(44, 236, 201, 0.06) 45%,
+    rgba(44, 236, 201, 0.02) 60%,
+    transparent 65%
+  );
+
+  pointer-events: none;
+  z-index: 0;
+}
+
+.gradient > * {
+  position: relative;
+  z-index: 1;
 }
 
 .skill-container h3 {

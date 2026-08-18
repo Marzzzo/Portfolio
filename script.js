@@ -57,6 +57,7 @@ async function initImpressumPage() {
 function renderHeader() {
   const header = document.getElementById("header");
   header.innerHTML = headerTemplate();
+  initNavigation();
 }
 
 /**
@@ -368,4 +369,22 @@ function closeMobileMenu() {
   burgerButton.setAttribute("aria-expanded", "false");
   burgerButton.setAttribute("aria-label", "Menü öffnen");
   document.body.classList.remove("menu-open");
+}
+
+const profilWrapper = document.querySelector(".profil-wrapper");
+profilWrapper.addEventListener(
+  "mouseenter",
+  () => {
+    profilWrapper.classList.add("stripes-visible");
+  },
+  { once: true },
+);
+
+function initNavigation() {
+  const isHomePage = window.location.pathname.endsWith("/") || window.location.pathname.endsWith("index.html");
+  document.querySelectorAll("[data-section]").forEach((link) => {
+    if (isHomePage) {
+      link.href = `#${link.dataset.section}`;
+    }
+  });
 }

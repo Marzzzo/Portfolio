@@ -33,46 +33,49 @@ function renderTechnologies(technologies) {
 function overlayTemplate(project) {
   return `
     <div class="card">
-      <div class="left-section">
-        <div class="headline">
-          <h1>${project.number}</h1>
-          <h2>${project.title}</h2>
+
+      <div class="card-content">
+        <div class="left-section">
+          <div class="headline">
+            <h1>${project.number}</h1>
+            <h2>${project.title}</h2>
+          </div>
+
+          <div class="fonts-section">
+            <h3>Worum geht es bei diesem Projekt?</h3>
+            <span>${translate(project.descriptionKey)}</span>
+          </div>
+
+          <div class="workframe">
+            ${renderTechnologies(project.technologies)}
+          </div>
         </div>
 
-        <div class="fonts-section">
-          <h3>Worum geht es bei diesem Projekt?</h3>
-          <span>${translate(project.descriptionKey)}</span>
-        </div>
-
-        <div class="workframe">
-          ${renderTechnologies(project.technologies)}
-        </div>
-
-        <div class="overlay-buttons">
-          <a
-            class="overlay-button"
-            href="${project.github}"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span>Github</span>
-            <img src="/assets/icons/arrow-outward-green.png" alt="" />
-          </a>
-
-          <a
-            class="overlay-button"
-            href="${project.liveTest}"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span>Live Test</span>
-            <img src="/assets/icons/arrow-outward-green.png" alt="" />
-          </a>
+        <div class="right-section">
+          <img class="image" src="${project.image}" alt="" />
         </div>
       </div>
 
-      <div class="right-section">
-        <img class="image" src="${project.image}" alt="" />
+      <div class="overlay-buttons">
+        <a
+          class="overlay-button"
+          href="${project.github}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>Github</span>
+          <img src="/assets/icons/arrow-outward-green.png" alt="" />
+        </a>
+
+        <a
+          class="overlay-button"
+          href="${project.liveTest}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>Live Test</span>
+          <img src="/assets/icons/arrow-outward-green.png" alt="" />
+        </a>
       </div>
 
       <div class="next-button" onclick="nextProject()">
@@ -81,9 +84,18 @@ function overlayTemplate(project) {
       </div>
 
       <div class="close-button" onclick="closeOverlay()">
-        <img class="close-button-small" src="/assets/icons/close-button.png" alt="" />
-        <img class="close-button-big" src="/assets/icons/close-button-hover.png" alt="" />
+        <img
+          class="close-button-small"
+          src="/assets/icons/close-button.png"
+          alt=""
+        />
+        <img
+          class="close-button-big"
+          src="/assets/icons/close-button-hover.png"
+          alt=""
+        />
       </div>
+
     </div>
   `;
 }
@@ -130,31 +142,26 @@ function headerTemplate() {
       <div class="mobile-logo">
         <img src="/assets/icons/favicon.png" alt="Logo">
       </div>
-
       <button class="burger-button" onclick="toggleMobileMenu()">
         <img src="/assets/icons/burger-menu.png" alt="Menü">
       </button>
     </div>
-
     <div class="desktop-header">
       <div class="left-header-section">
         <div class="language-switcher">
           <button class="language-button active" data-language="de" onclick="setLanguage('de')">
             DE
           </button>
-
           <button class="language-button" data-language="en" onclick="setLanguage('en')">
             EN
           </button>
         </div>
-
         <nav class="header-navigation">
-          <a href="index.html#aboutMe" data-i18n="navigation.about">Über mich</a>
-          <a href="index.html#skills" data-i18n="navigation.skills">Skills</a>
-          <a href="index.html#projects" data-i18n="navigation.projects">Projekte</a>
+          <a href="index.html#aboutMe" data-section="aboutMe" data-i18n="navigation.about">Über mich</a>
+          <a href="index.html#skills" data-section="skills" data-i18n="navigation.skills">Skills</a>
+          <a href="index.html#projects" data-section="projects" data-i18n="navigation.projects">Projekte</a>
         </nav>
       </div>
-
       <div class="logo-container">
         <img class="logo-filled" src="/assets/icons/logo-initial.png" alt="">
         <a href="/">
@@ -162,18 +169,15 @@ function headerTemplate() {
         </a>
       </div>
     </div>
-
     <div class="mobile-menu" id="mobileMenu">
       <nav class="mobile-navigation">
         <a href="index.html#aboutMe" data-i18n="navigation.about" onclick="closeMobileMenu()">Über mich</a>
         <a href="index.html#skills" data-i18n="navigation.skills" onclick="closeMobileMenu()">Skills</a>
         <a href="index.html#projects" data-i18n="navigation.projects" onclick="closeMobileMenu()">Projekte</a>
-
         <div class="language-switcher">
           <button class="language-button" data-language="de" onclick="setLanguage('de')">
             DE
           </button>
-
           <button class="language-button" data-language="en" onclick="setLanguage('en')">
             EN
           </button>

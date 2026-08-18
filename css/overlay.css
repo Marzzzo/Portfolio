@@ -15,9 +15,6 @@
 
 .card {
   position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
   max-width: 1248px;
   height: 100vh;
@@ -33,6 +30,14 @@
   overflow: hidden;
   user-select: none;
   animation: slideIn 0.4s ease forwards;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .closing {
@@ -147,9 +152,12 @@
 }
 
 .overlay-buttons {
+  position: absolute;
+  left: 80px;
+  bottom: 50px;
   display: flex;
   gap: 32px;
-  padding-top: 40px;
+  padding-top: 0;
 }
 
 .overlay-button {

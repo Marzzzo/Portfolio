@@ -36,6 +36,11 @@
   gap: 24px;
 }
 
+.header-navigation {
+  display: flex;
+  gap: 24px;
+}
+
 .header-navigation a,
 .mobile-navigation a {
   position: relative;
@@ -264,6 +269,37 @@ main {
   backdrop-filter: blur(4px);
   overflow: hidden;
   white-space: nowrap;
+}
+
+@media (max-height: 600px) {
+  .mailto-link {
+    display: none !important;
+  }
+
+  .mail {
+    display: block !important;
+  }
+
+  .verticalflow-right {
+    right: 16px;
+  }
+
+  .verticalflow-left {
+    left: 16px;
+  }
+
+  .verticalflow-left,
+  .verticalflow-right {
+    bottom: 0;
+  }
+
+  .line-left {
+    height: 180px !important;
+  }
+
+  .line-right {
+    height: 112px !important;
+  }
 }
 
 @media (min-height: 800px) {

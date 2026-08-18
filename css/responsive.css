@@ -80,15 +80,10 @@
     margin-top: 0;
   }
 
-  .headline-projects {
-    align-items: center;
-  }
-
   .card {
     flex-direction: column-reverse;
     justify-content: flex-start;
     align-items: center;
-    width: min(90%, 760px);
     max-height: 90vh;
     height: auto;
     padding: 56px 32px 80px;
@@ -121,7 +116,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 990px) {
   .main-impressum {
     padding: 0 16px;
     gap: 16px;
@@ -149,6 +144,80 @@
 
   .footer-left {
     gap: 8px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100svh - 32px);
+    max-height: none;
+    padding: 60px 16px 120px;
+    overflow: hidden;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
+    flex: 1;
+    min-height: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: #3dcfb6 transparent;
+  }
+
+  .card-content::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .card-content::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .card-content::-webkit-scrollbar-thumb {
+    background: #3dcfb6;
+    border-radius: 10px;
+  }
+
+  .contact-me-section {
+    margin-top: 80px;
+    padding: 0 16px;
+    gap: 48px;
+  }
+
+  .headline-container h2 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .right-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+    order: 1;
+  }
+
+  .left-section {
+    width: 100%;
+    height: auto;
+    order: 2;
+  }
+
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .image:hover {
+    transform: none;
   }
 }
 
@@ -362,17 +431,21 @@
     margin: 7px;
   }
 
-  .textfield-projects {
-    text-align: center;
-  }
-
   .headline-projects h1 {
     font-size: 42px;
+    text-align: start;
+  }
+
+  .headline-colleagues h1 {
+    font-size: 24px;
+    padding: 100px 16px 0 16px;
   }
 
   .projects-container,
   .projects-container-bottom {
     flex-direction: column;
+    padding: 40px 0 40px 0;
+    align-items: flex-start;
   }
 
   header {
@@ -492,13 +565,23 @@
     width: 100%;
     flex: 1;
     min-height: 0;
-    overflow-y: auto;
+    overflow-y: scroll;
     overflow-x: hidden;
-    scrollbar-width: none;
+    scrollbar-width: thin;
+    scrollbar-color: #3dcfb6 transparent;
   }
 
   .card-content::-webkit-scrollbar {
-    display: none;
+    width: 6px;
+  }
+
+  .card-content::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .card-content::-webkit-scrollbar-thumb {
+    background: #3dcfb6;
+    border-radius: 10px;
   }
 
   .contact-me-section {
@@ -513,7 +596,7 @@
   }
 
   .right-section {
-    width: 100%;
+    width: 96%;
     flex-shrink: 0;
     margin-bottom: 20px;
     order: 1;
@@ -523,6 +606,19 @@
     width: 100%;
     height: auto;
     order: 2;
+  }
+
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+  }
+
+  .image:hover {
+    transform: none;
   }
 
   .headline {
@@ -541,19 +637,6 @@
     font-size: 32px;
     line-height: 1.1;
     overflow-wrap: break-word;
-  }
-
-  .image {
-    display: block;
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    object-fit: contain;
-    border-radius: 20px;
-  }
-
-  .image:hover {
-    transform: none;
   }
 
   .fonts-section {
@@ -638,7 +721,7 @@
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 390px) {
   .carousel {
     height: 470px;
   }
@@ -667,5 +750,11 @@
 
   .nametag-button-section {
     gap: 24px;
+  }
+}
+
+@media (max-width: 340px) {
+  .carousel {
+    height: 512px;
   }
 }

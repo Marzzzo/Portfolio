@@ -171,9 +171,9 @@ function headerTemplate() {
     </div>
     <div class="mobile-menu" id="mobileMenu">
       <nav class="mobile-navigation">
-        <a href="index.html#aboutMe" data-i18n="navigation.about" onclick="closeMobileMenu()">Über mich</a>
-        <a href="index.html#skills" data-i18n="navigation.skills" onclick="closeMobileMenu()">Skills</a>
-        <a href="index.html#projects" data-i18n="navigation.projects" onclick="closeMobileMenu()">Projekte</a>
+        <a href="index.html#aboutMe" data-section="aboutMe" data-i18n="navigation.about" onclick="closeMobileMenu()">Über mich</a>
+        <a href="index.html#skills" data-section="skills" data-i18n="navigation.skills" onclick="closeMobileMenu()">Skills</a>
+        <a href="index.html#projects" data-section="projects" data-i18n="navigation.projects" onclick="closeMobileMenu()">Projekte</a>
         <div class="language-switcher">
           <button class="language-button" data-language="de" onclick="setLanguage('de')">
             DE

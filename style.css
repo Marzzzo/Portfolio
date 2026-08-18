@@ -281,3 +281,16 @@ h3 {
 .input-error {
   border-color: #ff4d4d;
 }
+
+.scroll-animation {
+  opacity: 0;
+  transform: translateY(80px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.scroll-animation.show {
+  opacity: 1;
+  transform: translateY(0);
+}

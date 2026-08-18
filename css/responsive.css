@@ -486,7 +486,7 @@
 
   .card-content {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
     width: 100%;
@@ -516,11 +516,13 @@
     width: 100%;
     flex-shrink: 0;
     margin-bottom: 20px;
+    order: 1;
   }
 
   .left-section {
     width: 100%;
     height: auto;
+    order: 2;
   }
 
   .headline {

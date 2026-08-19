@@ -87,8 +87,8 @@ const carouselCards = [
   {
     id: "4",
     description: {
-      de: "Ich kenne Marco seit mehr als 30 Jahren und schätze ihn als jemanden, auf den man sich jederzeit verlassen kann. Mit seiner professionellen, pragmatischen Art und seinem hohen Qualitätsanspruch bringt er genau die Eigenschaften mit, die ich auch aus HR-Sicht für eine erfolgreiche Zusammenarbeit wichtig finde. Ich kann ihn mit bestem Gewissen empfehlen und bin sicher, dass seine Kunden seine Arbeit genauso schätzen werden wie ich. ",
-      en: "I have known Marco for over 30 years and appreciate him as someone you can always rely on. With his professional, pragmatic approach and high standards of quality, he possesses exactly the qualities that I consider important for successful collaboration from an HR perspective. I can recommend him with the utmost confidence and am certain that his clients will value his work just as much as I do.",
+      de: "Ich kenne Marco seit mehr als 30 Jahren und schätze ihn als zuverlässigen und professionellen Menschen. Mit seiner pragmatischen Art und seinem hohen Qualitätsanspruch bringt er wichtige Eigenschaften für eine erfolgreiche Zusammenarbeit mit. Ich kann ihn mit bestem Gewissen empfehlen und bin sicher, dass auch seine Kunden seine Arbeit sehr schätzen werden. ",
+      en: "I have known Marco for more than 30 years and value him as a reliable and professional person. With his pragmatic approach and high standards of quality, he brings important qualities to any successful collaboration. I can recommend him with confidence and am sure his clients will value his work just as much.",
     },
     name: "M.Göckede",
     position: {

@@ -8,6 +8,10 @@
     display: none;
   }
 
+  .projects-section {
+    max-width: 770px;
+  }
+
   .desktop-header {
     padding: 0;
   }
@@ -37,47 +41,58 @@
     font-size: 62px;
   }
 
+  .headline-container h2 {
+    font-size: 46px;
+    line-height: 1.2;
+  }
+
   .stripes {
     display: none;
   }
 
   .about-me-container {
-    flex-direction: column;
-    align-items: center;
+    /* flex-direction: column; */
+    /* align-items: center; */
     padding: 0 0 100px 0;
     gap: 40px;
   }
 
   .profil-wrapper {
-    width: 100%;
+    /* width: 100%; */
     max-width: 568px;
   }
 
   .other-section {
-    flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     padding: 100px 16px 0 16px;
   }
 
   .skill-container {
-    flex-direction: column;
-    align-items: center;
+    /* flex-direction: column; */
+    /* align-items: center; */
     padding: 0 16px;
+    gap: 40px;
   }
 
   .skill-icon-box {
     justify-content: center;
     max-width: 568px;
+    gap: 40px 40px;
   }
 
   .contact-me-section {
-    flex-direction: column;
-    align-items: center;
+    /* flex-direction: column; */
+    /* align-items: center; */
     padding: 0 16px;
+    gap: 30px;
   }
 
   .who-i-am-container {
     margin-top: 0;
+  }
+
+  .img-container {
+    display: none;
   }
 
   .card {
@@ -124,6 +139,46 @@
 
   .imprint-headline {
     font-size: 22px;
+  }
+
+  .about-me-container {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .skill-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .other-section {
+    justify-content: center;
+  }
+
+  .projects-section {
+    max-width: 568px;
+  }
+
+  .projects-section {
+    text-align: start;
+  }
+
+  .border-form-container,
+  .border-form-bottom {
+    max-width: 568px;
+  }
+
+  form {
+    align-items: center;
+  }
+
+  .policy-container {
+    max-width: 568px;
+  }
+
+  .profil-wrapper {
+    width: 100%;
   }
 
   section h2 {
@@ -187,6 +242,8 @@
     margin-top: 80px;
     padding: 0 16px;
     gap: 48px;
+    flex-direction: column;
+    align-items: center;
   }
 
   .headline-container h2 {
@@ -389,7 +446,7 @@
   }
 
   .items {
-    height: 290px;
+    height: 300px;
     margin-top: 35px;
   }
 
@@ -402,13 +459,8 @@
   }
 
   .card-description {
-    font-size: 17px;
-    line-height: 1.35;
-  }
-
-  .card-footer {
-    gap: 15px;
-    margin-top: 25px;
+    font-size: 16px;
+    text-align: start;
   }
 
   .card-name {
@@ -428,10 +480,6 @@
     top: -30px;
     left: 10px;
     width: 60px;
-  }
-
-  .nav {
-    margin-top: 8px;
   }
 
   .arrow-button {
@@ -735,7 +783,7 @@
 
 @media (max-width: 390px) {
   .carousel {
-    height: 470px;
+    height: 360px;
   }
 
   .items {
@@ -747,17 +795,7 @@
   }
 
   .card-footer {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .horizonline {
-    width: 100%;
-    flex: none;
-  }
-
-  .card-name {
-    width: 100%;
+    gap: 16px;
   }
 
   .nametag-button-section {
@@ -767,6 +805,6 @@
 
 @media (max-width: 340px) {
   .carousel {
-    height: 512px;
+    height: 380px;
   }
 }

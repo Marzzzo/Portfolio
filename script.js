@@ -376,13 +376,15 @@ function closeMobileMenu() {
  * Shows the stripes when the profile is hovered for the first time.
  */
 const profilWrapper = document.querySelector(".profil-wrapper");
-profilWrapper.addEventListener(
-  "mouseenter",
-  () => {
-    profilWrapper.classList.add("stripes-visible");
-  },
-  { once: true },
-);
+if (profilWrapper) {
+  profilWrapper.addEventListener(
+    "mouseenter",
+    () => {
+      profilWrapper.classList.add("stripes-visible");
+    },
+    { once: true },
+  );
+}
 
 /**
  * Updates navigation links when the user is on the home page.

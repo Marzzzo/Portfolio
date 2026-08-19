@@ -583,10 +583,6 @@
   .skill-container {
     gap: 16px;
   }
-
-  #hero {
-    height: 844px;
-  }
 }
 
 @media (max-width: 600px) {

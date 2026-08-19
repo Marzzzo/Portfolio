@@ -9,7 +9,7 @@ function renderTechnologies(technologies) {
     .map(
       (tech) => `
     <div class="single-content">
-      <img src="/assets/icons/overlay-${tech.toLowerCase()}.png" alt="${tech}">
+      <img src="/assets/icons/overlay-${tech.toLowerCase()}.svg" alt="${tech}">
       <p>${tech}</p>
     </div>
   `,
@@ -164,7 +164,7 @@ function headerTemplate() {
       </div>
       <div class="logo-container">
         <img class="logo-filled" src="/assets/icons/logo-initial.png" alt="">
-        <a href="/">
+        <a href="/" data-section="hero">
           <img class="logo-outline" src="/assets/icons/logo-initial-hover.png" alt="" />
         </a>
       </div>
@@ -198,7 +198,7 @@ function footerTemplate() {
     <div class="footer-left">
       <div class="logo-container">
         <img class="logo-filled" src="/assets/icons/logo-initial.png" alt="" />
-        <a href="/">
+        <a href="/" data-section="hero">
           <img class="logo-outline" src="/assets/icons/logo-initial-hover.png" alt="" />
         </a>
       </div>

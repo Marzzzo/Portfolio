@@ -67,7 +67,7 @@
 
   .skill-icon-box {
     justify-content: center;
-    max-width: 520px;
+    max-width: 568px;
   }
 
   .contact-me-section {
@@ -272,6 +272,18 @@
 
   .desktop-header {
     display: none;
+  }
+
+  .nametag-button {
+    border-color: rgba(61, 207, 182, 1);
+  }
+
+  .nametag-button span {
+    color: rgba(61, 207, 182, 1);
+
+    animation:
+      buttonFirst 2s linear forwards,
+      buttonLoop 5s linear infinite 2s;
   }
 
   .mobile-header {

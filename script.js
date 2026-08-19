@@ -69,6 +69,7 @@ function renderHeader() {
 function renderFooter() {
   const footer = document.getElementById("footer");
   footer.innerHTML = footerTemplate();
+  initNavigation();
 }
 
 /**

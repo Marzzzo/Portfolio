@@ -1,7 +1,7 @@
 .skill-content {
   display: flex;
   flex-direction: column;
-  max-width: 520px;
+  max-width: 568px;
   gap: 20px;
 }
 
@@ -33,7 +33,7 @@
   display: flex;
   justify-content: space-between;
   padding: 20px 96px 144px 96px;
-  
+
   gap: 96px;
 }
 
@@ -45,14 +45,11 @@
 .gradient::before {
   content: "";
   position: absolute;
-
   width: 500px;
   height: 900px;
-
   left: -150px;
   top: 50%;
   transform: translateY(-50%);
-
   background: radial-gradient(
     ellipse,
     rgba(44, 236, 201, 0.22) 0%,
